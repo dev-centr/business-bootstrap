@@ -1,0 +1,9 @@
+= Business Bootstrap
+
+Product-agnostic guidance for bootstrapping tech-company support systems: email (human vs product), DMARC, org-level IaC (`infra` repos), and light ITIL-shaped service catalog naming.
+
+Organized with Diátaxis (tutorials, how-to, reference, explanation). Aggregated on https://docs.devcentr.org[docs.devcentr.org].
+
+== Changelog
+
+See link:docs/modules/ROOT/pages/changelog.adoc[changelog.adoc].

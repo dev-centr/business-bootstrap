@@ -1,0 +1,74 @@
+= Email decision matrix
+:description: Choose email providers by job — human correspondence vs product transactional vs marketing journeys.
+:navtitle: Email decision matrix
+
+Use this matrix when picking vendors. Defaults are de-facto standards for Dev-Centr–aligned orgs; alternatives are valid when the job changes.
+
+== By job
+
+[cols="1,1,2,2",options="header"]
+|===
+| Job | Default | Strong alternatives | Avoid as default
+
+| Inbound to personal Gmail
+| Cloudflare Email Routing (free)
+| Google Workspace / Zoho Mail seats
+| Using a transactional ESP as an inbox
+
+| Human outbound via Gmail "Send mail as"
+| **ZeptoMail** SMTP + per-user keys; SPF/DKIM in Cloudflare
+| SMTP2GO; Workspace native SMTP
+| **Resend** (keep for app/code only); Brevo free/starter for multi-user; shared "master" SMTP password; Gmail's own SMTP with custom From under `p=reject`
+
+| App hard transactional
+| **Resend** (DX)
+| ZeptoMail (PAYG + Mail Agents if already standardized); Postmark; SES
+| Marketing ESP for critical mail; Resend for human Gmail send-as
+
+| Product marketing + behavioral journeys
+| **Customer.io** (+ Twilio for SMS)
+| Braze / Klaviyo at scale
+| Brevo when you need event-driven multi-channel
+
+| Classic email marketing (lists/campaigns, little product orchestration)
+| Brevo / similar ESP
+| Customer.io (overkill if email-only)
+| Resend Broadcasts dual-running with another marketing brain
+
+| Ultra-cheap high volume, AWS-native
+| Amazon SES
+| —
+| First-week bootstrap for non-AWS teams
+
+| Full business inboxes at scale
+| Google Workspace (or Zoho Mail seats)
+| —
+| Forever-managing personal Gmail + SMTP relays for a whole team
+|===
+
+== Scoring dimensions
+
+Rate providers against:
+
+* **Collaborator seats on cheap tiers** — Brevo weak; ZeptoMail / Resend / Customer.io stronger
+* **Setup UX** — ZeptoMail high; SES low
+* **Gmail send-as fit** — SMTP credentials + static DKIM; watch IP allowlisting traps (Brevo banner)
+* **Product API / SDK DX** — Resend high
+* **Journey / multi-channel** — Customer.io high; Brevo medium as ESP; ZeptoMail none
+* **Pricing cliff** — ZeptoMail PAYG flat; Resend/CIO have plan steps; Brevo seats
+* **Isolation model** — ZeptoMail Mail Agents; CIO workspaces; Brevo sub-orgs paywalled
+* **IaC maturity** — Cloudflare DNS: Pulumi native; ZeptoMail: Dynamic Provider or manual DNS tokens; Brevo: Terraform bridge possible
+* **Reputation separation** — marketing subdomain vs transactional From
+
+== Customer.io vs Brevo
+
+Not a coin flip:
+
+* **Customer.io** when the product emits events and you need journeys across email/SMS/push/in-app.
+* **Brevo** when you mainly need a classic ESP (campaigns/lists/templates), accept collaboration paywalls on cheap tiers, and do not need deep product orchestration.
+
+== Related
+
+* xref:human-vs-product-messaging.adoc[Human vs product messaging]
+* xref:reference/provider-comparison.adoc[Provider comparison]
+* xref:resend-dns-roles.adoc[Resend subdomain DNS roles]

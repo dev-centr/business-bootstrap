@@ -1,0 +1,18 @@
+= Escalate DMARC policy
+:description: Checklist to move from p=none through quarantine to reject without cutting off legitimate mail.
+:navtitle: Escalate DMARC
+
+. Inventory every sender: ZeptoMail (human), Resend (app), Customer.io / marketing, Workspace if any, ticketing, etc.
+. Ensure SPF `include:` chains and DKIM selectors exist for each in Cloudflare (via `infra` where possible).
+. Run `p=none` with `rua=` reporting for 1–2 weeks; clear unexplained failures.
+. Set `p=quarantine`; monitor for another period.
+. Set `p=reject`.
+. Keep reviewing aggregate reports — spoof attempts still appear with disposition `reject`.
+
+Example TXT shape (values are illustrative):
+
+----
+v=DMARC1; p=reject; rua=mailto:your-dmarc-inbox@example.com;
+----
+
+See xref:explanation/dmarc-policy-path.adoc[DMARC policy path].

@@ -1,0 +1,22 @@
+= Bootstrap org email
+:description: One-afternoon tutorial to get inbound, human outbound, and app transactional mail lanes in place.
+:navtitle: Bootstrap org email
+
+== Goal
+
+Receive `@yourdomain`, send as humans via Gmail, and prepare product transactional mail — without mixing vendors across lanes.
+
+== Steps
+
+. Point DNS at Cloudflare; enable **Email Routing** to your personal Gmail for inbound.
+. Add DMARC at `p=none` with reporting (Cloudflare automatic setup is fine to start). See xref:explanation/dmarc-policy-path.adoc[DMARC policy path].
+. Create ZeptoMail Mail Agent; verify domain; create **your** SMTP key; configure Gmail send-as. See xref:how-to/zeptomail-gmail-send-as.adoc[ZeptoMail + Gmail send-as].
+. Add Resend domain as a **subdomain** (`updates.…`); configure `send` + `links`; put records in org `infra` when ready. See xref:how-to/resend-domain-dns.adoc[Resend domain DNS].
+. Wire the app to Resend API only (not human SMTP).
+. After 1–2 weeks of clean reports, xref:how-to/dmarc-escalation.adoc[escalate DMARC].
+. When marketing journeys matter, add Customer.io on a **separate** subdomain — not Brevo by default for product orgs.
+
+== Next
+
+* xref:explanation/org-infra-repo-pattern.adoc[Org infra repo pattern]
+* xref:explanation/email-decision-matrix.adoc[Email decision matrix]

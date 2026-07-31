@@ -1,0 +1,10 @@
+= Initial email matrix and infra pattern
+:description: First publication of human vs product messaging guidance, provider matrix, DMARC path, Resend DNS roles, and Pulumi org infra pattern.
+
+== Summary
+
+* Separated **human / org email** from **product messaging** contexts.
+* Locked de-facto lanes: ZeptoMail (human send-as), Resend (app/code only), Customer.io (journeys), Cloudflare Email Routing (inbound).
+* Documented DMARC `p=none` → `quarantine` → `reject`.
+* Documented Resend subdomain roles (`updates` / `send` / `links`).
+* Documented org-level Pulumi `infra` repo pattern with per-repo Antora docs.

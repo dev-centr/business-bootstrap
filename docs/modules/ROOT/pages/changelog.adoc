@@ -1,0 +1,6 @@
+= Changelog
+:description: Timeline of Business Bootstrap documentation changes.
+
+== 2026-07-31
+
+* xref:changelog-details/2026-07-31--initial-email-matrix-and-infra-pattern.adoc[Initial email decision matrix, DMARC path, Resend DNS roles, and org infra pattern]

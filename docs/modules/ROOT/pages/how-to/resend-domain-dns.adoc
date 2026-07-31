@@ -1,0 +1,12 @@
+= Resend domain DNS roles
+:description: How-to for adding a Resend sending subdomain with send and links hosts.
+:navtitle: Resend domain DNS
+
+. In Resend → Domains → Add domain, use a **subdomain** (e.g. `updates.example.com`), not the apex.
+. Set Custom Return-Path to `send` (or accept the default that differs from tracking).
+. Set Tracking subdomain to `links`.
+. Enable click tracking if needed; leave open tracking off unless you accept the tradeoffs.
+. Copy the DNS records Resend shows into the org `infra` Pulumi stack (Cloudflare provider) and apply.
+. Wait for verification; set the app `From` to a local-part on the verified host.
+
+Background: xref:explanation/resend-dns-roles.adoc[Resend subdomain DNS roles].

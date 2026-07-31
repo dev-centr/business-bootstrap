@@ -1,0 +1,16 @@
+= Business Bootstrap
+:description: Bootstrapping tech-company email, DNS deliverability, and org-level IaC.
+
+Guidance for founders and ops teams setting up essential IT support systems — especially **email** and **org-level infrastructure as code** — without mixing human correspondence with product messaging stacks.
+
+== Start here
+
+* xref:explanation/human-vs-product-messaging.adoc[Human vs product messaging] — the lane split that prevents vendor confusion
+* xref:explanation/email-decision-matrix.adoc[Email decision matrix] — pick providers by job
+* xref:tutorials/bootstrap-org-email.adoc[Bootstrap org email] — one-afternoon path
+* xref:explanation/org-infra-repo-pattern.adoc[Org infra repo pattern] — Pulumi `infra` repos with Antora docs
+
+== Related
+
+* xref:general-knowledge:explanation/infrastructure/iac.adoc[Infrastructure as Code (IaC)] (developer mechanics)
+* DevCentr xref:DevCentr:specifications:components/installation-workflow.adoc[Installation workflow] (org infra wizard hooks)

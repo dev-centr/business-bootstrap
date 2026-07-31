@@ -1,0 +1,24 @@
+= Defaults by org stage
+:description: Recommended email and infra defaults from solo founder through small team.
+:navtitle: Defaults by stage
+
+[cols="1,2,2",options="header"]
+|===
+| Stage | Email defaults | Infra
+
+| Solo / pre-product
+| Cloudflare Routing inbound; ZeptoMail or defer human SMTP; Resend when first app mail ships
+| Optional personal infra; else DNS by hand until painful
+
+| Product shipping
+| Resend on `updates.` (or similar); Customer.io when journeys needed; ZeptoMail for human `@domain`
+| Org `infra` Pulumi repo; encode Resend/Zepto/DMARC DNS
+
+| Small team (collaborators)
+| Per-user ZeptoMail keys; never shared master SMTP; escalate DMARC after alignment
+| Central `infra` + Antora docs; secrets in ESC/vault
+
+| Many seats / compliance
+| Consider Google Workspace for inboxes; keep Resend/CIO for product
+| Hybrid IaC; policy as code; marketing subdomain isolation mandatory
+|===

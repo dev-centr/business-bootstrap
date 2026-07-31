@@ -1,0 +1,33 @@
+= ZeptoMail + Gmail send-as
+:description: Configure ZeptoMail for human outbound mail through Gmail Send mail as, with per-user keys and Cloudflare DNS.
+:navtitle: ZeptoMail + Gmail send-as
+
+== Prerequisites
+
+* Domain on Cloudflare (or DNS you control)
+* Cloudflare Email Routing (or other MX) for **inbound**
+* ZeptoMail account with Mail Agents available
+
+== Steps
+
+. In ZeptoMail, create a **Mail Agent** per project/domain silo.
+. Add and verify the domain; publish SPF/DKIM (and any CNAMEs) via Cloudflare — prefer managing those records in the org `infra` Pulumi stack.
+. Invite collaborators with **Agent-level** access (Postmaster / Engineer / Viewer as needed).
+. Generate a **separate SMTP key per person** (never share a "master" password).
+. In each user's Gmail: *Settings → Accounts → Send mail as* — SMTP host/port from ZeptoMail; username/password = that user's key.
+. Confirm "Treat as an alias" only if you understand threading implications; it does **not** fix DMARC.
+
+== SPF / multi-user
+
+SPF and DKIM are **domain-level**. One correct DNS set authorizes all users of that SMTP provider. Volume and auth caps are **account-level** — create per-user keys and watch shared quotas.
+
+== Do not
+
+* Activate SMTP IP allowlisting if Gmail (dynamic egress) is the client — it will break send-as.
+* Hand everyone one shared SMTP password.
+* Point human mail through Resend "because the app already uses it."
+
+== Related
+
+* xref:explanation/dmarc-policy-path.adoc[DMARC policy path]
+* xref:how-to/dmarc-escalation.adoc[Escalate DMARC policy]

@@ -1,0 +1,5 @@
+name: business-bootstrap
+title: Business Bootstrap
+version: ~
+nav:
+  - modules/ROOT/nav.adoc
