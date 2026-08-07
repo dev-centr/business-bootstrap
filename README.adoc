@@ -3,19 +3,11 @@ ifndef::env-github[:icons: font]
 :toclevels: 2
 :sectanchors:
 
-ifndef::env-github[]
+[[readme-top]]
 image:https://img.shields.io/github/contributors/dev-centr/business-bootstrap.svg?style=for-the-badge[Contributors,link=https://github.com/dev-centr/business-bootstrap/graphs/contributors]
 image:https://img.shields.io/github/forks/dev-centr/business-bootstrap.svg?style=for-the-badge[Forks,link=https://github.com/dev-centr/business-bootstrap/network/members]
 image:https://img.shields.io/github/stars/dev-centr/business-bootstrap.svg?style=for-the-badge[Stars,link=https://github.com/dev-centr/business-bootstrap/stargazers]
 image:https://img.shields.io/github/issues/dev-centr/business-bootstrap.svg?style=for-the-badge[Issues,link=https://github.com/dev-centr/business-bootstrap/issues]
-endif::[]
-
-ifdef::env-github[]
-image:https://img.shields.io/github/contributors/dev-centr/business-bootstrap.svg?style=for-the-badge[Contributors]
-image:https://img.shields.io/github/forks/dev-centr/business-bootstrap.svg?style=for-the-badge[Forks]
-image:https://img.shields.io/github/stars/dev-centr/business-bootstrap.svg?style=for-the-badge[Stars]
-image:https://img.shields.io/github/issues/dev-centr/business-bootstrap.svg?style=for-the-badge[Issues]
-endif::[]
 
 = Business Bootstrap
 
@@ -31,6 +23,8 @@ Product-agnostic guidance for bootstrapping tech-company support systems: email 
 
 Organized with Diátaxis (tutorials, how-to, reference, explanation). Aggregated on link:https://docs.devcentr.org[docs.devcentr.org].
 
+link:#readme-top[back to top]
+
 == Changelog
 
 See link:docs/modules/ROOT/pages/changelog.adoc[changelog.adoc].
@@ -41,3 +35,5 @@ DevCentr.org — support@devcentr.org
 
 * Project: https://github.com/dev-centr/business-bootstrap
 * Site: https://docs.devcentr.org
+
+link:#readme-top[back to top]
