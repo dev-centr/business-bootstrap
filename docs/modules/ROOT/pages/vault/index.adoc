@@ -1,0 +1,19 @@
+= Vault
+:description: Secrets vault hosting — Bitwarden cloud, official self-host, and Vaultwarden.
+:navtitle: Vault
+
+Every other support system eventually drops API keys here. This area owns **which vault server** to run; developer distribution mechanics (CLI → hosting env) live in general-knowledge.
+
+== Articles
+
+* xref:vault/explanation/bitwarden-and-vaultwarden.adoc[Bitwarden and Vaultwarden] — cloud vs official server vs lightweight self-host
+
+== Room to grow
+
+Future pages: org collection conventions, emergency access runbook, Vaultwarden backup how-to, ESC seeding from `bw`.
+
+== Interconnect
+
+* Distribution pattern → xref:general-knowledge::explanation/infrastructure/secrets-distribution-hub.adoc[Secrets distribution hub]
+* Vault hostname / backups ownership → xref:infra/index.adoc[Org infra]
+* Consumers: xref:email/index.adoc[Email], xref:scheduling/index.adoc[Scheduling], xref:design/index.adoc[Design]

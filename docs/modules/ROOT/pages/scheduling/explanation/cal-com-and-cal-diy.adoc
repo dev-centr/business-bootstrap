@@ -1,0 +1,79 @@
+= Cal.com and Cal.diy
+:description: Hosted Cal.com vs MIT self-hosted Cal.diy for founder scheduling — when each fits and what not to confuse.
+:navtitle: Cal.com and Cal.diy
+
+Scheduling links (`/15min`, round-robin later, embeds on marketing sites) are early ops glue. Treat them as **business infrastructure**, not a one-off personal Calendly habit that never gets documented.
+
+== Two products, one lineage
+
+[cols="1,2,2",options="header"]
+|===
+| Name | What it is | License / ops model
+
+| **Cal.com**
+| Commercial scheduling product (hosted at `app.cal.com`, plus enterprise / on-prem sales). Teams, organizations, SSO, workflows, and vendor support live here.
+| Closed production app; paid tiers for team/org features. Prefer this when you want a vendor SLA or org features.
+
+| **Cal.diy**
+| Community-driven **MIT** fork spun out for self-hosters after Cal.com moved its production codebase private. Full scheduling engine without enterprise/commercial modules.
+| Fully open source; **you** run Node + PostgreSQL (Docker is the usual path). No managed Cal.diy cloud.
+|===
+
+Official framing (paraphrased from Cal.diy docs): Cal.diy is intended for people who want to self-host; Cal.com, Inc. recommends commercial / production-ready use of **Cal.com** (hosted or enterprise on-prem), not Cal.diy. Read that disclaimer before putting customer bookings on a DIY box.
+
+== Job to be done
+
+[cols="1,2",options="header"]
+|===
+| Need | Lean default
+
+| Solo founder booking links on a marketing site
+| Cal.com free/hosted **or** Cal.diy if you already run a small VPS fleet and accept ops ownership
+
+| Small team round-robin / org branding / SSO
+| **Cal.com** (team/org features are not in Cal.diy)
+
+| Embeds + API for product onboarding calls
+| Either; hosted Cal.com wins on time-to-first-link
+
+| Data residency / no SaaS booking PII
+| Cal.diy (or Cal.com enterprise on-prem) — budget backups, TLS, upgrades, and abuse monitoring
+|===
+
+== Why it belongs here
+
+Booking pages touch **DNS**, **transactional email**, **calendar OAuth**, and sometimes **payments**. They sit next to human email and org `infra`, not next to app feature flags.
+
+Practical wiring:
+
+* Put the public hostname in the org `infra` repo (CNAME / reverse proxy), same as other support hosts.
+* Keep calendar OAuth client secrets and webhook secrets in the vault (see xref:vault/explanation/bitwarden-and-vaultwarden.adoc[Bitwarden and Vaultwarden]).
+* Prefer a dedicated subdomain (`cal.`, `book.`, `meet.`) so you can move hosts without renaming the product domain.
+
+== Cal.diy self-host snapshot
+
+Expect a Next.js-style app plus PostgreSQL. Docker Compose is the common path; cron jobs matter for some features. You own upgrades, database backups, and hardening.
+
+[TIP]
+====
+If you only need personal booking pages and do not want another Postgres service, stay on **hosted Cal.com** until the self-host reason is concrete (cost at scale, residency, or lock-in escape).
+====
+
+== Anti-patterns
+
+* Running Cal.diy in production without backups or a restore drill.
+* Expecting Teams / Organizations / SSO on Cal.diy — those are Cal.com commercial features.
+* Mixing personal Calendly with org brand forever; pick a stack and put the hostname in `infra`.
+
+== Links
+
+* https://cal.com/[Cal.com]
+* https://www.cal.diy/[Cal.diy docs]
+* https://github.com/calcom/cal.diy[calcom/cal.diy]
+
+== Related
+
+* xref:scheduling/index.adoc[Scheduling]
+* xref:reference/business-resources.adoc[Stack map]
+* xref:explanation/org-infra-repo-pattern.adoc[Org infra repo pattern]
+* xref:explanation/human-vs-product-messaging.adoc[Human vs product messaging] (booking confirmation mail is usually product/ESP territory)

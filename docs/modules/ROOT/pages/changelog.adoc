@@ -1,6 +1,11 @@
 = Changelog
 :description: Timeline of Business Bootstrap documentation changes.
 
+== 2026-08-08 — Support-systems hub (capability areas)
+
+* Restructured into Email · Scheduling · Design · Vault · Org infra; stack map + Cal.com/Cal.diy, Penpot, Bitwarden/Vaultwarden articles.
+* See xref:changelog-details/2026-08-08 - business-resources-cal-penpot-vault.adoc[Detailed changelog].
+
 == 2026-07-31
 
 * xref:changelog-details/2026-07-31--initial-email-matrix-and-infra-pattern.adoc[Initial email decision matrix, DMARC path, Resend DNS roles, and org infra pattern]

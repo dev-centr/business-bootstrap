@@ -1,0 +1,88 @@
+= Bitwarden and Vaultwarden
+:description: Hosted Bitwarden vs official self-hosted server vs Vaultwarden — vault defaults for founders, small teams, and org secrets distribution.
+:navtitle: Bitwarden and Vaultwarden
+
+Every bootstrap stack needs a **source of truth for secrets**: API keys, OAuth clients, SMTP passwords, and later deploy matrices. Bitwarden clients (apps, browser extension, CLI) are the day-to-day UX; the **server** behind them is the hosting choice.
+
+== Three server shapes
+
+[cols="1,2,2",options="header"]
+|===
+| Option | What you get | When it fits
+
+| **Bitwarden cloud**
+| Vendor-hosted vault, audits, support, Secrets Manager path, least ops
+| Default for most early orgs — start here unless residency or cost forces otherwise
+
+| **Bitwarden self-hosted** (official server)
+| Same product family Bitwarden ships; heavier .NET + SQL stack; enterprise identity features (SSO/SCIM) when licensed
+| Compliance, SSO, or "vendor code under our roof" requirements — budget real RAM/disk and upgrades
+
+| **Vaultwarden**
+| Unofficial Rust reimplementation of the Bitwarden **client API**; single lightweight container; official clients work against it
+| Homelab / small self-host footprint; you accept community maintenance and no Bitwarden, Inc. support contract
+|===
+
+Clients do not care which compatible server you point at. The decision is **ops + risk + compliance**, not which phone app to install.
+
+== Locked guidance for Dev-Centr-style orgs
+
+[cols="1,2",options="header"]
+|===
+| Stage | Default
+
+| Solo / pre-product
+| Bitwarden cloud (or personal Vaultwarden if you already run one and understand backups)
+
+| Product shipping / small team
+| Bitwarden **Organizations** on cloud; custom fields for machine-readable API material; CLI (`bw`) for distribution scripts
+
+| Self-host by preference, small VPS
+| **Vaultwarden** with automated backups and off-box copies — document the `server` URL for every teammate
+
+| Compliance / SSO / SCIM / auditor questions
+| Official **Bitwarden** (cloud or self-hosted), not Vaultwarden alone
+|===
+
+Vaultwarden is excellent engineering for self-hosters. It is **not** a drop-in answer for "we need Bitwarden's compliance attestations and support."
+
+== How the vault fits the secrets hub
+
+Store once, distribute many times — do not treat Vercel/Netlify env UIs as the long-term source of truth.
+
+Developer mechanics live in general-knowledge:
+
+* xref:general-knowledge::explanation/infrastructure/secrets-distribution-hub.adoc[Secrets distribution hub]
+* xref:general-knowledge::how-to/secrets-distribution-cli-mcp.adoc[Secrets distribution how-to]
+* xref:general-knowledge::tutorials/secrets-from-vendor-to-deploy.adoc[Secrets from vendor to deploy]
+
+Business Bootstrap owns the **hosting choice** (cloud vs official server vs Vaultwarden) and the org habit of putting vault URLs and backup ownership in `infra` docs.
+
+== Self-host checklist (either server)
+
+* [ ] TLS on a dedicated hostname (`vault.`, `bw.`, …) owned in org DNS
+* [ ] Automated backups + restore drill (SQLite/file for Vaultwarden; DB + volumes for official stack)
+* [ ] Admin 2FA / emergency access story written down
+* [ ] Teammate onboarding: which server URL, which org collections, no shared master passwords
+* [ ] CLI install on developer machines (`bw`) for scripted field reads
+
+== Anti-patterns
+
+* Shared org master password in chat or a wiki.
+* Secrets only in hosting dashboards with no vault item.
+* Vaultwarden in production with no backups "because it is just SQLite."
+* Assuming Vaultwarden inherits Bitwarden SOC/ISO marketing claims.
+
+== Links
+
+* https://bitwarden.com/[Bitwarden]
+* https://bitwarden.com/help/install-on-premise-linux/[Bitwarden self-host help]
+* https://github.com/dani-garcia/vaultwarden[dani-garcia/vaultwarden]
+* https://bitwarden.com/help/cli/[Bitwarden CLI]
+
+== Related
+
+* xref:vault/index.adoc[Vault]
+* xref:reference/business-resources.adoc[Stack map]
+* xref:explanation/org-infra-repo-pattern.adoc[Org infra repo pattern]
+* xref:reference/defaults-by-org-stage.adoc[Defaults by org stage]

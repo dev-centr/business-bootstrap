@@ -1,16 +1,37 @@
 = Business Bootstrap
-:description: Bootstrapping tech-company email, DNS deliverability, and org-level IaC.
+:description: Support-systems hub for tech companies — email, scheduling, design, vaults, and org-level IaC.
 
-Guidance for founders and ops teams setting up essential IT support systems — especially **email** and **org-level infrastructure as code** — without mixing human correspondence with product messaging stacks.
+Hub for founders and ops teams setting up essential **IT support systems**. Capability areas hold the deep articles; the stack map and stage defaults stitch them together. Prefer **hosted** until ops cost or residency forces self-host.
 
-== Start here
+== Capability areas
 
-* xref:explanation/human-vs-product-messaging.adoc[Human vs product messaging] — the lane split that prevents vendor confusion
-* xref:explanation/email-decision-matrix.adoc[Email decision matrix] — pick providers by job
-* xref:tutorials/bootstrap-org-email.adoc[Bootstrap org email] — one-afternoon path
-* xref:explanation/org-infra-repo-pattern.adoc[Org infra repo pattern] — Pulumi `infra` repos with Antora docs
+[cols="1,2",options="header"]
+|===
+| Area | Start here
+
+| xref:email/index.adoc[Email]
+| Human vs product lanes, provider matrix, DMARC, bootstrap tutorial
+
+| xref:scheduling/index.adoc[Scheduling]
+| Cal.com hosted vs Cal.diy self-host
+
+| xref:design/index.adoc[Design]
+| Penpot (open) vs staying on Figma
+
+| xref:vault/index.adoc[Vault]
+| Bitwarden cloud / official server / Vaultwarden
+
+| xref:infra/index.adoc[Org infra]
+| Pulumi org `infra` repos and DNS for support hosts
+|===
+
+== Cross-cutting
+
+* xref:reference/business-resources.adoc[Stack map] — defaults at a glance
+* xref:reference/defaults-by-org-stage.adoc[Defaults by org stage]
 
 == Related
 
-* xref:general-knowledge:explanation/infrastructure/iac.adoc[Infrastructure as Code (IaC)] (developer mechanics)
+* xref:general-knowledge::explanation/infrastructure/iac.adoc[Infrastructure as Code (IaC)] (developer mechanics)
+* xref:general-knowledge::explanation/infrastructure/secrets-distribution-hub.adoc[Secrets distribution hub] (vault → hosts)
 * DevCentr xref:DevCentr:specifications:components/installation-workflow.adoc[Installation workflow] (org infra wizard hooks)

@@ -1,0 +1,12 @@
+= Business resources hub — capability areas
+:description: Restructure Business Bootstrap into capability areas; add Cal.com/Cal.diy, Penpot, and Bitwarden/Vaultwarden with room for interconnect articles.
+
+== Summary
+
+* Reframed the component as a **support-systems hub** with capability areas: Email, Scheduling, Design, Vault, Org infra (landing pages + nav sections).
+* Added explanation articles under area trees:
+** xref:scheduling/explanation/cal-com-and-cal-diy.adoc[Cal.com and Cal.diy]
+** xref:design/explanation/penpot.adoc[Penpot]
+** xref:vault/explanation/bitwarden-and-vaultwarden.adoc[Bitwarden and Vaultwarden]
+* Promoted xref:reference/business-resources.adoc[Stack map] (was flat "business resources" catalog) and extended xref:reference/defaults-by-org-stage.adoc[Defaults by org stage].
+* Kept published **email** page paths stable (`explanation/…`, `how-to/…`, `tutorials/…`); new topics live under area folders so how-tos and interconnect pages can grow without a second Antora component.

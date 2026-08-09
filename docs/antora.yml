@@ -1,5 +1,6 @@
 name: business-bootstrap
 title: Business Bootstrap
 version: ~
+# Support-systems hub (email, scheduling, design, vault, org infra) — one component, capability-area trees.
 nav:
   - modules/ROOT/nav.adoc

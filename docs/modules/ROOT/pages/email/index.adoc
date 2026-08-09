@@ -1,0 +1,30 @@
+= Email
+:description: Human vs product messaging, provider matrix, DMARC, and bootstrap how-tos.
+:navtitle: Email
+
+Email is the densest Business Bootstrap area: **human correspondence** and **product messaging** are different jobs. Start with the lane split, then pick providers and escalate DMARC.
+
+== Start here
+
+* xref:explanation/human-vs-product-messaging.adoc[Human vs product messaging]
+* xref:explanation/email-decision-matrix.adoc[Email decision matrix]
+* xref:tutorials/bootstrap-org-email.adoc[Bootstrap org email]
+
+== How-to
+
+* xref:how-to/zeptomail-gmail-send-as.adoc[ZeptoMail + Gmail send-as]
+* xref:how-to/dmarc-escalation.adoc[Escalate DMARC policy]
+* xref:how-to/resend-domain-dns.adoc[Resend domain DNS roles]
+
+== Reference & explanation
+
+* xref:reference/provider-comparison.adoc[Email provider comparison]
+* xref:explanation/dmarc-policy-path.adoc[DMARC policy path]
+* xref:explanation/resend-dns-roles.adoc[Resend subdomain DNS roles]
+* xref:explanation/itil-email-services.adoc[ITIL-shaped email services]
+
+== Interconnect
+
+* Booking confirmation mail → usually **product ESP** (Resend), not human SMTP — see xref:scheduling/index.adoc[Scheduling]
+* SMTP and API keys → xref:vault/index.adoc[Vault]
+* DNS records → xref:infra/index.adoc[Org infra]

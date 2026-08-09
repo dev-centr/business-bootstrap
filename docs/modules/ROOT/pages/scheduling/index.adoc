@@ -1,0 +1,19 @@
+= Scheduling
+:description: Booking pages and calendar infrastructure — Cal.com hosted vs Cal.diy self-host.
+:navtitle: Scheduling
+
+Founder and team booking links are support infrastructure: public hostname, calendar OAuth, webhooks, and often confirmation email. Document the choice; do not leave it as a personal Calendly habit.
+
+== Articles
+
+* xref:scheduling/explanation/cal-com-and-cal-diy.adoc[Cal.com and Cal.diy] — hosted product vs MIT self-hosted community edition
+
+== Room to grow
+
+Future pages in this area (when needed): self-host how-to, DNS/`infra` wiring, embed on marketing sites, interconnect with Resend confirmation templates.
+
+== Interconnect
+
+* Confirmation / reminder mail → xref:email/index.adoc[Email] (product lane)
+* OAuth client secrets → xref:vault/index.adoc[Vault]
+* `cal.` / `book.` hostname → xref:infra/index.adoc[Org infra]

@@ -1,24 +1,30 @@
 = Defaults by org stage
-:description: Recommended email and infra defaults from solo founder through small team.
+:description: Recommended email, vault, scheduling, design, and infra defaults from solo founder through small team.
 :navtitle: Defaults by stage
 
-[cols="1,2,2",options="header"]
+[cols="1,2,2,2",options="header"]
 |===
-| Stage | Email defaults | Infra
+| Stage | Email defaults | Vault / design / scheduling | Infra
 
 | Solo / pre-product
 | Cloudflare Routing inbound; ZeptoMail or defer human SMTP; Resend when first app mail ships
+| Bitwarden cloud (or personal Vaultwarden); Penpot or skip design tool until brand work starts; Cal.com hosted or Cal.diy if you already self-host
 | Optional personal infra; else DNS by hand until painful
 
 | Product shipping
 | Resend on `updates.` (or similar); Customer.io when journeys needed; ZeptoMail for human `@domain`
-| Org `infra` Pulumi repo; encode Resend/Zepto/DMARC DNS
+| Bitwarden org + CLI custom fields; Penpot (or Figma if partners require it); Cal.com unless residency forces Cal.diy
+| Org `infra` Pulumi repo; encode Resend/Zepto/DMARC DNS; optional `cal.` / `vault.` / Penpot hosts
 
 | Small team (collaborators)
 | Per-user ZeptoMail keys; never shared master SMTP; escalate DMARC after alignment
+| Shared Bitwarden collections; no shared master passwords; design library ownership documented
 | Central `infra` + Antora docs; secrets in ESC/vault
 
 | Many seats / compliance
 | Consider Google Workspace for inboxes; keep Resend/CIO for product
+| Official Bitwarden (cloud or self-host) for SSO/attestations — not Vaultwarden alone; Cal.com org features
 | Hybrid IaC; policy as code; marketing subdomain isolation mandatory
 |===
+
+See also xref:business-resources.adoc[Stack map] and the area articles: xref:scheduling/explanation/cal-com-and-cal-diy.adoc[Cal.com / Cal.diy], xref:design/explanation/penpot.adoc[Penpot], xref:vault/explanation/bitwarden-and-vaultwarden.adoc[Bitwarden / Vaultwarden].

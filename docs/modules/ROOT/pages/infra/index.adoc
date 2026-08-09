@@ -1,0 +1,19 @@
+= Org infra
+:description: Pulumi org infra repos — DNS and platform resources for support systems.
+:navtitle: Org infra
+
+Strategic "which vendor" guidance lives in the capability areas. Org `infra` answers **how this org's stacks encode DNS and shared platform resources**.
+
+== Articles
+
+* xref:explanation/org-infra-repo-pattern.adoc[Org infra repo pattern] — Pulumi TypeScript + Antora docs layout
+
+== Room to grow
+
+Future pages: hostname conventions (`updates.`, `cal.`, `vault.`), apply/preview habits shared across orgs, ESC as secrets distribution hub.
+
+== Interconnect
+
+* Email DNS roles → xref:email/index.adoc[Email]
+* Booking / design / vault hostnames → xref:scheduling/index.adoc[Scheduling], xref:design/index.adoc[Design], xref:vault/index.adoc[Vault]
+* Developer IaC mechanics → xref:general-knowledge::explanation/infrastructure/iac.adoc[Infrastructure as Code]

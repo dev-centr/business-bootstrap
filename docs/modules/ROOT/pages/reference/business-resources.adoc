@@ -1,0 +1,43 @@
+= Stack map
+:description: At-a-glance support-systems stack — email, scheduling, design, vault, org infra — with links into each capability area.
+:navtitle: Stack map
+
+Short map of **support systems** early tech orgs usually need besides product code. Each row opens a capability area with room for explanation, how-to, and interconnect articles. Per-org wiring stays in that org's `infra` and product docs.
+
+== Stack
+
+[cols="1,2,2",options="header"]
+|===
+| Job | Default lean path | Area
+
+| Human vs product email
+| ZeptoMail / Resend / Customer.io lane split
+| xref:email/index.adoc[Email]
+
+| Scheduling / booking pages
+| **Cal.com** hosted for SLA + orgs; **Cal.diy** when you self-host MIT community edition
+| xref:scheduling/index.adoc[Scheduling] · xref:scheduling/explanation/cal-com-and-cal-diy.adoc[Cal.com and Cal.diy]
+
+| Product / brand design (Figma-class)
+| **Penpot** (open file format, self-host or cloud); Figma when partners require it
+| xref:design/index.adoc[Design] · xref:design/explanation/penpot.adoc[Penpot]
+
+| Human + machine secrets vault
+| **Bitwarden** cloud (or official self-host for compliance); **Vaultwarden** for tiny self-host
+| xref:vault/index.adoc[Vault] · xref:vault/explanation/bitwarden-and-vaultwarden.adoc[Bitwarden and Vaultwarden]
+
+| Org DNS + platform IaC
+| Pulumi TypeScript org `infra` repo
+| xref:infra/index.adoc[Org infra] · xref:explanation/org-infra-repo-pattern.adoc[Org infra repo pattern]
+|===
+
+== What this hub is not
+
+* Not a product partner marketplace (POS, delivery marketplaces, etc.).
+* Not a full developer toolchain — see xref:general-knowledge::reference/recommended-tools.adoc[Recommended tools].
+* Not a mandate to self-host everything.
+
+== Related
+
+* xref:defaults-by-org-stage.adoc[Defaults by org stage]
+* xref:email/index.adoc[Email] · xref:scheduling/index.adoc[Scheduling] · xref:design/index.adoc[Design] · xref:vault/index.adoc[Vault] · xref:infra/index.adoc[Org infra]

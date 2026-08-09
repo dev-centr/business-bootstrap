@@ -1,0 +1,71 @@
+= Penpot
+:description: Open-source design platform as a Figma-class bootstrap choice for product UI, design systems, and designer–developer handoff.
+:navtitle: Penpot
+
+Early product teams need a shared place for frames, components, and handoff — not a folder of PNG exports in chat. **Penpot** is the open-source design platform we treat as a first-class **business resource** when the goal is collaboration without a proprietary file format as the source of truth.
+
+== What Penpot is for
+
+[cols="1,2",options="header"]
+|===
+| Job | Why Penpot fits
+
+| UI wireframes and interactive prototypes
+| Browser-based editor with Flex/Grid-aware layouts aimed at real CSS mental models
+
+| Design systems / tokens / libraries
+| Shared libraries and design tokens for scalable brand + product UI
+
+| Designer ↔ developer handoff
+| Inspect paths that speak CSS/HTML/SVG/JSON; open file format instead of opaque binary blobs
+
+| Self-host or cloud
+| Run Penpot yourself or use their hosted offering — same product family, different ops tradeoff
+|===
+
+Penpot positions itself for designers, developers, and AI-assisted workflows (code-to-design and design-to-code). That matters for agent-heavy studios: an open format is easier to script, diff, and archive than a locked SaaS-only canvas.
+
+== When to pick it
+
+[cols="1,2",options="header"]
+|===
+| Situation | Guidance
+
+| Greenfield brand + product UI, small team, OSS preference
+| Start in Penpot; keep the project URL and export backups in org docs
+
+| Existing Figma libraries and agency partners live there
+| Stay on Figma until a migration cost is justified — do not dual-home forever
+
+| Procurement wants zero design SaaS seats
+| Self-host Penpot; put hostname + TLS in org `infra`
+
+| Motion / Lottie / Rive pipelines already decided
+| Penpot does not replace motion toolchains — see xref:general-knowledge::reference/recommended-tools.adoc[Recommended tools] (Design & Brand Motion)
+|===
+
+== Ops notes
+
+* Treat Penpot like other support hosts: DNS in Pulumi `infra`, secrets (OIDC, SMTP, storage keys) in the vault.
+* Back up the object store / database on a schedule; design files are business assets.
+* Prefer org SSO when the team grows past informal invites.
+* Export or mirror critical libraries so a host migration is not a redesign.
+
+== What it is not
+
+* Not a substitute for code design systems in the repo (tokens in CSS/JSON still need a home in git).
+* Not a marketing site builder.
+* Not an excuse to skip brand motion decisions — SVG/Lottie/Rive choices stay in general-knowledge.
+
+== Links
+
+* https://penpot.app/[penpot.app]
+* https://help.penpot.app/[Penpot help center]
+* https://github.com/penpot/penpot[penpot/penpot]
+
+== Related
+
+* xref:design/index.adoc[Design]
+* xref:reference/business-resources.adoc[Stack map]
+* xref:explanation/org-infra-repo-pattern.adoc[Org infra repo pattern]
+* xref:general-knowledge::explanation/brand-motion.adoc[Brand and UI motion formats]

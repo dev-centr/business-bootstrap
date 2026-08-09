@@ -1,0 +1,19 @@
+= Design
+:description: Product and brand design platforms — Penpot as the open default, Figma when partners require it.
+:navtitle: Design
+
+Shared frames, components, and handoff belong in a real design host — not PNG dumps in chat. This area covers **which canvas** and how it ties to `infra` and the vault.
+
+== Articles
+
+* xref:design/explanation/penpot.adoc[Penpot] — open-source design platform (self-host or cloud)
+
+== Room to grow
+
+Future pages: self-host how-to, library/backup runbook, Figma↔Penpot migration notes, design-token export into repos.
+
+== Interconnect
+
+* Motion formats (SVG / Lottie / Rive) stay in xref:general-knowledge::reference/recommended-tools.adoc[Recommended tools] / brand-motion docs — not duplicated here
+* Host secrets and SSO → xref:vault/index.adoc[Vault]
+* Design host DNS → xref:infra/index.adoc[Org infra]
