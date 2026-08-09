@@ -13,12 +13,14 @@ Email is the densest Business Bootstrap area: **human correspondence** and **pro
 == How-to
 
 * xref:how-to/zeptomail-gmail-send-as.adoc[ZeptoMail + Gmail send-as]
+* xref:email/how-to/personal-gmail-send-as-gotchas.adoc[Personal Gmail send-as gotchas]
 * xref:how-to/dmarc-escalation.adoc[Escalate DMARC policy]
 * xref:how-to/resend-domain-dns.adoc[Resend domain DNS roles]
 
 == Reference & explanation
 
 * xref:reference/provider-comparison.adoc[Email provider comparison]
+* xref:email/explanation/cloudflare-email-routing-limits.adoc[Cloudflare Email Routing limits]
 * xref:explanation/dmarc-policy-path.adoc[DMARC policy path]
 * xref:explanation/resend-dns-roles.adoc[Resend subdomain DNS roles]
 * xref:explanation/itil-email-services.adoc[ITIL-shaped email services]
