@@ -1,0 +1,27 @@
+= Business topics (ops beyond pure product engineering)
+:description: Where non-engineering business ops live while DevCentr remains the docs hub.
+:navtitle: Business overview
+
+DevCentr does not run a separate “business resources” Antora site. **Business Bootstrap** is the home for founder/ops topics that are not pure software-engineering Reference.
+
+== What belongs here
+
+* Email, scheduling, design tooling, password vaults
+* Org-level `infra` (DNS, shared platform hosts)
+* Stage defaults and vendor stack maps
+* Gotchas that are business-process constraints (personal Gmail, free Cloudflare Routing, team pricing traps)
+
+== What belongs in General Knowledge
+
+* Developer IaC mechanics, shells, toolchains, secrets distribution patterns
+* Product architecture essentials
+* Reference checklists for shipping software
+
+Cross-link freely; do not duplicate long procedures in both places.
+
+== Start
+
+* xref:reference/business-resources.adoc[Stack map]
+* xref:reference/defaults-by-org-stage.adoc[Defaults by stage]
+* xref:email/index.adoc[Email]
+* xref:infra/index.adoc[Org infra]

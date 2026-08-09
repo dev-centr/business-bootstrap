@@ -1,7 +1,7 @@
 = Business Bootstrap
 :description: Support-systems hub for tech companies — email, scheduling, design, vaults, and org-level IaC.
 
-Hub for founders and ops teams setting up essential **IT support systems**. Capability areas hold the deep articles; the stack map and stage defaults stitch them together. Prefer **hosted** until ops cost or residency forces self-host.
+Hub for founders and ops teams setting up essential **IT support systems** and related **business ops** topics (there is no separate business-resources Antora site). Capability areas hold the deep articles; the stack map and stage defaults stitch them together. Prefer **hosted** until ops cost or residency forces self-host.
 
 == Capability areas
 
@@ -10,7 +10,7 @@ Hub for founders and ops teams setting up essential **IT support systems**. Capa
 | Area | Start here
 
 | xref:email/index.adoc[Email]
-| Human vs product lanes, provider matrix, DMARC, bootstrap tutorial
+| Human vs product lanes, provider matrix, DMARC, bootstrap tutorial, personal Gmail / Cloudflare Routing gotchas
 
 | xref:scheduling/index.adoc[Scheduling]
 | Cal.com hosted vs Cal.diy self-host
@@ -23,6 +23,9 @@ Hub for founders and ops teams setting up essential **IT support systems**. Capa
 
 | xref:infra/index.adoc[Org infra]
 | Pulumi org `infra` repos and DNS for support hosts
+
+| xref:business/index.adoc[Business]
+| Non-engineering ops home + stack map / stage defaults
 |===
 
 == Cross-cutting

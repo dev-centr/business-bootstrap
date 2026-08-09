@@ -17,6 +17,10 @@
 . In each user's Gmail: *Settings → Accounts → Send mail as* — SMTP host/port from ZeptoMail; username/password = that user's key.
 . Confirm "Treat as an alias" only if you understand threading implications; it does **not** fix DMARC.
 
+== Gotchas
+
+Personal `@gmail.com` accounts and free Cloudflare Email Routing have sharp edges — read xref:email/how-to/personal-gmail-send-as-gotchas.adoc[Personal Gmail send-as gotchas] and xref:email/explanation/cloudflare-email-routing-limits.adoc[Cloudflare Email Routing limits] before production cutover.
+
 == SPF / multi-user
 
 SPF and DKIM are **domain-level**. One correct DNS set authorizes all users of that SMTP provider. Volume and auth caps are **account-level** — create per-user keys and watch shared quotas.

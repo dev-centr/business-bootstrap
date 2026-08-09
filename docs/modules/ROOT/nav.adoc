@@ -9,6 +9,8 @@
 * xref:explanation/email-decision-matrix.adoc[Email decision matrix]
 * xref:tutorials/bootstrap-org-email.adoc[Bootstrap org email]
 * xref:how-to/zeptomail-gmail-send-as.adoc[ZeptoMail + Gmail send-as]
+* xref:email/how-to/personal-gmail-send-as-gotchas.adoc[Personal Gmail send-as gotchas]
+* xref:email/explanation/cloudflare-email-routing-limits.adoc[Cloudflare Email Routing limits]
 * xref:how-to/dmarc-escalation.adoc[Escalate DMARC policy]
 * xref:how-to/resend-domain-dns.adoc[Resend domain DNS roles]
 * xref:reference/provider-comparison.adoc[Email provider comparison]
@@ -31,3 +33,9 @@
 .Org infra
 * xref:infra/index.adoc[Overview]
 * xref:explanation/org-infra-repo-pattern.adoc[Org infra repo pattern]
+* xref:infra/reference/pulumi-cloudflare-email-checklist.adoc[Pulumi + Cloudflare email checklist]
+
+.Business (non-tech ops)
+* xref:business/index.adoc[Overview]
+* xref:reference/business-resources.adoc[Stack map]
+* xref:reference/defaults-by-org-stage.adoc[Defaults by stage]

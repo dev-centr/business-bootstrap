@@ -7,6 +7,7 @@ Strategic "which vendor" guidance lives in the capability areas. Org `infra` ans
 == Articles
 
 * xref:explanation/org-infra-repo-pattern.adoc[Org infra repo pattern] — Pulumi TypeScript + Antora docs layout
+* xref:infra/reference/pulumi-cloudflare-email-checklist.adoc[Pulumi + Cloudflare email checklist]
 
 == Room to grow
 
@@ -15,5 +16,7 @@ Future pages: hostname conventions (`updates.`, `cal.`, `vault.`), apply/preview
 == Interconnect
 
 * Email DNS roles → xref:email/index.adoc[Email]
+* Personal Gmail / Routing limits → xref:email/how-to/personal-gmail-send-as-gotchas.adoc[Personal Gmail send-as gotchas]
 * Booking / design / vault hostnames → xref:scheduling/index.adoc[Scheduling], xref:design/index.adoc[Design], xref:vault/index.adoc[Vault]
 * Developer IaC mechanics → xref:general-knowledge::explanation/infrastructure/iac.adoc[Infrastructure as Code]
+* Reference lookup → xref:general-knowledge::reference/technology/infrastructure.adoc[Technology → Infrastructure]

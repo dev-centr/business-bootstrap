@@ -1,0 +1,46 @@
+= Pulumi + Cloudflare email checklist
+:description: Operator checklist for org infra stacks that own DNS and email-related records.
+:navtitle: Pulumi + Cloudflare email checklist
+
+Use this when standing up or reviewing an org `infra` Pulumi stack (example: link:https://github.com/nonprofit-resources/infra[nonprofit-resources/infra], private).
+
+== Before `pulumi up`
+
+. [ ] Domain(s) on Cloudflare; note **zone IDs**
+. [ ] API token with Zone DNS Edit (add Email Routing edit if automating Routing)
+. [ ] `pulumi config set cloudflare:apiToken --secret …`
+. [ ] Netlify (or other) hostname for apex/`www` CNAMEs
+. [ ] Decide lanes: Resend (`updates.`), Customer.io (`news.`), ZeptoMail (human), Routing (inbound)
+
+== Automatable vs manual
+
+[cols="1,2",options="header"]
+|===
+| In Pulumi / Cloudflare API
+| Manual / other UI
+
+| Apex/`www` → site host; DMARC TXT
+| Resend / Customer.io “copy these records” paste into config then apply
+
+| DKIM/SPF CNAMEs/TXT once values known
+| ESP dashboard “verify domain” clicks
+
+| Optional Email Routing MX (if you choose to manage MX in stack)
+| Routing **destination verify** + create addresses in dashboard
+
+| Stack outputs / runbooks
+| Gmail **Send mail as** create (Composio can list/patch; **create** often UI-only)
+
+| —
+| ZeptoMail Mail Agent + per-user SMTP passwords
+|===
+
+== Personal Gmail caveat
+
+Founders on `@gmail.com` should read xref:email/how-to/personal-gmail-send-as-gotchas.adoc[Personal Gmail send-as gotchas] and xref:email/explanation/cloudflare-email-routing-limits.adoc[Cloudflare Email Routing limits] before assuming Cloudflare “email” replaces Workspace.
+
+== Related
+
+* xref:explanation/org-infra-repo-pattern.adoc[Org infra repo pattern]
+* xref:how-to/resend-domain-dns.adoc[Resend domain DNS roles]
+* xref:how-to/zeptomail-gmail-send-as.adoc[ZeptoMail + Gmail send-as]
