@@ -1,0 +1,84 @@
+= Back up Pulumi stack state
+:description: Export stack checkpoints; prefer self-managed backends or Drive copies when Pulumi Cloud free tier is solo-only.
+:navtitle: Back up Pulumi stack state
+
+Use this when state lives on Pulumi Cloud (including ephemeral agent accounts) and you need an offline copy, or when moving off SaaS invites entirely.
+
+== Export a checkpoint (always works)
+
+From the org `infra` repo:
+
+----
+pulumi stack select <stack>
+pulumi stack export --file pulumi-state-<org>-<stack>.json
+----
+
+* Default export **redacts** secrets. Add `--show-secrets` only on a locked machine when you intentionally need plaintext recovery material.
+* Import later with `pulumi stack import --file …` into a stack on the **destination** backend.
+* An export of a never-applied stack is nearly empty JSON — still worth keeping after the first successful `pulumi up`.
+
+Schedule exports (Task Scheduler / cron / CI artifact) after every production apply if you stay on Pulumi Cloud Individual.
+
+== Prefer: self-managed backend (team without Team Edition)
+
+Skip Pulumi Cloud membership entirely:
+
+----
+# Object storage (examples)
+pulumi login s3://your-company-pulumi-state
+pulumi login gs://your-company-pulumi-state
+
+# Local or synced directory (single operator or carefully shared path)
+pulumi login file:///path/to/pulumi-state
+pulumi login --local
+----
+
+Then collaboration is **IAM + Git**, not Pulumi invites. You must back up that bucket or directory yourself.
+
+== Google Drive as an export landing zone
+
+Drive is a reasonable **offline copy** of `pulumi stack export` JSON. It is **not** a supported Pulumi state backend (do not `pulumi login` to Drive).
+
+Options that fit this workstation:
+
+[cols="1,2",options="header"]
+|===
+| Tool
+| Role
+
+| **Composio Google Drive** (MCP / agents)
+| Create a `Pulumi backups` folder; upload export JSON after apply. Already used for founder Drive (`rj.amdphreak@gmail.com`).
+
+| **`rclone`** (if installed)
+| `rclone copy ./pulumi-state-*.json gdrive:Pulumi-backups/` — good for scheduled jobs.
+
+| **DevCentr RepoDrive** (`repodrive`)
+| **Not** Google Drive. Mounts forge repos as a virtual filesystem. Wrong tool for Pulumi checkpoints.
+|===
+
+Suggested Drive layout (founder Drive already has link:https://drive.google.com/drive/folders/19JXqiB4znuggWH0yEAjeBx9Ix3G3IhhL[Pulumi backups] with a `nonprofit-resources/` child):
+
+----
+Pulumi backups/
+  nonprofit-resources/
+    nonprofit-resources-infra-prod-YYYYMMDD.json
+  foodtrucknerdz/
+    …
+----
+
+Treat exports as sensitive (resource IDs, sometimes secret ciphertext). Keep the folder private; do not attach exports to public issues.
+
+== Migrating off an ephemeral agent account
+
+. Export every stack: `pulumi stack export --file …`
+. Claim the agent account **or** log in as your lasting Individual user / point `pulumi login` at object storage
+. `pulumi stack init` (if needed) + `pulumi stack import --file …`
+. Confirm `pulumi preview` is clean before the next apply
+. Upload the same export JSON to Drive as a dated backup
+
+See xref:infra/explanation/pulumi-cloud-org-model.adoc[Pulumi Cloud org model] for why free Organizations/invites are not the escape hatch.
+
+== Related
+
+* xref:infra/explanation/pulumi-cloud-org-model.adoc[Pulumi Cloud org model]
+* xref:explanation/org-infra-repo-pattern.adoc[Org infra repo pattern]

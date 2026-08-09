@@ -1,0 +1,8 @@
+= Pulumi Cloud org model + state backup
+:description: Document free-tier invite trap, self-managed backends, and Drive/export backup how-to.
+
+== Summary
+
+* Added xref:infra/explanation/pulumi-cloud-org-model.adoc[Pulumi Cloud org model]: CLI vs SaaS state, Individual = no invites, Team/OSS/self-hosted alternatives, ephemeral agent claim gotcha.
+* Added xref:infra/how-to/backup-pulumi-state.adoc[Back up Pulumi stack state]: `stack export`/`import`, S3/GCS/file backends, Google Drive as offline copy (not a backend); clarified DevCentr RepoDrive is forge mount, not Google Drive.
+* Cross-linked from Org infra index, org infra pattern, email checklist, and General Knowledge Technology → Infrastructure.

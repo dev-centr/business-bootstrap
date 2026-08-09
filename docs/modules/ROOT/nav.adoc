@@ -30,9 +30,15 @@
 * xref:vault/index.adoc[Overview]
 * xref:vault/explanation/bitwarden-and-vaultwarden.adoc[Bitwarden and Vaultwarden]
 
+.Chat
+* xref:chat/index.adoc[Overview]
+* xref:chat/explanation/mattermost-self-host.adoc[Mattermost self-host]
+
 .Org infra
 * xref:infra/index.adoc[Overview]
 * xref:explanation/org-infra-repo-pattern.adoc[Org infra repo pattern]
+* xref:infra/explanation/pulumi-cloud-org-model.adoc[Pulumi Cloud org model]
+* xref:infra/how-to/backup-pulumi-state.adoc[Back up Pulumi stack state]
 * xref:infra/reference/pulumi-cloudflare-email-checklist.adoc[Pulumi + Cloudflare email checklist]
 
 .Business (non-tech ops)

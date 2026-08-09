@@ -42,5 +42,7 @@ Founders on `@gmail.com` should read xref:email/how-to/personal-gmail-send-as-go
 == Related
 
 * xref:explanation/org-infra-repo-pattern.adoc[Org infra repo pattern]
+* xref:infra/explanation/pulumi-cloud-org-model.adoc[Pulumi Cloud org model]
+* xref:infra/how-to/backup-pulumi-state.adoc[Back up Pulumi stack state]
 * xref:how-to/resend-domain-dns.adoc[Resend domain DNS roles]
 * xref:how-to/zeptomail-gmail-send-as.adoc[ZeptoMail + Gmail send-as]

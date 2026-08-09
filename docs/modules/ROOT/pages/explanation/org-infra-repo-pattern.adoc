@@ -27,6 +27,8 @@ Live example: link:https://github.com/FoodTruckNerdz/infra[FoodTruckNerdz/infra]
 
 DevCentr installation flows may still offer **OpenTofu** as a broadly compatible default for new users. For orgs following this bootstrap guide, prefer **Pulumi** when scaffolding the org `infra` repo. OpenTofu/Terraform remain valid for discovery and personal/repo-level IaC.
 
+**Pulumi Cloud trap:** the free Individual plan is one user — no org invites. Multi-human collaboration needs paid Team, OSS Team, or a self-managed state backend. See xref:infra/explanation/pulumi-cloud-org-model.adoc[Pulumi Cloud org model] and xref:infra/how-to/backup-pulumi-state.adoc[Back up Pulumi stack state].
+
 See also xref:infra/index.adoc[Org infra] (area overview) and xref:general-knowledge::explanation/infrastructure/iac.adoc[Infrastructure as Code (IaC)].
 
 == What Pulumi can and cannot automate for email

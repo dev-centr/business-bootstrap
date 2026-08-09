@@ -1,6 +1,18 @@
 = Changelog
 :description: Timeline of Business Bootstrap documentation changes.
 
+== 2026-08-09 — Pulumi Cloud org model + state backup
+
+* Documented free Individual = no invites; Organizations need Team / OSS Team / self-managed backend.
+* How-to for `pulumi stack export` and Drive offline copies (not a Pulumi backend).
+* See xref:changelog-details/2026-08-09 - pulumi-cloud-org-model.adoc[Detailed changelog].
+
+== 2026-08-09 — Chat / Mattermost + stage-shaped defaults
+
+* Added **Chat** capability area and xref:chat/explanation/mattermost-self-host.adoc[Mattermost self-host] (hosting matrix, Linear/Composio integrations, file limits, R2/B2 + CDN).
+* Subdivided xref:reference/defaults-by-org-stage.adoc[Defaults by org stage] into phase sections so later-maturity steps (e.g. Mattermost self-host) are not treated as day-one work.
+* See xref:changelog-details/2026-08-09 - chat-mattermost-stage-defaults.adoc[Detailed changelog].
+
 == 2026-08-09 — Gmail / Cloudflare email gotchas + business home
 
 * Added personal Gmail send-as gotchas and Cloudflare Email Routing limits; Pulumi + Cloudflare email checklist under Org infra.
