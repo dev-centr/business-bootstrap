@@ -46,14 +46,14 @@ Options that fit this workstation:
 | Tool
 | Role
 
-| **Composio Google Drive** (MCP / agents)
-| Create a `Pulumi backups` folder; upload export JSON after apply. Already used for founder Drive (`rj.amdphreak@gmail.com`).
+| **`rclone`** (multi-provider object/storage CLI)
+| Preferred local CLI for Drive, S3, Spaces, R2, B2, etc. Known remotes on this machine include `gdrive:` and `digitalocean-spaces:`. Example: `rclone copy ./pulumi-state-*.json gdrive:"Pulumi backups/nonprofit-resources/"`. Good for scheduled jobs and for syncing a `file://` Pulumi backend directory to a remote.
 
-| **`rclone`** (if installed)
-| `rclone copy ./pulumi-state-*.json gdrive:Pulumi-backups/` — good for scheduled jobs.
+| **Composio Google Drive** (MCP / agents)
+| Same Drive account from Cursor agents; create folders / upload export JSON when `rclone` is awkward in-session. Founder Drive already has link:https://drive.google.com/drive/folders/19JXqiB4znuggWH0yEAjeBx9Ix3G3IhhL[Pulumi backups].
 
 | **DevCentr RepoDrive** (`repodrive`)
-| **Not** Google Drive. Mounts forge repos as a virtual filesystem. Wrong tool for Pulumi checkpoints.
+| Unrelated — forge-repo virtual filesystem, not cloud object storage.
 |===
 
 Suggested Drive layout (founder Drive already has link:https://drive.google.com/drive/folders/19JXqiB4znuggWH0yEAjeBx9Ix3G3IhhL[Pulumi backups] with a `nonprofit-resources/` child):

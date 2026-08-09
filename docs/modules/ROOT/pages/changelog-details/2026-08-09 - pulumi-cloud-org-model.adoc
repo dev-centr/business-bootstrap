@@ -4,5 +4,5 @@
 == Summary
 
 * Added xref:infra/explanation/pulumi-cloud-org-model.adoc[Pulumi Cloud org model]: CLI vs SaaS state, Individual = no invites, Team/OSS/self-hosted alternatives, ephemeral agent claim gotcha.
-* Added xref:infra/how-to/backup-pulumi-state.adoc[Back up Pulumi stack state]: `stack export`/`import`, S3/GCS/file backends, Google Drive as offline copy (not a backend); clarified DevCentr RepoDrive is forge mount, not Google Drive.
+* Added xref:infra/how-to/backup-pulumi-state.adoc[Back up Pulumi stack state]: `stack export`/`import`, S3/GCS/file backends, Google Drive as offline copy (not a backend); preferred local CLI is **rclone** (multi-provider; remotes such as `gdrive:` / `digitalocean-spaces:`), not RepoDrive.
 * Cross-linked from Org infra index, org infra pattern, email checklist, and General Knowledge Technology → Infrastructure.
