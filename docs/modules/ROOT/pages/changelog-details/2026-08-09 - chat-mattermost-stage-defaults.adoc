@@ -1,0 +1,8 @@
+= Chat capability + Mattermost self-host + stage-shaped defaults
+:description: Add Chat area, Mattermost hosting/integration matrix, and phase-subdivided org-stage defaults.
+
+== Summary
+
+* New capability area **Chat** with xref:chat/explanation/mattermost-self-host.adoc[Mattermost self-host]: when self-host fits by stage, VPS vs shared-hosting matrix, Linear/Composio/webhook paths, file limits, R2/B2 + CDN offload.
+* Reframed xref:reference/defaults-by-org-stage.adoc[Defaults by org stage] as **phase sections** (solo → product shipping → small team → compliance) so bootstrap steps are skipped until maturity demands them; kept a compact summary matrix.
+* Stack map, hub index, and nav list Chat alongside Email · Scheduling · Design · Vault · Org infra.

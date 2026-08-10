@@ -6,9 +6,10 @@ DevCentr does not run a separate “business resources” Antora site. **Busines
 
 == What belongs here
 
-* Email, scheduling, design tooling, password vaults
+* Email, scheduling, design tooling, password vaults, team chat
 * Org-level `infra` (DNS, shared platform hosts)
-* Stage defaults and vendor stack maps
+* Funding for open source work and infrastructure (fiscal hosts, grants, sponsorships)
+* Stage defaults and vendor stack maps (bootstrap steps differ by maturity)
 * Gotchas that are business-process constraints (personal Gmail, free Cloudflare Routing, team pricing traps)
 
 == What belongs in General Knowledge
@@ -25,3 +26,4 @@ Cross-link freely; do not duplicate long procedures in both places.
 * xref:reference/defaults-by-org-stage.adoc[Defaults by stage]
 * xref:email/index.adoc[Email]
 * xref:infra/index.adoc[Org infra]
+* xref:funding/index.adoc[Funding]

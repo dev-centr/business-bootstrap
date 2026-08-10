@@ -1,7 +1,7 @@
 = Business Bootstrap
-:description: Support-systems hub for tech companies — email, scheduling, design, vaults, and org-level IaC.
+:description: Support-systems hub for tech companies — email, scheduling, design, vaults, chat, funding, and org-level IaC.
 
-Hub for founders and ops teams setting up essential **IT support systems** and related **business ops** topics (there is no separate business-resources Antora site). Capability areas hold the deep articles; the stack map and stage defaults stitch them together. Prefer **hosted** until ops cost or residency forces self-host.
+Hub for founders and ops teams setting up essential **IT support systems** and related **business ops** topics (there is no separate business-resources Antora site). Capability areas hold the deep articles; the stack map and **stage defaults** stitch them together. Prefer **hosted** until ops cost or residency forces self-host. Not every area is day-one — follow xref:reference/defaults-by-org-stage.adoc[Defaults by org stage].
 
 == Capability areas
 
@@ -21,8 +21,14 @@ Hub for founders and ops teams setting up essential **IT support systems** and r
 | xref:vault/index.adoc[Vault]
 | Bitwarden cloud / official server / Vaultwarden
 
+| xref:chat/index.adoc[Chat]
+| Hosted Slack/Discord vs self-hosted Mattermost (integrations, VPS matrix, object storage)
+
 | xref:infra/index.adoc[Org infra]
 | Pulumi org `infra` repos and DNS for support hosts
+
+| xref:funding/index.adoc[Funding]
+| OSS fiscal hosts, grants, sponsorships, subscriptions — map + link:https://www.oss.fund/[OSS.Fund]
 
 | xref:business/index.adoc[Business]
 | Non-engineering ops home + stack map / stage defaults
@@ -31,7 +37,8 @@ Hub for founders and ops teams setting up essential **IT support systems** and r
 == Cross-cutting
 
 * xref:reference/business-resources.adoc[Stack map] — defaults at a glance
-* xref:reference/defaults-by-org-stage.adoc[Defaults by org stage]
+* xref:reference/defaults-by-org-stage.adoc[Defaults by org stage] — **phase-shaped** bootstrap (solo → shipping → small team → compliance)
+
 
 == Related
 

@@ -1,8 +1,8 @@
 = Stack map
-:description: At-a-glance support-systems stack — email, scheduling, design, vault, org infra — with links into each capability area.
+:description: At-a-glance support-systems stack — email, scheduling, design, vault, chat, org infra, funding — with links into each capability area.
 :navtitle: Stack map
 
-Short map of **support systems** early tech orgs usually need besides product code. Each row opens a capability area with room for explanation, how-to, and interconnect articles. Per-org wiring stays in that org's `infra` and product docs.
+Short map of **support systems** early tech orgs usually need besides product code. Each row opens a capability area with room for explanation, how-to, and interconnect articles. Per-org wiring stays in that org's `infra` and product docs. Which rows you actually stand up depends on xref:defaults-by-org-stage.adoc[org stage].
 
 == Stack
 
@@ -26,9 +26,17 @@ Short map of **support systems** early tech orgs usually need besides product co
 | **Bitwarden** cloud (or official self-host for compliance); **Vaultwarden** for tiny self-host
 | xref:vault/index.adoc[Vault] · xref:vault/explanation/bitwarden-and-vaultwarden.adoc[Bitwarden and Vaultwarden]
 
+| Team chat / ops bots
+| Hosted Slack/Discord until seat cost or residency bites; then **Mattermost** on a real VPS (not shared hosting) with optional R2/B2 offload
+| xref:chat/index.adoc[Chat] · xref:chat/explanation/mattermost-self-host.adoc[Mattermost self-host]
+
 | Org DNS + platform IaC
 | Pulumi TypeScript org `infra` repo
 | xref:infra/index.adoc[Org infra] · xref:explanation/org-infra-repo-pattern.adoc[Org infra repo pattern]
+
+| Fund OSS maintenance / infrastructure
+| GitHub Sponsors and/or Open Collective (fiscal host); grants when the work is public-good scoped — see landscape
+| xref:funding/index.adoc[Funding] · xref:funding/explanation/oss-funding-landscape.adoc[OSS funding landscape]
 |===
 
 == What this hub is not
@@ -40,4 +48,4 @@ Short map of **support systems** early tech orgs usually need besides product co
 == Related
 
 * xref:defaults-by-org-stage.adoc[Defaults by org stage]
-* xref:email/index.adoc[Email] · xref:scheduling/index.adoc[Scheduling] · xref:design/index.adoc[Design] · xref:vault/index.adoc[Vault] · xref:infra/index.adoc[Org infra]
+* xref:email/index.adoc[Email] · xref:scheduling/index.adoc[Scheduling] · xref:design/index.adoc[Design] · xref:vault/index.adoc[Vault] · xref:chat/index.adoc[Chat] · xref:infra/index.adoc[Org infra] · xref:funding/index.adoc[Funding]

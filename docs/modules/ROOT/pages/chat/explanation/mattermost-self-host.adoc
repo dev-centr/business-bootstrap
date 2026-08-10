@@ -1,0 +1,193 @@
+= Mattermost self-host
+:description: When to self-host Mattermost, hosting and storage decision matrix, and Linear / Composio / webhook integration paths.
+:navtitle: Mattermost self-host
+
+Self-hosted Mattermost is a **small-team / residency** chat choice — not a day-one solo bootstrap item. Prefer hosted Slack, Discord, or Mattermost Cloud until ops cost, data residency, or integration control makes a VPS + PostgreSQL stack concrete.
+
+Self-hosted instances support the full integration surface (plugins, webhooks, custom apps, REST API) with fewer tier caps than many managed chat products. That power only pays off if you own TLS, upgrades, backups, and disk.
+
+== When it fits by org stage
+
+[cols="1,2",options="header"]
+|===
+| Stage | Default
+
+| Solo / pre-product
+| Skip dedicated chat infra, or use Discord / Slack free for async. Do **not** stand up Mattermost yet.
+
+| Product shipping
+| Hosted chat (Slack / Mattermost Cloud / Discord) unless residency already forces self-host elsewhere.
+
+| Small team (collaborators)
+| Revisit self-host when Slack seat cost bites **or** you want bots/webhooks under your roof. Budget a real VPS (not shared web hosting).
+
+| Many seats / compliance
+| Mattermost Cloud or self-host with SSO, backup ownership, and object-storage offload documented in org `infra`.
+|===
+
+== Job to be done
+
+[cols="1,2",options="header"]
+|===
+| Need | Lean default
+
+| Fast team chat, vendor SLA
+| Slack or Mattermost Cloud
+
+| Own the data + full plugin/API surface
+| Self-hosted Mattermost on a VPS with PostgreSQL
+
+| Linear issue events → channel posts
+| Incoming webhooks, or n8n / Zapier / Make bridging both APIs
+
+| Agents acting in chat (Composio / MCP)
+| Mattermost REST API + PATs as a Composio tool target; outgoing webhooks / WebSocket into the agent pipeline
+|===
+
+== Hosting decision matrix
+
+Mattermost is a long-running Go service plus PostgreSQL. It needs root (or equivalent container host), persistent DB sockets, and enough RAM — **not** shared cPanel web hosting.
+
+=== Baseline hardware
+
+* *Minimum* (up to ~50 active users): 1 vCPU, 2 GB RAM, 20+ GB storage
+* *Recommended* (50–250 active users): 2 vCPUs, 4 GB RAM, NVMe/SSD
+
+=== Provider matrix
+
+[cols="1,1,2,2",options="header"]
+|===
+| Provider | Verdict | Notes | Best for
+
+| Shared / cPanel hosts (e.g. WebHostMost-class)
+| **Avoid**
+| No reliable background daemons, PostgreSQL, or root; inode/memory caps kill the app
+| Static sites only — not Mattermost
+
+| Hostinger VPS (KVM tiers)
+| Acceptable with eyes open
+| Full root; Mattermost runs cleanly. Advertised low rates often need long prepaid terms; renewals jump
+| Already in that ecosystem; short-term experiment
+
+| Hetzner Cloud (CPX11 / CPX21 class)
+| Prefer
+| ~2 vCPU, 2–4 GB RAM, NVMe; hourly billing, strong price/performance
+| Default self-host pick when EU/US East latency is fine
+
+| DigitalOcean Basic Droplet
+| Solid
+| Higher $/mo; 1-Click apps and predictable US network
+| Ease of deploy over squeezing cost
+
+| Vultr Cloud Compute
+| Solid
+| Competitive NVMe tiers; many edge regions
+| Latency-sensitive geography
+|===
+
+Put the public hostname (`chat.`, `mm.`, …) in the org `infra` repo the same way as other support hosts. Keep PATs, webhook secrets, and S3 keys in the vault (xref:vault/explanation/bitwarden-and-vaultwarden.adoc[Bitwarden and Vaultwarden]).
+
+== Integrations
+
+Self-host removes most managed-tier blocks. Enable webhooks, slash commands, and plugins under *System Console → Integrations*. Enable Personal Access Tokens if external bots use REST API v4.
+
+=== Linear
+
+Linear has no first-party Mattermost app comparable to Slack/Teams. Practical paths:
+
+. *Automation engines (recommended)* — Self-hosted or SaaS **n8n**, Zapier, Make, Integrately: e.g. new Linear issue → Mattermost post, or slash command → create Linear issue.
+. *Webhooks* — Linear outbound webhooks → Mattermost **incoming webhook** (Slack-compatible JSON payloads work).
+. *Custom slash commands* — Mattermost slash command → small backend (or serverless) calling Linear GraphQL.
+
+=== Composio and agent pipelines
+
+Composio is an execution plane so agents can call tools across SaaS APIs (see xref:general-knowledge::explanation/infrastructure/composio-and-mcp-connectors.adoc[Composio and MCP connectors]).
+
+* *Mattermost as target* — Register via REST API v4 / PATs so agents can post, read, or manage channels.
+* *Mattermost as trigger* — Outgoing webhook or WebSocket events into your agent runtime; the agent then runs Composio actions (Linear, GitHub, …).
+
+=== Network prereqs
+
+External SaaS (Linear webhooks, Zapier, Composio cloud) must reach your instance over **HTTPS** (NGINX/Caddy + Let's Encrypt or equivalent). Private-only LAN installs cannot receive vendor webhooks without a tunnel or reverse path you operate.
+
+== File upload limits
+
+Three layers gate large attachments:
+
+. *Mattermost* — `System Console → Environment → File Storage` or `FileSettings.MaxFileSize` in `config.json` (default **100 MB**; often raised toward **200 MB** for local storage).
+. *Reverse proxy* — NGINX defaults `client_max_body_size` to **1m**; raise it (e.g. `200M`) or uploads fail with `413 Request Entity Too Large`.
+. *Disk strategy* — Local SSD is fast but finite; heavy teams should offload to S3-compatible object storage.
+
+== Object storage and crash isolation
+
+To keep the app disk from filling (and cascading into DB/OS damage), pair **S3-compatible storage** with an **edge CDN**:
+
+[source]
+----
+[Mattermost app] ---> [Cloudflare R2 or Backblaze B2]  (objects)
+       |
+       +--> public media --> [Cloudflare CDN / cache]
+----
+
+[cols="1,2,2",options="header"]
+|===
+| Piece | Lean pick | Why
+
+| Object store
+| **Cloudflare R2** or **Backblaze B2**
+| Avoid AWS S3 egress surprise (~$0.09/GB). R2: ~$0.015/GB storage, **$0 egress**, small free tier. B2: cheaper storage, free egress up to ~3× average monthly stored volume.
+
+| CDN
+| Cloudflare in front of the bucket
+| Cache avatars, emoji, previews near users
+
+| App DB volume
+| Separate disk/partition from OS root
+| Logging or crash fill on `/` should not corrupt PostgreSQL
+|===
+
+In *System Console → Environment → File Storage*, set storage to **Amazon S3**, point the endpoint at R2 (`<account_id>.r2.cloudflarestorage.com`) or B2 (`s3.<region>.backblazeb2.com`), enable SSL + S3 v4 signatures, and store keys in the vault.
+
+NGINX sketch for large uploads without buffering whole bodies to local disk:
+
+[source,nginx]
+----
+client_max_body_size 200M;
+client_body_buffer_size 10M;
+proxy_request_buffering off;
+----
+
+Add bucket lifecycle rules to prune deleted attachments / thumbnail junk when compliance allows.
+
+== Self-host checklist
+
+* [ ] Real VPS/container host (not shared web hosting); PostgreSQL backed up
+* [ ] TLS hostname in org `infra` DNS
+* [ ] System Console: webhooks / slash commands / plugins; PATs if bots need REST
+* [ ] Reverse proxy `client_max_body_size` aligned with Mattermost max file size
+* [ ] Object storage (R2/B2) once attachments matter; CDN for hot media
+* [ ] DB on a volume separate from OS root; restore drill documented
+* [ ] Secrets (PATs, S3 keys, webhook URLs) in the vault — not in chat history
+
+== Anti-patterns
+
+* Installing Mattermost on shared/cPanel hosting "because it is cheaper."
+* Self-hosting for a solo founder with no collaborators or residency need.
+* Leaving NGINX at the 1 MB body default and blaming Mattermost for upload failures.
+* Storing all uploads on the root volume with no S3 offload and no disk alerts.
+* Expecting a native Linear Mattermost app; plan webhooks or n8n instead.
+
+== Links
+
+* https://docs.mattermost.com/[Mattermost docs]
+* https://docs.mattermost.com/administer/install-guides.html[Mattermost install guides]
+* https://docs.mattermost.com/configure/configuration-settings.html#file-storage[File storage settings]
+* https://linear.app/docs[Linear docs] · https://composio.dev/[Composio]
+
+== Related
+
+* xref:chat/index.adoc[Chat]
+* xref:reference/business-resources.adoc[Stack map]
+* xref:reference/defaults-by-org-stage.adoc[Defaults by org stage]
+* xref:explanation/org-infra-repo-pattern.adoc[Org infra repo pattern]
+* xref:general-knowledge::explanation/infrastructure/composio-and-mcp-connectors.adoc[Composio and MCP connectors]

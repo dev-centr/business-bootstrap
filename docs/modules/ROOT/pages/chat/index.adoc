@@ -1,0 +1,20 @@
+= Chat
+:description: Team chat and ops integrations — when Slack/Discord is enough vs self-hosted Mattermost.
+:navtitle: Chat
+
+Realtime team chat is optional until collaborators show up — then it becomes a **support system** with DNS, storage, backups, and integration surface. This area owns **which chat host** and when self-host is worth the ops; agent/MCP connector mechanics stay in general-knowledge.
+
+== Articles
+
+* xref:chat/explanation/mattermost-self-host.adoc[Mattermost self-host] — hosting matrix, Linear/Composio integrations, file limits, object storage
+
+== Room to grow
+
+Future pages: Slack/Discord lean path, Mattermost cloud vs Team Edition decision, n8n bridge how-to, restore drill checklist.
+
+== Interconnect
+
+* Agent tool connectors → xref:general-knowledge::explanation/infrastructure/composio-and-mcp-connectors.adoc[Composio and MCP connectors]
+* Bot tokens / webhook secrets → xref:vault/index.adoc[Vault]
+* `chat.` / `mm.` hostname + volumes → xref:infra/index.adoc[Org infra]
+* Stage defaults → xref:reference/defaults-by-org-stage.adoc[Defaults by org stage]

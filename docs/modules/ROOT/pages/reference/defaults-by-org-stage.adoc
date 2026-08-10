@@ -1,30 +1,80 @@
 = Defaults by org stage
-:description: Recommended email, vault, scheduling, design, and infra defaults from solo founder through small team.
+:description: Phase-shaped defaults for email, vault, scheduling, design, chat, infra, and funding — from solo founder through compliance-heavy teams.
 :navtitle: Defaults by stage
+
+Business Bootstrap steps are **not** all day-one work. Use the stage that matches headcount, product mail, and compliance pressure; skip self-host chat, design hosts, and org `infra` until the pain is real.
+
+== Solo / pre-product
+
+* *Email* — Cloudflare Routing inbound; ZeptoMail or defer human SMTP; Resend when first app mail ships.
+* *Vault* — Bitwarden cloud (or personal Vaultwarden).
+* *Design* — Penpot or skip until brand work starts.
+* *Scheduling* — Cal.com hosted, or Cal.diy only if you already self-host.
+* *Chat* — Skip dedicated infra; Discord / Slack free is enough if you need a room at all. **No Mattermost yet.**
+* *Infra* — Optional personal infra; else DNS by hand until painful.
+* *Funding* — Skip unless you already publish libraries others depend on; a GitHub Sponsors profile is cheap if you do.
+
+== Product shipping
+
+* *Email* — Resend on `updates.` (or similar); Customer.io when journeys needed; ZeptoMail for human `@domain`.
+* *Vault* — Bitwarden org + CLI custom fields.
+* *Design* — Penpot (or Figma if partners require it).
+* *Scheduling* — Cal.com unless residency forces Cal.diy.
+* *Chat* — Hosted Slack / Mattermost Cloud / Discord. Self-host Mattermost only if residency already forces a VPS fleet.
+* *Infra* — Org `infra` Pulumi repo; encode Resend/Zepto/DMARC DNS; optional `cal.` / `vault.` / Penpot hosts.
+* *Funding* — If you maintain public OSS, add Sponsors and/or an Open Collective before the first “how do we pay you?” email. See xref:funding/explanation/oss-funding-landscape.adoc[OSS funding landscape].
+
+== Small team (collaborators)
+
+* *Email* — Per-user ZeptoMail keys; never shared master SMTP; escalate DMARC after alignment.
+* *Vault* — Shared Bitwarden collections; no shared master passwords.
+* *Design* — Design library ownership documented.
+* *Scheduling* — Cal.com team features when round-robin / branding matter.
+* *Chat* — Revisit **self-hosted Mattermost** when seat cost or integration control hurts; use a real VPS (Hetzner/DO/Vultr-class), not shared hosting. Wire Linear via webhooks or n8n; agents via Composio + Mattermost REST/PATs. See xref:chat/explanation/mattermost-self-host.adoc[Mattermost self-host].
+* *Infra* — Central `infra` + Antora docs; secrets in ESC/vault; optional `chat.` / `mm.` host.
+* *Funding* — Prefer a collective / fiscal host when money must be shared or invoiced; chase grants only for public-good scoped work.
+
+== Many seats / compliance
+
+* *Email* — Consider Google Workspace for inboxes; keep Resend/CIO for product.
+* *Vault* — Official Bitwarden (cloud or self-host) for SSO/attestations — not Vaultwarden alone.
+* *Design / scheduling* — Penpot or partner-required Figma; Cal.com org features.
+* *Chat* — Mattermost Cloud or hardened self-host with SSO, object-storage offload (R2/B2), CDN, DB volume isolation, and restore drills.
+* *Infra* — Hybrid IaC; policy as code; marketing subdomain isolation mandatory.
+* *Funding* — Treat fiscal-host KYC, grant reporting, and trademark ownership like other vendor risk.
+
+== Summary matrix
 
 [cols="1,2,2,2",options="header"]
 |===
-| Stage | Email defaults | Vault / design / scheduling | Infra
+| Stage | Email | Vault · design · scheduling · chat | Infra · funding
 
 | Solo / pre-product
-| Cloudflare Routing inbound; ZeptoMail or defer human SMTP; Resend when first app mail ships
-| Bitwarden cloud (or personal Vaultwarden); Penpot or skip design tool until brand work starts; Cal.com hosted or Cal.diy if you already self-host
-| Optional personal infra; else DNS by hand until painful
+| Routing + defer or ZeptoMail; Resend when app mail ships
+| Bitwarden cloud; Penpot optional; Cal.com/Cal.diy; **no Mattermost**
+| Hand DNS until painful; Sponsors only if you already publish deps
 
 | Product shipping
-| Resend on `updates.` (or similar); Customer.io when journeys needed; ZeptoMail for human `@domain`
-| Bitwarden org + CLI custom fields; Penpot (or Figma if partners require it); Cal.com unless residency forces Cal.diy
-| Org `infra` Pulumi repo; encode Resend/Zepto/DMARC DNS; optional `cal.` / `vault.` / Penpot hosts
+| Resend + ZeptoMail lanes; CIO when journeys needed
+| Bitwarden org; Penpot/Figma; Cal.com; **hosted chat**
+| Org Pulumi `infra`; Sponsors / Open Collective if you maintain OSS
 
-| Small team (collaborators)
-| Per-user ZeptoMail keys; never shared master SMTP; escalate DMARC after alignment
-| Shared Bitwarden collections; no shared master passwords; design library ownership documented
-| Central `infra` + Antora docs; secrets in ESC/vault
+| Small team
+| Per-user SMTP keys; DMARC escalate
+| Shared vault collections; team Cal.com; **Mattermost self-host when cost/residency bites**
+| Central `infra` + docs; collective/fiscal host when money is shared
 
 | Many seats / compliance
-| Consider Google Workspace for inboxes; keep Resend/CIO for product
-| Official Bitwarden (cloud or self-host) for SSO/attestations — not Vaultwarden alone; Cal.com org features
-| Hybrid IaC; policy as code; marketing subdomain isolation mandatory
+| Workspace inboxes + product ESPs
+| Official Bitwarden; Cal.com org; Mattermost Cloud or hardened self-host + object storage
+| Hybrid IaC; funding compliance (KYC, grant reports, trademarks)
 |===
 
-See also xref:business-resources.adoc[Stack map] and the area articles: xref:scheduling/explanation/cal-com-and-cal-diy.adoc[Cal.com / Cal.diy], xref:design/explanation/penpot.adoc[Penpot], xref:vault/explanation/bitwarden-and-vaultwarden.adoc[Bitwarden / Vaultwarden].
+== Related
+
+* xref:business-resources.adoc[Stack map]
+* xref:funding/explanation/oss-funding-landscape.adoc[OSS funding landscape]
+* xref:chat/explanation/mattermost-self-host.adoc[Mattermost self-host]
+* xref:scheduling/explanation/cal-com-and-cal-diy.adoc[Cal.com / Cal.diy]
+* xref:design/explanation/penpot.adoc[Penpot]
+* xref:vault/explanation/bitwarden-and-vaultwarden.adoc[Bitwarden / Vaultwarden]
