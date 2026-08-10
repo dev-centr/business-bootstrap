@@ -1,0 +1,7 @@
+= OSS funding landscape capability area
+:description: Add Funding area with fiscal-host / grant / sponsorship map and OSS.Fund deep link.
+
+== Summary
+
+* New capability area **Funding** with xref:funding/explanation/oss-funding-landscape.adoc[OSS funding landscape]: decoupled channels (Open Collective / fiscal hosts, public grants, Sponsors, Tidelift, thanks.dev, bounties, credits), stage notes, and pointer to link:https://www.oss.fund/[OSS.Fund].
+* Wired into hub index, Business overview, stack map, stage defaults, and nav.
