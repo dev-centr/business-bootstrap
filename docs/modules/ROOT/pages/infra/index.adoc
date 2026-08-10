@@ -8,7 +8,8 @@ Strategic "which vendor" guidance lives in the capability areas. Org `infra` ans
 
 * xref:explanation/org-infra-repo-pattern.adoc[Org infra repo pattern] — Pulumi TypeScript + Antora docs layout
 * xref:infra/explanation/pulumi-cloud-org-model.adoc[Pulumi Cloud org model] — free Individual cannot invite; Organizations are paid or self-hosted state
-* xref:infra/how-to/backup-pulumi-state.adoc[Back up Pulumi stack state] — `stack export`, object-storage backends, Drive offline copies
+* xref:infra/explanation/pulumi-secrets-vs-state.adoc[Pulumi secrets vs stack state] — encrypted config in git ≠ resource inventory backend
+* xref:infra/how-to/backup-pulumi-state.adoc[Back up Pulumi stack state] — `stack export`, object-storage backends, Drive offline copies, rclone GUIs
 * xref:infra/reference/pulumi-cloudflare-email-checklist.adoc[Pulumi + Cloudflare email checklist]
 
 == Room to grow

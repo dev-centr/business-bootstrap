@@ -1,6 +1,18 @@
 = Changelog
 :description: Timeline of Business Bootstrap documentation changes.
 
+== 2026-08-09 — OSS funding landscape
+
+* Added **Funding** capability area and xref:funding/explanation/oss-funding-landscape.adoc[OSS funding landscape] (fiscal hosts, grants, sponsorships, subscriptions, bounties, credits).
+* Deep external directory: link:https://www.oss.fund/[OSS.Fund].
+* See xref:changelog-details/2026-08-09 - oss-funding-landscape.adoc[Detailed changelog].
+
+== 2026-08-09 — Pulumi secrets vs state + rclone GUIs
+
+* Added xref:infra/explanation/pulumi-secrets-vs-state.adoc[Pulumi secrets vs stack state] (encrypted config in git ≠ resource inventory backend).
+* Expanded backup how-to with rclone GUI options (RcloneView, Cyberduck, Mountain Duck, S3 Browser, AlternativeTo) — untested; shopping list.
+* See also earlier entry for org-model / backup pages.
+
 == 2026-08-09 — Pulumi Cloud org model + state backup
 
 * Documented free Individual = no invites; Organizations need Team / OSS Team / self-managed backend.

@@ -35,6 +35,41 @@ pulumi login --local
 
 Then collaboration is **IAM + Git**, not Pulumi invites. You must back up that bucket or directory yourself.
 
+Read xref:infra/explanation/pulumi-secrets-vs-state.adoc[Pulumi secrets vs stack state] if you expected the git repo alone to remember live Cloudflare resource IDs.
+
+== GUIs when `rclone` feels hostile
+
+`rclone` is powerful and opaque. You do **not** have to live in the CLI. Options (not all tested here — pick one and try):
+
+[cols="1,2,2",options="header"]
+|===
+| Tool
+| Fit
+| Notes
+
+| link:https://rcloneview.com/[RcloneView]
+| GUI over rclone
+| Browse/sync/mount; multi-provider. Evaluate free vs paid tiers yourself.
+
+| link:https://cyberduck.io/[Cyberduck]
+| Free open-source browser
+| S3, B2, Drive, many protocols. Same family as Mountain Duck.
+
+| link:https://mountainduck.io/[Mountain Duck]
+| Mount as a drive
+| Finder / Explorer mount; Backblaze documents B2 + S3-style clients in this class.
+
+| link:https://s3browser.com/[S3 Browser]
+| Windows S3/B2-style buckets
+| Object-storage focused (not Google Drive).
+
+| link:https://alternativeto.net/software/rclone/[AlternativeTo: rclone]
+| Survey
+| Community list of GUIs and sync tools — use when shopping; verify license and malware like any download portal.
+|===
+
+Backblaze’s own docs and marketing commonly point people at **Cyberduck**, **Mountain Duck**, and similar S3/B2 GUIs rather than raw rclone. Prefer those if Drive is only a temporary landing zone and B2/R2 will hold Pulumi **state**.
+
 == Google Drive as an export landing zone
 
 Drive is a reasonable **offline copy** of `pulumi stack export` JSON. It is **not** a supported Pulumi state backend (do not `pulumi login` to Drive).
@@ -81,4 +116,5 @@ See xref:infra/explanation/pulumi-cloud-org-model.adoc[Pulumi Cloud org model] f
 == Related
 
 * xref:infra/explanation/pulumi-cloud-org-model.adoc[Pulumi Cloud org model]
+* xref:infra/explanation/pulumi-secrets-vs-state.adoc[Pulumi secrets vs stack state]
 * xref:explanation/org-infra-repo-pattern.adoc[Org infra repo pattern]

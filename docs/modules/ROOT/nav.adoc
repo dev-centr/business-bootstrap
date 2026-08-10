@@ -38,8 +38,13 @@
 * xref:infra/index.adoc[Overview]
 * xref:explanation/org-infra-repo-pattern.adoc[Org infra repo pattern]
 * xref:infra/explanation/pulumi-cloud-org-model.adoc[Pulumi Cloud org model]
+* xref:infra/explanation/pulumi-secrets-vs-state.adoc[Pulumi secrets vs stack state]
 * xref:infra/how-to/backup-pulumi-state.adoc[Back up Pulumi stack state]
 * xref:infra/reference/pulumi-cloudflare-email-checklist.adoc[Pulumi + Cloudflare email checklist]
+
+.Funding
+* xref:funding/index.adoc[Overview]
+* xref:funding/explanation/oss-funding-landscape.adoc[OSS funding landscape]
 
 .Business (non-tech ops)
 * xref:business/index.adoc[Overview]
