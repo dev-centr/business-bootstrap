@@ -45,6 +45,7 @@
 .Funding
 * xref:funding/index.adoc[Overview]
 * xref:funding/explanation/oss-funding-landscape.adoc[OSS funding landscape]
+* xref:funding/explanation/donation-ask-ideas.adoc[Donation ask ideas]
 
 .Business (non-tech ops)
 * xref:business/index.adoc[Overview]

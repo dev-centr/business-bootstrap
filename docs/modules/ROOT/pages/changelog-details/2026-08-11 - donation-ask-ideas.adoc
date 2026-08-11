@@ -1,0 +1,12 @@
+= Transparent fund ask and org-scope note
+:description: Donation ask ideas page (link to Nonprofit Resources) and a naming note that Business Bootstrap is organization ops.
+
+== Summary
+
+* New Funding article xref:funding/explanation/donation-ask-ideas.adoc[Donation and monetization ask ideas]: on-site ask that shows raised/balance, a floor or goal, an as-of date, and the work the money buys. Exhibit is Transparency HOA’s Analyze Queue (screenshot). Full operator guide is on Nonprofit Resources so this hub does not duplicate a fundraising handbook.
+* Wired into Funding overview, nav, stack map, stage defaults (solo / shipping), OSS landscape Related, and the hub Funding row.
+* Index and Business overview: “business” means running an organization. No repo or Antora component rename.
+
+== Why not rename the repo
+
+The capability tree was already org-shaped (email, vault, funding, infra). Renaming `business-bootstrap` would churn URLs and xrefs for a word-sense fix. Display copy is the cheaper, sufficient change.

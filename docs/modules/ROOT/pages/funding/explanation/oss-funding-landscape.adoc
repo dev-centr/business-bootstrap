@@ -121,8 +121,10 @@ Funding is optional until you **are** the open source (or critically depend on u
 == Related
 
 * xref:funding/index.adoc[Funding overview]
+* xref:funding/explanation/donation-ask-ideas.adoc[Donation and monetization ask ideas]
 * xref:business/index.adoc[Business topics]
 * xref:reference/defaults-by-org-stage.adoc[Defaults by org stage]
+* link:https://nonprofit-resources.org/guides/donate-page-as-a-ledger[Donate page as a ledger] (Nonprofit Resources)
 * link:https://www.oss.fund/[OSS.Fund] · link:https://www.oss.fund/guides/open-source-grants-2026/[Open source grants (2026)]
 * link:https://opencollective.com/opensource[Open Source Collective on Open Collective]
 * link:https://www.sovereign.tech/programs/fund[Sovereign Tech Fund]

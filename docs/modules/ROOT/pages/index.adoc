@@ -1,7 +1,7 @@
 = Business Bootstrap
-:description: Support-systems hub for tech companies — email, scheduling, design, vaults, chat, funding, and org-level IaC.
+:description: Support-systems hub for organizations — email, scheduling, design, vaults, chat, funding, and org-level IaC.
 
-Hub for founders and ops teams setting up essential **IT support systems** and related **business ops** topics (there is no separate business-resources Antora site). Capability areas hold the deep articles; the stack map and **stage defaults** stitch them together. Prefer **hosted** until ops cost or residency forces self-host. Not every area is day-one — follow xref:reference/defaults-by-org-stage.adoc[Defaults by org stage].
+Hub for founders and ops teams setting up essential **IT support systems** and related **org ops** topics (there is no separate business-resources Antora site). The repo name says “business”; the scope is **any organization** — for-profit, nonprofit, or OSS collective. Capability areas hold the deep articles; the stack map and **stage defaults** stitch them together. Prefer **hosted** until ops cost or residency forces self-host. Not every area is day-one — follow xref:reference/defaults-by-org-stage.adoc[Defaults by org stage].
 
 **Sibling path (not a capability area here):** standing up your AI coding studio (Cursor skills, MCP, agent rules) is xref:general-knowledge::explanation/infrastructure/vibe-coding-bootstrap.adoc[Vibe coding bootstrap]. It often happens *alongside* early Business Bootstrap—especially solo / shipping—but it is not org inbox/vault/chat. Stage defaults and Chat call it out so you do not skip it while walking BB.
 
@@ -30,7 +30,7 @@ Hub for founders and ops teams setting up essential **IT support systems** and r
 | Pulumi org `infra` repos and DNS for support hosts
 
 | xref:funding/index.adoc[Funding]
-| OSS fiscal hosts, grants, sponsorships, subscriptions — map + link:https://www.oss.fund/[OSS.Fund]
+| OSS fiscal hosts, grants, sponsorships, subscriptions — map + link:https://www.oss.fund/[OSS.Fund]. On-site ask: xref:funding/explanation/donation-ask-ideas.adoc[donation ask ideas] (canonical: link:https://nonprofit-resources.org/guides/donate-page-as-a-ledger[Nonprofit Resources])
 
 | xref:business/index.adoc[Business]
 | Non-engineering ops home + stack map / stage defaults

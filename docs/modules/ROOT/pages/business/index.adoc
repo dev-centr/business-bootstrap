@@ -2,13 +2,13 @@
 :description: Where non-engineering business ops live while DevCentr remains the docs hub.
 :navtitle: Business overview
 
-DevCentr does not run a separate “business resources” Antora site. **Business Bootstrap** is the home for founder/ops topics that are not pure software-engineering Reference.
+DevCentr does not run a separate “business resources” Antora site. **Business Bootstrap** is the home for founder/ops topics that are not pure software-engineering Reference. “Business” here means *running an organization*, not a profit-only motive.
 
 == What belongs here
 
 * Email, scheduling, design tooling, password vaults, team chat
 * Org-level `infra` (DNS, shared platform hosts)
-* Funding for open source work and infrastructure (fiscal hosts, grants, sponsorships)
+* Funding for open source work and infrastructure (fiscal hosts, grants, sponsorships) plus the on-site donate/sponsor ask
 * Stage defaults and vendor stack maps (bootstrap steps differ by maturity)
 * Gotchas that are business-process constraints (personal Gmail, free Cloudflare Routing, team pricing traps)
 

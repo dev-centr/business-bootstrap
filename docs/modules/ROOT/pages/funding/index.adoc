@@ -2,17 +2,18 @@
 :description: How open source projects and early orgs raise money without making every sponsor a customer or a boss.
 :navtitle: Funding
 
-Early products need **cash for maintenance**, not only cloud credits for demos. This area maps the common ways open source work gets funded — especially channels that let companies support infrastructure **without** negotiating one-off contracts with each maintainer.
+Early products and donation-supported orgs need **cash for maintenance**, not only cloud credits for demos. This area maps the common ways open source and public-good work gets funded — especially channels that let companies support infrastructure **without** negotiating one-off contracts with each maintainer — and the **on-site ask** visitors actually see.
 
 This is an orientation map, not a live grant calendar. Programs open and close; verify eligibility on the official pages before you apply.
 
 == Articles
 
 * xref:funding/explanation/oss-funding-landscape.adoc[OSS funding landscape] — fiscal hosts, grants, sponsorships, subscriptions, bounties, credits
+* xref:funding/explanation/donation-ask-ideas.adoc[Donation and monetization ask ideas] — show raised + floor/goal on your own page (canonical guide on Nonprofit Resources)
 
 == Room to grow
 
-Future pages: applying to a fiscal host (checklist), company side (how to sponsor without owning the roadmap), nonprofit-resources crossover for 501(c) paths.
+Future pages: applying to a fiscal host (checklist), company side (how to sponsor without owning the roadmap).
 
 == Interconnect
 
@@ -20,3 +21,4 @@ Future pages: applying to a fiscal host (checklist), company side (how to sponso
 * Business home → xref:business/index.adoc[Business]
 * Stack map → xref:reference/business-resources.adoc[Stack map]
 * Deeper external directory → link:https://www.oss.fund/[OSS.Fund]
+* Nonprofit operator guide → link:https://nonprofit-resources.org/guides/donate-page-as-a-ledger[Donate page as a ledger]

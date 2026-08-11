@@ -1,6 +1,12 @@
 = Changelog
 :description: Timeline of Business Bootstrap documentation changes.
 
+== 2026-08-11 — Transparent fund ask + org scope
+
+* Added xref:funding/explanation/donation-ask-ideas.adoc[Donation and monetization ask ideas] (Transparency HOA–style balance + floor on the donate page). Canonical writeup: link:https://nonprofit-resources.org/guides/donate-page-as-a-ledger[Nonprofit Resources · Donate page as a ledger].
+* Hub intro now states the scope is **organizations** (for-profit, nonprofit, OSS), not a profit-only reading of “business.” Repo and Antora component stay `business-bootstrap`.
+* See xref:changelog-details/2026-08-11 - donation-ask-ideas.adoc[Detailed changelog].
+
 == 2026-08-10 — Vibe coding bootstrap related links
 
 * Hub intro + Related, stage defaults (solo / shipping + matrix), stack map, business overview, and Chat interconnect now point at xref:general-knowledge::explanation/infrastructure/vibe-coding-bootstrap.adoc[Vibe coding bootstrap] as a **sibling** path during early BB—not a nested capability area.

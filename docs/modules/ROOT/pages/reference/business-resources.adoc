@@ -2,7 +2,7 @@
 :description: At-a-glance support-systems stack — email, scheduling, design, vault, chat, org infra, funding — with links into each capability area.
 :navtitle: Stack map
 
-Short map of **support systems** early tech orgs usually need besides product code. Each row opens a capability area with room for explanation, how-to, and interconnect articles. Per-org wiring stays in that org's `infra` and product docs. Which rows you actually stand up depends on xref:defaults-by-org-stage.adoc[org stage].
+Short map of **support systems** early organizations usually need besides product code. Each row opens a capability area with room for explanation, how-to, and interconnect articles. Per-org wiring stays in that org's `infra` and product docs. Which rows you actually stand up depends on xref:defaults-by-org-stage.adoc[org stage].
 
 == Stack
 
@@ -35,8 +35,8 @@ Short map of **support systems** early tech orgs usually need besides product co
 | xref:infra/index.adoc[Org infra] · xref:explanation/org-infra-repo-pattern.adoc[Org infra repo pattern]
 
 | Fund OSS maintenance / infrastructure
-| GitHub Sponsors and/or Open Collective (fiscal host); grants when the work is public-good scoped — see landscape
-| xref:funding/index.adoc[Funding] · xref:funding/explanation/oss-funding-landscape.adoc[OSS funding landscape]
+| GitHub Sponsors and/or Open Collective (fiscal host); grants when the work is public-good scoped — see landscape. On-site: show balance + floor/goal (Nonprofit Resources guide).
+| xref:funding/index.adoc[Funding] · xref:funding/explanation/oss-funding-landscape.adoc[OSS funding landscape] · xref:funding/explanation/donation-ask-ideas.adoc[Donation ask ideas]
 |===
 
 == What this hub is not
