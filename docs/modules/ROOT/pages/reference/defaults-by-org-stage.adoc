@@ -13,6 +13,7 @@ Business Bootstrap steps are **not** all day-one work. Use the stage that matche
 * *Chat* — Skip dedicated infra; Discord / Slack free is enough if you need a room at all. **No Mattermost yet.**
 * *Infra* — Optional personal infra; else DNS by hand until painful.
 * *Funding* — Skip unless you already publish libraries others depend on; a GitHub Sponsors profile is cheap if you do.
+* *Studio (vibe coding)* — Stand up Cursor (or peer) skills / agent rules / MCP now if you ship with an AI studio. Not a BB capability area — see xref:general-knowledge::explanation/infrastructure/vibe-coding-bootstrap.adoc[Vibe coding bootstrap] · xref:general-knowledge::how-to/bootstrap-cursor-skills.adoc[Bootstrap Cursor skills].
 
 == Product shipping
 
@@ -23,6 +24,7 @@ Business Bootstrap steps are **not** all day-one work. Use the stage that matche
 * *Chat* — Hosted Slack / Mattermost Cloud / Discord. Self-host Mattermost only if residency already forces a VPS fleet.
 * *Infra* — Org `infra` Pulumi repo; encode Resend/Zepto/DMARC DNS; optional `cal.` / `vault.` / Penpot hosts.
 * *Funding* — If you maintain public OSS, add Sponsors and/or an Open Collective before the first “how do we pay you?” email. See xref:funding/explanation/oss-funding-landscape.adoc[OSS funding landscape].
+* *Studio (vibe coding)* — Keep the studio durable (skills out of always-on rules; connectors for CI mail / forge). Same links as solo; wire secrets via vault + xref:general-knowledge::explanation/infrastructure/secrets-distribution-hub.adoc[secrets distribution hub].
 
 == Small team (collaborators)
 
@@ -47,17 +49,17 @@ Business Bootstrap steps are **not** all day-one work. Use the stage that matche
 
 [cols="1,2,2,2",options="header"]
 |===
-| Stage | Email | Vault · design · scheduling · chat | Infra · funding
+| Stage | Email | Vault · design · scheduling · chat | Infra · funding · studio
 
 | Solo / pre-product
 | Routing + defer or ZeptoMail; Resend when app mail ships
 | Bitwarden cloud; Penpot optional; Cal.com/Cal.diy; **no Mattermost**
-| Hand DNS until painful; Sponsors only if you already publish deps
+| Hand DNS until painful; Sponsors only if you already publish deps; **AI studio** if you vibe-code
 
 | Product shipping
 | Resend + ZeptoMail lanes; CIO when journeys needed
 | Bitwarden org; Penpot/Figma; Cal.com; **hosted chat**
-| Org Pulumi `infra`; Sponsors / Open Collective if you maintain OSS
+| Org Pulumi `infra`; Sponsors / Open Collective if you maintain OSS; keep studio durable (skills / MCP)
 
 | Small team
 | Per-user SMTP keys; DMARC escalate
@@ -78,3 +80,4 @@ Business Bootstrap steps are **not** all day-one work. Use the stage that matche
 * xref:scheduling/explanation/cal-com-and-cal-diy.adoc[Cal.com / Cal.diy]
 * xref:design/explanation/penpot.adoc[Penpot]
 * xref:vault/explanation/bitwarden-and-vaultwarden.adoc[Bitwarden / Vaultwarden]
+* xref:general-knowledge::explanation/infrastructure/vibe-coding-bootstrap.adoc[Vibe coding bootstrap] (AI studio — sibling to BB stages, not nested under chat/email)

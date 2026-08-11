@@ -17,6 +17,7 @@ DevCentr does not run a separate “business resources” Antora site. **Busines
 * Developer IaC mechanics, shells, toolchains, secrets distribution patterns
 * Product architecture essentials
 * Reference checklists for shipping software
+* **AI studio / vibe coding bootstrap** (Cursor skills, MCP, agent rules) — often done in the same weeks as early BB, but not an org-IT capability area here. Start: xref:general-knowledge::explanation/infrastructure/vibe-coding-bootstrap.adoc[Vibe coding bootstrap]
 
 Cross-link freely; do not duplicate long procedures in both places.
 

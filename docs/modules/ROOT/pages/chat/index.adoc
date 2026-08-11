@@ -15,6 +15,7 @@ Future pages: Slack/Discord lean path, Mattermost cloud vs Team Edition decision
 == Interconnect
 
 * Agent tool connectors → xref:general-knowledge::explanation/infrastructure/composio-and-mcp-connectors.adoc[Composio and MCP connectors]
+* AI studio setup (skills / rules / MCP on-ramps) → xref:general-knowledge::explanation/infrastructure/vibe-coding-bootstrap.adoc[Vibe coding bootstrap]
 * Bot tokens / webhook secrets → xref:vault/index.adoc[Vault]
 * `chat.` / `mm.` hostname + volumes → xref:infra/index.adoc[Org infra]
 * Stage defaults → xref:reference/defaults-by-org-stage.adoc[Defaults by org stage]

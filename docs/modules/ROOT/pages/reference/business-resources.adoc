@@ -43,9 +43,11 @@ Short map of **support systems** early tech orgs usually need besides product co
 
 * Not a product partner marketplace (POS, delivery marketplaces, etc.).
 * Not a full developer toolchain — see xref:general-knowledge::reference/recommended-tools.adoc[Recommended tools].
+* Not AI-studio bootstrap (Cursor skills / MCP / agent rules) — that sibling path is xref:general-knowledge::explanation/infrastructure/vibe-coding-bootstrap.adoc[Vibe coding bootstrap]; stage defaults still remind you during solo / shipping.
 * Not a mandate to self-host everything.
 
 == Related
 
 * xref:defaults-by-org-stage.adoc[Defaults by org stage]
 * xref:email/index.adoc[Email] · xref:scheduling/index.adoc[Scheduling] · xref:design/index.adoc[Design] · xref:vault/index.adoc[Vault] · xref:chat/index.adoc[Chat] · xref:infra/index.adoc[Org infra] · xref:funding/index.adoc[Funding]
+* xref:general-knowledge::explanation/infrastructure/vibe-coding-bootstrap.adoc[Vibe coding bootstrap]

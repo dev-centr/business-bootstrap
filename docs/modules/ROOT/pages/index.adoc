@@ -3,6 +3,8 @@
 
 Hub for founders and ops teams setting up essential **IT support systems** and related **business ops** topics (there is no separate business-resources Antora site). Capability areas hold the deep articles; the stack map and **stage defaults** stitch them together. Prefer **hosted** until ops cost or residency forces self-host. Not every area is day-one — follow xref:reference/defaults-by-org-stage.adoc[Defaults by org stage].
 
+**Sibling path (not a capability area here):** standing up your AI coding studio (Cursor skills, MCP, agent rules) is xref:general-knowledge::explanation/infrastructure/vibe-coding-bootstrap.adoc[Vibe coding bootstrap]. It often happens *alongside* early Business Bootstrap—especially solo / shipping—but it is not org inbox/vault/chat. Stage defaults and Chat call it out so you do not skip it while walking BB.
+
 == Capability areas
 
 [cols="1,2",options="header"]
@@ -44,4 +46,5 @@ Hub for founders and ops teams setting up essential **IT support systems** and r
 
 * xref:general-knowledge::explanation/infrastructure/iac.adoc[Infrastructure as Code (IaC)] (developer mechanics)
 * xref:general-knowledge::explanation/infrastructure/secrets-distribution-hub.adoc[Secrets distribution hub] (vault → hosts)
+* xref:general-knowledge::explanation/infrastructure/vibe-coding-bootstrap.adoc[Vibe coding bootstrap] · xref:general-knowledge::how-to/bootstrap-cursor-skills.adoc[Bootstrap Cursor skills] (AI studio — related sibling during early BB, not nested under a capability area)
 * DevCentr xref:DevCentr:specifications:components/installation-workflow.adoc[Installation workflow] (org infra wizard hooks)

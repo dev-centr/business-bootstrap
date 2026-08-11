@@ -1,0 +1,5 @@
+= 2026-08-10 — Vibe coding bootstrap related links
+
+* Clarified that AI-studio / vibe-coding bootstrap is **related to** Business Bootstrap (same early weeks) but **not** a BB capability area.
+* Related / interconnect callouts on: hub `index`, xref:../reference/defaults-by-org-stage.adoc[Defaults by org stage] (solo + shipping bullets + summary matrix), xref:../reference/business-resources.adoc[Stack map], xref:../business/index.adoc[Business overview], xref:../chat/index.adoc[Chat].
+* Deep pages remain in general-knowledge (vibe-coding-bootstrap + bootstrap-cursor-skills).
