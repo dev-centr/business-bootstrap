@@ -4,6 +4,7 @@
 == 2026-08-12 — Access on member hostnames
 
 * Org infra: member-only static sites stay Antora; **Cloudflare Access** on the orange-cloud hostname. Reader accounts = GitHub org invite / Google / email PIN.
+* Access checks GitHub org membership **at login** (`GET /user/orgs`); it does not keep a roster. Canonical: xref:general-knowledge::explanation/infrastructure/access-in-front-of-static-sites.adoc#how-github-org-membership[How Cloudflare learns GitHub org membership].
 * Wired from xref:infra/index.adoc[Org infra], xref:explanation/org-infra-repo-pattern.adoc[org infra repo pattern], stack map, and product-shipping / small-team stage defaults.
 * Canonical steps: xref:general-knowledge::how-to/cloudflare-access-static-site.adoc[Protect a static site with Cloudflare Access].
 * See xref:changelog-details/2026-08-12 - access-member-hostnames.adoc[Detailed changelog].

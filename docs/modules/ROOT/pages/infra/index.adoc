@@ -18,7 +18,7 @@ Future pages: hostname conventions (`updates.`, `cal.`, `vault.`), apply/preview
 
 == Member-only hostnames
 
-Static sister docs (Antora) stay static. Put **Cloudflare Access** on the orange-cloud hostname and on `*.pages.dev`. Reader identities are GitHub org membership (or Google / email PIN) — not Cloudflare dashboard users.
+Static sister docs (Antora) stay static. Put **Cloudflare Access** on the orange-cloud hostname and on `*.pages.dev`. Reader identities are GitHub org membership (or Google / email PIN) — not Cloudflare dashboard users. Access asks GitHub at login (`GET /user/orgs`); it does not keep a member roster.
 
 * xref:general-knowledge::explanation/infrastructure/access-in-front-of-static-sites.adoc[Access in front of static sites]
 * xref:general-knowledge::how-to/cloudflare-access-static-site.adoc[Protect a static site with Cloudflare Access]
