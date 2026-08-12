@@ -31,8 +31,8 @@ Short map of **support systems** early organizations usually need besides produc
 | xref:chat/index.adoc[Chat] · xref:chat/explanation/mattermost-self-host.adoc[Mattermost self-host]
 
 | Org DNS + platform IaC
-| Pulumi TypeScript org `infra` repo
-| xref:infra/index.adoc[Org infra] · xref:explanation/org-infra-repo-pattern.adoc[Org infra repo pattern]
+| Pulumi TypeScript org `infra` repo; member-only static hosts behind Cloudflare Access
+| xref:infra/index.adoc[Org infra] · xref:explanation/org-infra-repo-pattern.adoc[Org infra repo pattern] · xref:general-knowledge::how-to/cloudflare-access-static-site.adoc[Access how-to]
 
 | Fund OSS maintenance / infrastructure
 | GitHub Sponsors and/or Open Collective (fiscal host); grants when the work is public-good scoped — see landscape. On-site: show balance + floor/goal (Nonprofit Resources guide).

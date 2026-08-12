@@ -10,6 +10,7 @@ Each GitHub **organization** gets one central repository named `infra` (or `infr
 * Application repos stay mostly IaC-free (or thin wrappers only).
 * Secrets live in Pulumi config / ESC / a vault — **never** committed.
 * A small **Antora component** under `docs/` holds stack inventory, apply/preview how-tos, and org-specific DNS checklists.
+* Member-only static hostnames (`team.docs.`, internal runbooks) get **Cloudflare Access** on the orange-cloud record — not a docs-app rewrite. Identities live in the GitHub org (or Google / email PIN). See xref:general-knowledge::explanation/infrastructure/access-in-front-of-static-sites.adoc[Access in front of static sites] and xref:general-knowledge::how-to/cloudflare-access-static-site.adoc[the Access how-to].
 
 Strategic "which vendor" guidance stays in **this** Business Bootstrap component. Org `infra` docs answer "how *our* stacks work."
 

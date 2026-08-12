@@ -1,6 +1,13 @@
 = Changelog
 :description: Timeline of Business Bootstrap documentation changes.
 
+== 2026-08-12 — Access on member hostnames
+
+* Org infra: member-only static sites stay Antora; **Cloudflare Access** on the orange-cloud hostname. Reader accounts = GitHub org invite / Google / email PIN.
+* Wired from xref:infra/index.adoc[Org infra], xref:explanation/org-infra-repo-pattern.adoc[org infra repo pattern], stack map, and product-shipping / small-team stage defaults.
+* Canonical steps: xref:general-knowledge::how-to/cloudflare-access-static-site.adoc[Protect a static site with Cloudflare Access].
+* See xref:changelog-details/2026-08-12 - access-member-hostnames.adoc[Detailed changelog].
+
 == 2026-08-11 — Transparent fund ask + org scope
 
 * Added xref:funding/explanation/donation-ask-ideas.adoc[Donation and monetization ask ideas] (Transparency HOA–style balance + floor on the donate page). Canonical writeup: link:https://nonprofit-resources.org/guides/donate-page-as-a-ledger[Nonprofit Resources · Donate page as a ledger].

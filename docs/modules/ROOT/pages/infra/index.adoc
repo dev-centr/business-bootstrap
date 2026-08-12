@@ -16,6 +16,13 @@ Strategic "which vendor" guidance lives in the capability areas. Org `infra` ans
 
 Future pages: hostname conventions (`updates.`, `cal.`, `vault.`), apply/preview habits shared across orgs, ESC as secrets distribution hub.
 
+== Member-only hostnames
+
+Static sister docs (Antora) stay static. Put **Cloudflare Access** on the orange-cloud hostname and on `*.pages.dev`. Reader identities are GitHub org membership (or Google / email PIN) — not Cloudflare dashboard users.
+
+* xref:general-knowledge::explanation/infrastructure/access-in-front-of-static-sites.adoc[Access in front of static sites]
+* xref:general-knowledge::how-to/cloudflare-access-static-site.adoc[Protect a static site with Cloudflare Access]
+
 == Interconnect
 
 * Email DNS roles → xref:email/index.adoc[Email]

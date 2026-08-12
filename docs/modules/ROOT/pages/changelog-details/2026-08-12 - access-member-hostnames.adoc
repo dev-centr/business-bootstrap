@@ -1,0 +1,9 @@
+= 2026-08-12 — Access on member hostnames
+
+Org infra now points at the general-knowledge pattern for privatizing static sister docs:
+
+* Keep Antora (or any static generator)
+* Cloudflare Access on the custom domain **and** `*.pages.dev`
+* Identities in GitHub org / Google / one-time PIN — not Cloudflare dashboard users
+
+Pages touched: xref:infra/index.adoc[Org infra], xref:explanation/org-infra-repo-pattern.adoc[Org infra repo pattern], xref:reference/business-resources.adoc[Stack map], xref:reference/defaults-by-org-stage.adoc[Defaults by org stage].

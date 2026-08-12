@@ -22,7 +22,7 @@ Business Bootstrap steps are **not** all day-one work. Use the stage that matche
 * *Design* — Penpot (or Figma if partners require it).
 * *Scheduling* — Cal.com unless residency forces Cal.diy.
 * *Chat* — Hosted Slack / Mattermost Cloud / Discord. Self-host Mattermost only if residency already forces a VPS fleet.
-* *Infra* — Org `infra` Pulumi repo; encode Resend/Zepto/DMARC DNS; optional `cal.` / `vault.` / Penpot hosts.
+* *Infra* — Org `infra` Pulumi repo; encode Resend/Zepto/DMARC DNS; optional `cal.` / `vault.` / Penpot hosts. Member-only static docs: Cloudflare Access (GitHub org as IdP).
 * *Funding* — If you maintain public OSS, add Sponsors and/or an Open Collective before the first “how do we pay you?” email. See xref:funding/explanation/oss-funding-landscape.adoc[OSS funding landscape]. Donation-supported products: xref:funding/explanation/donation-ask-ideas.adoc[show the fund on-site].
 * *Studio (vibe coding)* — Keep the studio durable (skills out of always-on rules; connectors for CI mail / forge). Same links as solo; wire secrets via vault + xref:general-knowledge::explanation/infrastructure/secrets-distribution-hub.adoc[secrets distribution hub].
 
@@ -33,7 +33,7 @@ Business Bootstrap steps are **not** all day-one work. Use the stage that matche
 * *Design* — Design library ownership documented.
 * *Scheduling* — Cal.com team features when round-robin / branding matter.
 * *Chat* — Revisit **self-hosted Mattermost** when seat cost or integration control hurts; use a real VPS (Hetzner/DO/Vultr-class), not shared hosting. Wire Linear via webhooks or n8n; agents via Composio + Mattermost REST/PATs. See xref:chat/explanation/mattermost-self-host.adoc[Mattermost self-host].
-* *Infra* — Central `infra` + Antora docs; secrets in ESC/vault; optional `chat.` / `mm.` host.
+* *Infra* — Central `infra` + Antora docs; secrets in ESC/vault; optional `chat.` / `mm.` host; Access on member hostnames (invite to GitHub org — not Cloudflare dashboard users).
 * *Funding* — Prefer a collective / fiscal host when money must be shared or invoiced; chase grants only for public-good scoped work.
 
 == Many seats / compliance
