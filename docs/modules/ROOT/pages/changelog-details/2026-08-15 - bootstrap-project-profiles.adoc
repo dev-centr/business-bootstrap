@@ -1,0 +1,5 @@
+= 2026-08-15 — Project SDL profiles
+
+* xref:../tutorials/fast-org-bootstrap.adoc[Fast org bootstrap] profile table now includes `library`, `cli`, and `desktop` (Tauri + solid-ui) beside the org names.
+* First prompt may **name** a catalog profile, **attach/paste** an SDL `profile` block, or **imply** one (`new CLI`). The agent polls only what that profile still leaves open.
+* Capability-area literature (email, vault, chat, infra) is unchanged.

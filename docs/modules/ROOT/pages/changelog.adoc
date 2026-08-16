@@ -1,6 +1,11 @@
 = Changelog
 :description: Timeline of Business Bootstrap documentation changes.
 
+== 2026-08-15 — Project SDL profiles (`library` / `cli` / `desktop`)
+
+* Fast-path tutorial now lists project profiles besides org ones. House site default remains **SolidStart static + solid-ui**. Name a profile, paste SDL in the first prompt, or let the agent infer (`new CLI` → `cli`).
+* See xref:changelog-details/2026-08-15 - bootstrap-project-profiles.adoc[Detailed changelog].
+
 == 2026-08-15 — Fast org bootstrap (agent skill)
 
 * Added xref:tutorials/fast-org-bootstrap.adoc[Fast org bootstrap] — GitHub org identity (`.github` profile, site, docs hub) as a **fast alternative** to walking every capability area. Email, vault, chat, and infra literature stay where they are.
