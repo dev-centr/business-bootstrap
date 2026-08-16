@@ -4,6 +4,8 @@
 
 Short map of **support systems** early organizations usually need besides product code. Each row opens a capability area with room for explanation, how-to, and interconnect articles. Per-org wiring stays in that org's `infra` and product docs. Which rows you actually stand up depends on xref:defaults-by-org-stage.adoc[org stage].
 
+**Forge identity first (optional fast path):** xref:tutorials/fast-org-bootstrap.adoc[Fast org bootstrap] — About, `.github` profile, site, docs hub. This table stays the IT stack.
+
 == Stack
 
 [cols="1,2,2",options="header"]

@@ -1,4 +1,5 @@
 * xref:index.adoc[Business Bootstrap]
+* xref:tutorials/fast-org-bootstrap.adoc[Fast org bootstrap]
 * xref:reference/business-resources.adoc[Stack map]
 * xref:reference/defaults-by-org-stage.adoc[Defaults by stage]
 * xref:changelog.adoc[Changelog]

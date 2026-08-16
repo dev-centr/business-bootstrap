@@ -1,6 +1,12 @@
 = Changelog
 :description: Timeline of Business Bootstrap documentation changes.
 
+== 2026-08-15 — Fast org bootstrap (agent skill)
+
+* Added xref:tutorials/fast-org-bootstrap.adoc[Fast org bootstrap] — GitHub org identity (`.github` profile, site, docs hub) as a **fast alternative** to walking every capability area. Email, vault, chat, and infra literature stay where they are.
+* Cursor skill `bootstrap-org` in `dev-centr/agent-rules`, with named SDLang profiles (SolidStart static + solid-ui house defaults).
+* See xref:changelog-details/2026-08-15 - fast-org-bootstrap.adoc[Detailed changelog].
+
 == 2026-08-12 — Access on member hostnames
 
 * Org infra: member-only static sites stay Antora; **Cloudflare Access** on the orange-cloud hostname. Reader accounts = GitHub org invite / Google / email PIN.

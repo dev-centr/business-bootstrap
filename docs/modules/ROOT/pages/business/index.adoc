@@ -23,6 +23,7 @@ Cross-link freely; do not duplicate long procedures in both places.
 
 == Start
 
+* xref:tutorials/fast-org-bootstrap.adoc[Fast org bootstrap] — GitHub identity in one pass (does not replace the rows below)
 * xref:reference/business-resources.adoc[Stack map]
 * xref:reference/defaults-by-org-stage.adoc[Defaults by stage]
 * xref:email/index.adoc[Email]

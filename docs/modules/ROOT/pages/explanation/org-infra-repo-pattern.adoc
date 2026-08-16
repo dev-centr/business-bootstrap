@@ -30,7 +30,7 @@ DevCentr installation flows may still offer **OpenTofu** as a broadly compatible
 
 **Pulumi Cloud trap:** the free Individual plan is one user — no org invites. Multi-human collaboration needs paid Team, OSS Team, or a self-managed state backend. See xref:infra/explanation/pulumi-cloud-org-model.adoc[Pulumi Cloud org model] and xref:infra/how-to/backup-pulumi-state.adoc[Back up Pulumi stack state].
 
-See also xref:infra/index.adoc[Org infra] (area overview) and xref:general-knowledge::explanation/infrastructure/iac.adoc[Infrastructure as Code (IaC)].
+See also xref:infra/index.adoc[Org infra] (area overview), xref:tutorials/fast-org-bootstrap.adoc[Fast org bootstrap] (identity pass before `infra` exists), and xref:general-knowledge::explanation/infrastructure/iac.adoc[Infrastructure as Code (IaC)].
 
 == What Pulumi can and cannot automate for email
 

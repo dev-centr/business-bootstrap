@@ -1,0 +1,6 @@
+= 2026-08-15 — Fast org bootstrap (agent skill)
+
+* Added xref:../tutorials/fast-org-bootstrap.adoc[Fast org bootstrap] as an **agent-skill path** for GitHub org identity (profile, site, docs hub). Capability-area literature is unchanged.
+* Cursor skill: `bootstrap-org` in `dev-centr/agent-rules/skills/bootstrap-org/`.
+* Named **SDLang** profiles (`oss-collective`, `product-org`, `nonprofit`, `web-app`, `docs-hub`, `forks-org`) encode house defaults (SolidStart static + solid-ui, Antora/Valentus). Prompt may name a profile, attach `.sdl`, or paste a `profile` block.
+* Hub, stage defaults, stack map, and business overview point at the tutorial without nesting it under Email or Infra.

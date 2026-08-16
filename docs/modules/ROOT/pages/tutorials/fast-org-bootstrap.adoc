@@ -1,0 +1,75 @@
+= Fast org bootstrap
+:navtitle: Fast org bootstrap
+:description: Agent-skill path to stand up GitHub org identity, profile, site, and docs hub — a fast alternative to walking every Business Bootstrap capability area.
+:keywords: bootstrap org, GitHub organization, org profile, .github, github.io, company, nonprofit, OSS collective
+
+Fast path for **forge identity and public surface**: GitHub org About, logo, public `.github` profile, website, one docs hub, news vs blog split, then optional transfers. It does **not** replace the capability-area pages (email, vault, scheduling, design, chat, funding, org infra). Use those when the session reaches mail, secrets, or DNS-as-code.
+
+Cursor skill (named SDL profile, or profile pasted in the prompt)::
+https://github.com/dev-centr/agent-rules/blob/main/skills/bootstrap-org/SKILL.md[`skills/bootstrap-org`]
+(`~/.cursor/skills/bootstrap-org/` when installed)
+
+House site/docs defaults (overridable per profile): **SolidStart static** + **solid-ui**, pnpm, Antora + Valentus v2, GitHub Pages, Cloudflare DNS-only in front of github.io.
+
+== Named profiles
+
+Pass a name, `@`-mention a `.sdl` file, or paste a `profile "…" { }` block. Catalog: https://github.com/dev-centr/agent-rules/blob/main/skills/bootstrap-org/profiles/catalog.sdl[`profiles/catalog.sdl`].
+
+[cols="1,2",options="header"]
+|===
+| Name | Typical job
+
+| `oss-collective`
+| OSS GitHub org hub + docs; skip mail/infra
+
+| `product-org`
+| Company hub + docs; email/infra when a domain exists
+
+| `nonprofit`
+| Public-good hub + optional donate/sponsors ask
+
+| `web-app`
+| Standalone SolidStart product site (Netlify overlay if login)
+
+| `docs-hub`
+| Docs as the public face; marketing site optional stub
+
+| `forks-org`
+| Supplemental/splinter org; license first; thin hub
+|===
+
+If the prompt names none of these, the agent asks for a profile before scaffolding.
+
+== When to use this instead of walking the hub
+
+Use this tutorial / skill when the job is “make this org look real on GitHub and the web.” Walk xref:index.adoc[Business Bootstrap] capability areas when the job is inboxes, vaults, chat, funding, or Pulumi `infra`.
+
+A new org pays off when there is a **name that belongs on a landing page**, a handful of projects that belong under that banner, and a reason outsiders follow the **org** rather than a person. Otherwise keep the work on a personal account.
+
+== Goal
+
+An org that is not vacant: Settings filled, avatar ready, public profile README, and (if in scope) a site + docs hub whose copy is written for **visitors**.
+
+== Steps
+
+These match the skill phases. Skip anything the org does not need yet (no domain → no custom CNAME; no mail → stop before email lanes).
+
+. Pick a named SDL profile (`oss-collective`, `product-org`, …) — or pass one in the prompt. Confirm split and partners.
+. Fill org identity with `gh` (display name, description, **website = public site**, not docs). The empty org is often created in the GitHub UI first.
+. Design or copy a mark; export a **256×256 PNG** for Settings → General (upload is UI-bound).
+. Create **public** `{org}/.github` with `profile/README.md` (Markdown). Do not put the profile in the repo root. Skip `.github-private` unless member-only text actually differs.
+. Public site: `{org}.github.io` until a custom domain is bought and verified. Grey-cloud DNS if you CNAME github.io — see xref:general-knowledge::how-to/github-pages-custom-domain.adoc[GitHub Pages custom domain]. Do not invent a second homepage if a canonical site already exists.
+. One public docs hub per org; product repos contribute `docs/` instead of publishing a second docs site.
+. Split **news** (dated chronicle) from **blog/essays** (stance). Do not publish philosophy as a news item or as the GitHub profile.
+. Transfer candidate repos; update remotes and the personal hub. Remove leftover personal-account stubs.
+. **Only if** a domain or repeating DNS exists: email lanes and `{org}/infra` — start at xref:tutorials/bootstrap-org-email.adoc[Bootstrap org email] and xref:explanation/org-infra-repo-pattern.adoc[Org infra repo pattern]. Follow xref:reference/defaults-by-org-stage.adoc[Defaults by org stage]; do not self-host chat or design on day one.
+
+Profile recipe (keep it short)::
+centered logo; rule; 1–3 pitch lines; no H1 restating the org name; no notable-repo list (GitHub Settings + the site already do that).
+
+== Related
+
+* xref:index.adoc[Business Bootstrap hub] — capability areas (the long path)
+* xref:reference/defaults-by-org-stage.adoc[Defaults by org stage]
+* xref:general-knowledge::explanation/infrastructure/vibe-coding-bootstrap.adoc[Vibe coding bootstrap] — AI studio (skills/MCP), not org identity
+* xref:agent-rules::skills-catalog.adoc[Agent Rules skills catalog]

@@ -3,6 +3,8 @@
 
 Hub for founders and ops teams setting up essential **IT support systems** and related **org ops** topics (there is no separate business-resources Antora site). The repo name says “business”; the scope is **any organization** — for-profit, nonprofit, or OSS collective. Capability areas hold the deep articles; the stack map and **stage defaults** stitch them together. Prefer **hosted** until ops cost or residency forces self-host. Not every area is day-one — follow xref:reference/defaults-by-org-stage.adoc[Defaults by org stage].
 
+**Fast path (GitHub identity):** xref:tutorials/fast-org-bootstrap.adoc[Fast org bootstrap] — org About, public `.github` profile, site, and docs hub (Cursor skill `bootstrap-org`). Use it when the org still looks vacant. It does not replace the capability areas below.
+
 **Sibling path (not a capability area here):** standing up your AI coding studio (Cursor skills, MCP, agent rules) is xref:general-knowledge::explanation/infrastructure/vibe-coding-bootstrap.adoc[Vibe coding bootstrap]. It often happens *alongside* early Business Bootstrap—especially solo / shipping—but it is not org inbox/vault/chat. Stage defaults and Chat call it out so you do not skip it while walking BB.
 
 == Capability areas
@@ -38,6 +40,7 @@ Hub for founders and ops teams setting up essential **IT support systems** and r
 
 == Cross-cutting
 
+* xref:tutorials/fast-org-bootstrap.adoc[Fast org bootstrap] — GitHub identity in one pass (skill + tutorial); then come back here for IT systems
 * xref:reference/business-resources.adoc[Stack map] — defaults at a glance
 * xref:reference/defaults-by-org-stage.adoc[Defaults by org stage] — **phase-shaped** bootstrap (solo → shipping → small team → compliance)
 

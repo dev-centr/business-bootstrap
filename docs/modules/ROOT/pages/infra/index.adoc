@@ -25,6 +25,7 @@ Static sister docs (Antora) stay static. Put **Cloudflare Access** on the orange
 
 == Interconnect
 
+* Forge identity (profile / site / docs hub) before this repo exists → xref:tutorials/fast-org-bootstrap.adoc[Fast org bootstrap]
 * Email DNS roles → xref:email/index.adoc[Email]
 * Personal Gmail / Routing limits → xref:email/how-to/personal-gmail-send-as-gotchas.adoc[Personal Gmail send-as gotchas]
 * Booking / design / vault hostnames → xref:scheduling/index.adoc[Scheduling], xref:design/index.adoc[Design], xref:vault/index.adoc[Vault]

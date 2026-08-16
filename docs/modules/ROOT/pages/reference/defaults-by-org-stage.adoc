@@ -4,6 +4,8 @@
 
 Business Bootstrap steps are **not** all day-one work. Use the stage that matches headcount, product mail, and compliance pressure; skip self-host chat, design hosts, and org `infra` until the pain is real.
 
+GitHub org identity (profile, site, docs hub) can run in the same week as solo defaults. That is the xref:tutorials/fast-org-bootstrap.adoc[Fast org bootstrap] path (Cursor skill `bootstrap-org`) — not a reason to skip email/vault later.
+
 == Solo / pre-product
 
 * *Email* — Cloudflare Routing inbound; ZeptoMail or defer human SMTP; Resend when first app mail ships.
@@ -14,6 +16,7 @@ Business Bootstrap steps are **not** all day-one work. Use the stage that matche
 * *Infra* — Optional personal infra; else DNS by hand until painful.
 * *Funding* — Skip unless you already publish libraries others depend on or you run on donations; a GitHub Sponsors profile is cheap if you do. If you do ask, put balance + floor on your own page (xref:funding/explanation/donation-ask-ideas.adoc[donation ask ideas]).
 * *Studio (vibe coding)* — Stand up Cursor (or peer) skills / agent rules / MCP now if you ship with an AI studio. Not a BB capability area — see xref:general-knowledge::explanation/infrastructure/vibe-coding-bootstrap.adoc[Vibe coding bootstrap] · xref:general-knowledge::how-to/bootstrap-cursor-skills.adoc[Bootstrap Cursor skills].
+* *Forge identity* — If the GitHub (or peer) org still looks vacant, run xref:tutorials/fast-org-bootstrap.adoc[Fast org bootstrap] before the deeper IT rows.
 
 == Product shipping
 
