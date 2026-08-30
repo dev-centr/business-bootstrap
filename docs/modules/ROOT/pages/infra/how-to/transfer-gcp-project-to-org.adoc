@@ -1,8 +1,8 @@
-= Move a Google Cloud project from a personal account into an organization
+= How to transfer a project from a personal account into an org in GCP
 :description: A Cloud Identity organization cannot hold a personal Google account. Use an organization account with Owner on the project and Project Mover on the organization.
-:navtitle: Move a GCP project into an org
+:navtitle: Transfer a project into an org
 :page-audience: Anyone who created a Google Cloud project on a personal account before the organization existed, and now needs it to live under the org
-:page-usage-context: Full how-to on the Business Bootstrap site. It follows organization creation and precedes billing consolidation
+:page-usage-context: Full how-to on the Business Bootstrap site. It follows organization creation
 :page-doc-type: how-to
 :page-orig-author: Ryan Johnson
 :page-last-author: Claude Code on behalf of Okan Erturan
@@ -84,24 +84,6 @@ Sign in as the *organization* account.
 . Select the *All* tab.
 
 The project now shows below the organization. Before the move it showed below *No organization*.
-
-== Billing does not follow the project
-
-A move changes where the project sits in the resource hierarchy. It does not change which billing account pays for it. The personal account that created the project can keep paying for it after the move, for as long as nobody checks.
-
-Check from a shell:
-
-----
-gcloud billing projects list --billing-account=<BILLING_ACCOUNT_ID>
-----
-
-If the project still appears under a personal billing account, do three things:
-
-. Create a billing account that the organization owns.
-. Add the people who share responsibility as billing administrators.
-. Link the project to the new billing account.
-
-One person should not carry the organization's spend on a personal account. If that person leaves, the organization loses the billing account, and the services stop.
 
 == Related
 

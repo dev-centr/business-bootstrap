@@ -1,10 +1,10 @@
-= 2026-08-30 — Move a GCP project into an org
+= 2026-08-30 — Transfer a GCP project into an org
 :description: Detailed changelog for the GCP project transfer how-to.
 :navtitle: GCP project transfer
 
 == What landed
 
-xref:infra/how-to/transfer-gcp-project-to-org.adoc[Move a Google Cloud project from a personal account into an organization]. A how-to under *Org infra*, with a three-step diagram.
+xref:infra/how-to/transfer-gcp-project-to-org.adoc[How to transfer a project from a personal account into an org in GCP]. A how-to under *Org infra*, with a three-step diagram.
 
 == Why it exists
 
@@ -16,10 +16,6 @@ The page documents two failures, because both cost real time.
 . `resourcemanager.projects.move` is an organization-level permission. The project's own *IAM & Admin* page offers Project Mover, and a grant there does nothing.
 
 The fix is one organization account with two grants on two IAM surfaces. Owner on the project, and Project Mover on the organization.
-
-== Also covered
-
-Billing does not follow a moved project. A project can sit correctly inside the organization and still charge a personal billing account. The page ends with the `gcloud billing projects list` check and the case for a billing account that the organization owns.
 
 == Language
 
