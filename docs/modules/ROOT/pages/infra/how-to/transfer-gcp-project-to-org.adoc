@@ -1,0 +1,119 @@
+= Move a Google Cloud project from a personal account into an organization
+:description: A Cloud Identity organization cannot hold a personal Google account. Use an organization account with Owner on the project and Project Mover on the organization.
+:navtitle: Move a GCP project into an org
+:page-audience: Anyone who created a Google Cloud project on a personal account before the organization existed, and now needs it to live under the org
+:page-usage-context: Full how-to on the Business Bootstrap site. It follows organization creation and precedes billing consolidation
+:page-doc-type: how-to
+:page-orig-author: Ryan Johnson
+:page-last-author: Claude Code on behalf of Okan Erturan
+:page-last-edited: 2026-08-30
+
+ifndef::page-context-active[]
+[.page-context.page-context-lead]
+****
+Audience:: {page-audience}
+****
+endif::[]
+
+Small teams almost always build this backwards. Someone creates a Google Cloud project on a personal account to get started, and the organization arrives weeks later. The project is now in the wrong place.
+
+The obvious fix does not work. You open the project's *IAM & Admin* page, you give yourself the role that moves projects, and nothing changes. The button stays grey. The error asks for a permission you appear to already hold.
+
+image::gcp-project-transfer-to-org.svg[alt="Step 1, a personal account is blocked from the organization. Step 2, an organization account gets Owner on the project and Project Mover on the organization. Step 3, that account signs in and moves the project.",width=760]
+
+== Why the obvious path fails
+
+A Cloud Identity organization is a closed membership boundary. It cannot hold a personal Google account as a member or an administrator. No role assignment changes this. The organization has no way to name that account at all.
+
+So the organization cannot give a role to the account that owns your project. A move into an organization needs a role inside that organization. The account that holds the project and the account that can receive it are two different accounts.
+
+A second trap waits below the first. The move needs the permission `resourcemanager.projects.move`. The organization grants that permission, not the project. The project's own *IAM & Admin* page offers a Project Mover role, so it looks like the correct page. It is not. Ownership of a project does not include the right to move that project elsewhere. The destination controls that right.
+
+== Before you start
+
+* The organization exists. You can sign in to an account inside it, for example `you@yourdomain.org`.
+* That organization account is a Super Admin, or a Super Admin can grant organization-level roles for you.
+* You can sign in to the personal account that owns the project.
+
+You must change between two Google identities several times. Use a second browser profile. It is faster than repeated sign-out and sign-in.
+
+== Step 1 — Give the organization account Owner on the project
+
+Sign in as the *personal* account that owns the project.
+
+. Open the project in the Google Cloud console.
+. Go to *IAM & Admin*, then *IAM*.
+. Select *Grant access*.
+. Add the organization account, for example `you@yourdomain.org`.
+. Assign the role *Owner*.
+
+The organization account can now administer the project. The project is still outside the organization.
+
+== Step 2 — Give the same account Project Mover on the organization
+
+Most people miss this step.
+
+. Change the console scope from the project to the *organization*.
+. Use the resource picker at the top of the console. The ⋮ menu at the top right also opens *Settings* for the organization.
+. Open the *IAM* page for the organization. Do not use the *IAM* page for the project.
+. Select *Grant access*.
+. Add the same organization account.
+. Assign the role *Project Mover* (`roles/resourcemanager.projectMover`).
+
+[NOTE]
+====
+Read the heading before you grant the role. If the breadcrumb names your project, the page is wrong. The heading must name the organization.
+====
+
+The role *Organization Owner* also works. *Project Mover* is the narrower grant, and it is sufficient. You do not need to own the whole organization to move one project.
+
+== Step 3 — Move the project
+
+Sign in as the *organization* account.
+
+. Open the project.
+. Select the ⋮ menu at the top right.
+. Select *Settings*.
+. Select the migrate or transfer action.
+. Select the organization as the destination.
+
+== Step 4 — Confirm the move
+
+. Open the project home page.
+. Select the project identity in the top bar.
+. Select the *All* tab.
+
+The project now shows below the organization. Before the move it showed below *No organization*.
+
+== Billing does not follow the project
+
+A move changes where the project sits in the resource hierarchy. It does not change which billing account pays for it. The personal account that created the project can keep paying for it after the move, for as long as nobody checks.
+
+Check from a shell:
+
+----
+gcloud billing projects list --billing-account=<BILLING_ACCOUNT_ID>
+----
+
+If the project still appears under a personal billing account, do three things:
+
+. Create a billing account that the organization owns.
+. Add the people who share responsibility as billing administrators.
+. Link the project to the new billing account.
+
+One person should not carry the organization's spend on a personal account. If that person leaves, the organization loses the billing account, and the services stop.
+
+== Related
+
+* xref:infra/index.adoc[Org infra]
+* xref:explanation/org-infra-repo-pattern.adoc[Org infra repo pattern]
+* xref:tutorials/fast-org-bootstrap.adoc[Fast org bootstrap]
+
+ifndef::page-context-active[]
+[.page-context.page-context-footer]
+****
+Original author:: {page-orig-author}
+Latest contributor:: {page-last-author}
+Last updated:: {page-last-edited}
+****
+endif::[]
