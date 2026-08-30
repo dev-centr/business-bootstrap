@@ -41,6 +41,7 @@
 * xref:infra/explanation/pulumi-cloud-org-model.adoc[Pulumi Cloud org model]
 * xref:infra/explanation/pulumi-secrets-vs-state.adoc[Pulumi secrets vs stack state]
 * xref:infra/how-to/backup-pulumi-state.adoc[Back up Pulumi stack state]
+* xref:infra/how-to/transfer-gcp-project-to-org.adoc[Transfer a project into an org]
 * xref:infra/reference/pulumi-cloudflare-email-checklist.adoc[Pulumi + Cloudflare email checklist]
 * xref:general-knowledge::how-to/cloudflare-access-static-site.adoc[Cloudflare Access (static sites)]
 

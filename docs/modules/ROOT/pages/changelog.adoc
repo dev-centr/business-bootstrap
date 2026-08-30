@@ -1,6 +1,12 @@
 = Changelog
 :description: Timeline of Business Bootstrap documentation changes.
 
+== 2026-08-30 — Transfer a GCP project into an org
+
+* Added xref:infra/how-to/transfer-gcp-project-to-org.adoc[How to transfer a project from a personal account into an org in GCP] — why a personal Google account can never move a project into a Cloud Identity organization, and the two-grant bridge that works.
+* Names the trap: `resourcemanager.projects.move` is an **organization**-level permission. Granting Project Mover on the project's own IAM page looks right and does nothing.
+* See xref:changelog-details/2026-08-30 - gcp-project-transfer.adoc[Detailed changelog].
+
 == 2026-08-15 — Project SDL profiles (`library` / `cli` / `desktop`)
 
 * Fast-path tutorial now lists project profiles besides org ones. House site default remains **SolidStart static + solid-ui**. Name a profile, paste SDL in the first prompt, or let the agent infer (`new CLI` → `cli`).

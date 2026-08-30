@@ -1,0 +1,28 @@
+= 2026-08-30 — Transfer a GCP project into an org
+:description: Detailed changelog for the GCP project transfer how-to.
+:navtitle: GCP project transfer
+
+== What landed
+
+xref:infra/how-to/transfer-gcp-project-to-org.adoc[How to transfer a project from a personal account into an org in GCP]. A how-to under *Org infra*, with a three-step diagram.
+
+== Why it exists
+
+Free Cloud Identity organizations are hard to find. Most small teams create their first project on a personal account and inherit the mismatch later. The recovery path is not visible from the console. The page that offers the Project Mover role is the page where the grant has no effect.
+
+The page documents two failures, because both cost real time.
+
+. A Cloud Identity organization cannot hold a personal Google account as a member. The account that owns the project can never receive a role inside the destination.
+. `resourcemanager.projects.move` is an organization-level permission. The project's own *IAM & Admin* page offers Project Mover, and a grant there does nothing.
+
+The fix is one organization account with two grants on two IAM surfaces. Owner on the project, and Project Mover on the organization.
+
+== Language
+
+Procedures follow ASD-STE100 in strict mode. One instruction per sentence, active voice, no phrasal verbs, 20-word cap. Explanatory sections use the STE-flavored mode, which keeps the structural rules and allows normal prose range.
+
+== Wiring
+
+* Navigation entry under *Org infra*
+* Listed in xref:infra/index.adoc[Org infra] articles
+* Diagram committed at `modules/ROOT/images/gcp-project-transfer-to-org.svg`
