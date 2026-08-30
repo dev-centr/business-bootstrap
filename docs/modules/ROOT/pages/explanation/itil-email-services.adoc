@@ -1,6 +1,5 @@
-= ITIL-shaped email services
+= ITIL email services
 :description: Name email capabilities as catalog services with owners and change paths.
-:navtitle: ITIL email services
 
 Treat email as named **services** in a lightweight catalog (ITIL-flavored, not a full ITIL implementation). DevCentr org-setup wizards can later register these capabilities.
 

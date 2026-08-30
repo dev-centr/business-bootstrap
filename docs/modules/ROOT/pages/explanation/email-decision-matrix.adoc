@@ -1,6 +1,5 @@
 = Email decision matrix
 :description: Choose email providers by job — human correspondence vs product transactional vs marketing journeys.
-:navtitle: Email decision matrix
 
 Use this matrix when picking vendors. Defaults are de-facto standards for Dev-Centr–aligned orgs; alternatives are valid when the job changes.
 

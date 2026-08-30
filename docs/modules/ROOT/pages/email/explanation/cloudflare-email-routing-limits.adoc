@@ -1,6 +1,5 @@
 = Cloudflare Email Routing limits
 :description: Free Cloudflare Email Routing is receive/forward only — not a mailbox or SMTP service.
-:navtitle: Cloudflare Email Routing limits
 
 Cloudflare **Email Routing** is excellent early-stage plumbing for custom-domain *addresses* that land in a personal Gmail inbox. It is easy to over-read what "free email on Cloudflare" means.
 

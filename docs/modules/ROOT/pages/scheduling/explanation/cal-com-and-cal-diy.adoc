@@ -1,6 +1,5 @@
 = Cal.com and Cal.diy
 :description: Hosted Cal.com vs MIT self-hosted Cal.diy for founder scheduling — when each fits and what not to confuse.
-:navtitle: Cal.com and Cal.diy
 
 Scheduling links (`/15min`, round-robin later, embeds on marketing sites) are early ops glue. Treat them as **business infrastructure**, not a one-off personal Calendly habit that never gets documented.
 

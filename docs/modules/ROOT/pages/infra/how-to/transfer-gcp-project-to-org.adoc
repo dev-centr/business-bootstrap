@@ -1,6 +1,5 @@
-= How to transfer a project from a personal account into an org in GCP
+= Transfer a project into an org
 :description: A Cloud Identity organization cannot hold a personal Google account. Use an organization account with Owner on the project and Project Mover on the organization.
-:navtitle: Transfer a project into an org
 :page-audience: Anyone who created a Google Cloud project on a personal account before the organization existed, and now needs it to live under the org
 :page-usage-context: Full how-to on the Business Bootstrap site. It follows organization creation
 :page-doc-type: how-to

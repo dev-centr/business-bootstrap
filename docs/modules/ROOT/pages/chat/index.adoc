@@ -1,6 +1,5 @@
 = Chat
 :description: Team chat and ops integrations — when Slack/Discord is enough vs self-hosted Mattermost.
-:navtitle: Chat
 
 Realtime team chat is optional until collaborators show up — then it becomes a **support system** with DNS, storage, backups, and integration surface. This area owns **which chat host** and when self-host is worth the ops; agent/MCP connector mechanics stay in general-knowledge.
 

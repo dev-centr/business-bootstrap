@@ -1,6 +1,5 @@
 = OSS funding landscape
 :description: Funding models for open source — fiscal hosts, public grants, sponsorships, enterprise subscriptions, bounties, and credits — with examples and a pointer to deeper directories.
-:navtitle: OSS funding landscape
 
 Open source often runs on unpaid maintenance until something critical breaks. The industry answer is not “make every library a startup.” It is a set of **decoupled funding channels**: projects register once; companies (or public funders) send money through a known pipe; maintainers get paid without each sponsor becoming a product manager.
 

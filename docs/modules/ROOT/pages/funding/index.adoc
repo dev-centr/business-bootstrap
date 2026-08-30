@@ -1,6 +1,5 @@
 = Funding
 :description: How open source projects and early orgs raise money without making every sponsor a customer or a boss.
-:navtitle: Funding
 
 Early products and donation-supported orgs need **cash for maintenance**, not only cloud credits for demos. This area maps the common ways open source and public-good work gets funded — especially channels that let companies support infrastructure **without** negotiating one-off contracts with each maintainer — and the **on-site ask** visitors actually see.
 

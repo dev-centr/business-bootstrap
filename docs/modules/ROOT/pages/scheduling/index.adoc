@@ -1,6 +1,5 @@
 = Scheduling
 :description: Booking pages and calendar infrastructure — Cal.com hosted vs Cal.diy self-host.
-:navtitle: Scheduling
 
 Founder and team booking links are support infrastructure: public hostname, calendar OAuth, webhooks, and often confirmation email. Document the choice; do not leave it as a personal Calendly habit.
 

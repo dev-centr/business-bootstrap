@@ -1,6 +1,5 @@
 = Vault
 :description: Secrets vault hosting — Bitwarden cloud, official self-host, and Vaultwarden.
-:navtitle: Vault
 
 Every other support system eventually drops API keys here. This area owns **which vault server** to run; developer distribution mechanics (CLI → hosting env) live in general-knowledge.
 

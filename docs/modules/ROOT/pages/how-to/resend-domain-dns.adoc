@@ -1,6 +1,5 @@
-= Resend domain DNS roles
+= Resend domain DNS
 :description: How-to for adding a Resend sending subdomain with send and links hosts.
-:navtitle: Resend domain DNS
 
 . In Resend → Domains → Add domain, use a **subdomain** (e.g. `updates.example.com`), not the apex.
 . Set Custom Return-Path to `send` (or accept the default that differs from tracking).

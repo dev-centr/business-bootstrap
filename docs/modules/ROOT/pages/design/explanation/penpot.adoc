@@ -1,6 +1,5 @@
 = Penpot
 :description: Open-source design platform as a Figma-class bootstrap choice for product UI, design systems, and designer–developer handoff.
-:navtitle: Penpot
 
 Early product teams need a shared place for frames, components, and handoff — not a folder of PNG exports in chat. **Penpot** is the open-source design platform we treat as a first-class **business resource** when the goal is collaboration without a proprietary file format as the source of truth.
 

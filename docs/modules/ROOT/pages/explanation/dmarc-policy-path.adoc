@@ -1,6 +1,5 @@
 = DMARC policy path
 :description: Why Cloudflare (and others) start DMARC at p=none, and how to escalate to quarantine and reject safely.
-:navtitle: DMARC policy path
 
 == Why `p=none` is not stupid
 

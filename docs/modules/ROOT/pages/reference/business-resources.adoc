@@ -1,6 +1,5 @@
 = Stack map
 :description: At-a-glance support-systems stack — email, scheduling, design, vault, chat, org infra, funding — with links into each capability area.
-:navtitle: Stack map
 
 Short map of **support systems** early organizations usually need besides product code. Each row opens a capability area with room for explanation, how-to, and interconnect articles. Per-org wiring stays in that org's `infra` and product docs. Which rows you actually stand up depends on xref:defaults-by-org-stage.adoc[org stage].
 

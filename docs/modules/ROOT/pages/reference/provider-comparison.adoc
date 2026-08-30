@@ -1,6 +1,5 @@
-= Email provider comparison
+= Provider comparison
 :description: Qualitative comparison of Resend, ZeptoMail, Customer.io, Brevo, SES, and related tools.
-:navtitle: Provider comparison
 
 [cols="1,1,1,1,1,1",options="header"]
 |===

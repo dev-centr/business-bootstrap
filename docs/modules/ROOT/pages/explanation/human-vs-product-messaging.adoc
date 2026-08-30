@@ -1,6 +1,5 @@
 = Human vs product messaging
 :description: Why personal SMTP / Gmail send-as choices differ from app transactional and marketing journey stacks.
-:navtitle: Human vs product messaging
 
 Two conversations often get conflated. They optimize for different jobs.
 

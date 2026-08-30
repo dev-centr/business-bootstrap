@@ -1,6 +1,5 @@
-= 2026-08-30 — Transfer a GCP project into an org
+= GCP project transfer
 :description: Detailed changelog for the GCP project transfer how-to.
-:navtitle: GCP project transfer
 
 == What landed
 

@@ -1,6 +1,5 @@
 = Pulumi Cloud org model
 :description: Free Individual accounts cannot invite teammates; Organizations are paid or self-hosted state.
-:navtitle: Pulumi Cloud org model
 
 Pulumi is two layers. Confusing them is how founders end up stuck on an ephemeral agent account or a paid Team trial they did not expect.
 

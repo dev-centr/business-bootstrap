@@ -1,6 +1,5 @@
 = Bootstrap org email
 :description: One-afternoon tutorial to get inbound, human outbound, and app transactional mail lanes in place.
-:navtitle: Bootstrap org email
 
 == Goal
 

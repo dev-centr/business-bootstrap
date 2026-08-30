@@ -1,6 +1,5 @@
-= Resend subdomain DNS roles
+= Resend DNS roles
 :description: Sending identity, return-path, and tracking subdomains for Resend — deliverability isolation pattern.
-:navtitle: Resend DNS roles
 
 Resend's "Add domain" flow pushes **subdomain isolation**, not pedantry. Do not verify the apex for app mail when the same zone also hosts human (ZeptoMail) and marketing senders.
 

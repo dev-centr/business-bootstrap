@@ -1,6 +1,5 @@
 = Bitwarden and Vaultwarden
 :description: Hosted Bitwarden vs official self-hosted server vs Vaultwarden — vault defaults for founders, small teams, and org secrets distribution.
-:navtitle: Bitwarden and Vaultwarden
 
 Every bootstrap stack needs a **source of truth for secrets**: API keys, OAuth clients, SMTP passwords, and later deploy matrices. Bitwarden clients (apps, browser extension, CLI) are the day-to-day UX; the **server** behind them is the hosting choice.
 

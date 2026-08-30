@@ -1,6 +1,5 @@
-= Donation and monetization ask ideas
+= Donation ask ideas
 :description: On-site fundraising patterns that show raised amount and the floor or goal — not only a Donate button. Canonical writeup lives on Nonprofit Resources.
-:navtitle: Donation ask ideas
 
 Donation-supported orgs (nonprofits, OSS collectives, products that ask instead of charging) usually fail the ask in the same way: a mission sentence and a button, often on someone else's site. Visitors never see **where the fund is** or **what “enough” means**.
 

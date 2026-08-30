@@ -1,6 +1,5 @@
-= Defaults by org stage
+= Defaults by stage
 :description: Phase-shaped defaults for email, vault, scheduling, design, chat, infra, and funding — from solo founder through compliance-heavy teams.
-:navtitle: Defaults by stage
 
 Business Bootstrap steps are **not** all day-one work. Use the stage that matches headcount, product mail, and compliance pressure; skip self-host chat, design hosts, and org `infra` until the pain is real.
 

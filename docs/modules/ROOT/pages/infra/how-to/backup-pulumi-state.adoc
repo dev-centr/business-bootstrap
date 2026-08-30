@@ -1,6 +1,5 @@
 = Back up Pulumi stack state
 :description: Export stack checkpoints; prefer self-managed backends or Drive copies when Pulumi Cloud free tier is solo-only.
-:navtitle: Back up Pulumi stack state
 
 Use this when state lives on Pulumi Cloud (including ephemeral agent accounts) and you need an offline copy, or when moving off SaaS invites entirely.
 

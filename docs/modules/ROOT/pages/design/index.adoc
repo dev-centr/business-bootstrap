@@ -1,6 +1,5 @@
 = Design
 :description: Product and brand design platforms — Penpot as the open default, Figma when partners require it.
-:navtitle: Design
 
 Shared frames, components, and handoff belong in a real design host — not PNG dumps in chat. This area covers **which canvas** and how it ties to `infra` and the vault.
 

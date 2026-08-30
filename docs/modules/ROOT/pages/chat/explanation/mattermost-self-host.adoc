@@ -1,6 +1,5 @@
 = Mattermost self-host
 :description: When to self-host Mattermost, hosting and storage decision matrix, and Linear / Composio / webhook integration paths.
-:navtitle: Mattermost self-host
 
 Self-hosted Mattermost is a **small-team / residency** chat choice — not a day-one solo bootstrap item. Prefer hosted Slack, Discord, or Mattermost Cloud until ops cost, data residency, or integration control makes a VPS + PostgreSQL stack concrete.
 

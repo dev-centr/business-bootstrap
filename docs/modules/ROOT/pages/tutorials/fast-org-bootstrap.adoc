@@ -1,5 +1,4 @@
 = Fast org bootstrap
-:navtitle: Fast org bootstrap
 :description: Agent-skill path to stand up GitHub org identity or a library/CLI/desktop/web project — a fast alternative to walking every Business Bootstrap capability area.
 :keywords: bootstrap org, GitHub organization, org profile, .github, github.io, company, nonprofit, OSS collective, CLI, library, Tauri, SolidStart
 

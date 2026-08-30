@@ -1,6 +1,5 @@
 = Org infra repo pattern
 :description: One Pulumi infra repo per GitHub org, with Antora docs beside the stacks.
-:navtitle: Org infra repo pattern
 
 == Pattern
 

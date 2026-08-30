@@ -1,6 +1,5 @@
 = ZeptoMail + Gmail send-as
 :description: Configure ZeptoMail for human outbound mail through Gmail Send mail as, with per-user keys and Cloudflare DNS.
-:navtitle: ZeptoMail + Gmail send-as
 
 == Prerequisites
 

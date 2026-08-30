@@ -1,6 +1,5 @@
 = Personal Gmail send-as gotchas
 :description: Limits when wiring custom domain From addresses into a personal Gmail account.
-:navtitle: Personal Gmail send-as gotchas
 
 Personal Gmail (`@gmail.com`) can send as `you@yourdomain.com` via *Settings → Accounts → Send mail as*, but several constraints surprise founders.
 

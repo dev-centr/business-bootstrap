@@ -1,6 +1,5 @@
 = Pulumi + Cloudflare email checklist
 :description: Operator checklist for org infra stacks that own DNS and email-related records.
-:navtitle: Pulumi + Cloudflare email checklist
 
 Use this when standing up or reviewing an org `infra` Pulumi stack (example: link:https://github.com/nonprofit-resources/infra[nonprofit-resources/infra], private).
 

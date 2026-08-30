@@ -1,6 +1,5 @@
 = Org infra
 :description: Pulumi org infra repos — DNS and platform resources for support systems.
-:navtitle: Org infra
 
 Strategic "which vendor" guidance lives in the capability areas. Org `infra` answers **how this org's stacks encode DNS and shared platform resources**.
 

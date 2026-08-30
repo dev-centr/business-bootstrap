@@ -1,6 +1,5 @@
 = Email
 :description: Human vs product messaging, provider matrix, DMARC, and bootstrap how-tos.
-:navtitle: Email
 
 Email is the densest Business Bootstrap area: **human correspondence** and **product messaging** are different jobs. Start with the lane split, then pick providers and escalate DMARC.
 

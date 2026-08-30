@@ -1,6 +1,5 @@
-= Business topics (ops beyond pure product engineering)
+= Business
 :description: Where non-engineering business ops live while DevCentr remains the docs hub.
-:navtitle: Business overview
 
 DevCentr does not run a separate “business resources” Antora site. **Business Bootstrap** is the home for founder/ops topics that are not pure software-engineering Reference. “Business” here means *running an organization*, not a profit-only motive.
 
