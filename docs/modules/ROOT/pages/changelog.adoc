@@ -1,9 +1,14 @@
 = Changelog
 :description: Timeline of Business Bootstrap documentation changes.
 
+== 2026-08-30 — Linked parent section landings
+
+* Replaced `.Email` / `.Org infra` / … + Overview with linked parents whose link text equals the landing H1 (`Email`, `Org infra`, …); nested pages under `**`. Files stay `index.adoc`.
+* See agent-rules `general/documentation.md` (Antora page title = nav label).
+
 == 2026-08-30 — Page title = nav label
 
-* Aligned document H1s with `nav.adoc` labels and dropped divergent `:navtitle:` attrs (house rule: one canonical title; section `Overview` landings kept).
+* Aligned document H1s with `nav.adoc` labels and dropped divergent `:navtitle:` attrs (house rule: one canonical title).
 * See agent-rules `general/documentation.md` (Antora page title = nav label).
 
 == 2026-08-30 — Transfer a GCP project into an org

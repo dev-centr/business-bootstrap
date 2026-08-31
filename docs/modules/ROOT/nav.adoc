@@ -4,53 +4,45 @@
 * xref:reference/defaults-by-org-stage.adoc[Defaults by stage]
 * xref:changelog.adoc[Changelog]
 
-.Email
-* xref:email/index.adoc[Overview]
-* xref:explanation/human-vs-product-messaging.adoc[Human vs product messaging]
-* xref:explanation/email-decision-matrix.adoc[Email decision matrix]
-* xref:tutorials/bootstrap-org-email.adoc[Bootstrap org email]
-* xref:how-to/zeptomail-gmail-send-as.adoc[ZeptoMail + Gmail send-as]
-* xref:email/how-to/personal-gmail-send-as-gotchas.adoc[Personal Gmail send-as gotchas]
-* xref:email/explanation/cloudflare-email-routing-limits.adoc[Cloudflare Email Routing limits]
-* xref:how-to/dmarc-escalation.adoc[Escalate DMARC policy]
-* xref:how-to/resend-domain-dns.adoc[Resend domain DNS roles]
-* xref:reference/provider-comparison.adoc[Email provider comparison]
-* xref:explanation/dmarc-policy-path.adoc[DMARC policy path]
-* xref:explanation/resend-dns-roles.adoc[Resend subdomain DNS roles]
-* xref:explanation/itil-email-services.adoc[ITIL-shaped email services]
+* xref:email/index.adoc[Email]
+** xref:explanation/human-vs-product-messaging.adoc[Human vs product messaging]
+** xref:explanation/email-decision-matrix.adoc[Email decision matrix]
+** xref:tutorials/bootstrap-org-email.adoc[Bootstrap org email]
+** xref:how-to/zeptomail-gmail-send-as.adoc[ZeptoMail + Gmail send-as]
+** xref:email/how-to/personal-gmail-send-as-gotchas.adoc[Personal Gmail send-as gotchas]
+** xref:email/explanation/cloudflare-email-routing-limits.adoc[Cloudflare Email Routing limits]
+** xref:how-to/dmarc-escalation.adoc[Escalate DMARC policy]
+** xref:how-to/resend-domain-dns.adoc[Resend domain DNS roles]
+** xref:reference/provider-comparison.adoc[Email provider comparison]
+** xref:explanation/dmarc-policy-path.adoc[DMARC policy path]
+** xref:explanation/resend-dns-roles.adoc[Resend subdomain DNS roles]
+** xref:explanation/itil-email-services.adoc[ITIL-shaped email services]
 
-.Scheduling
-* xref:scheduling/index.adoc[Overview]
-* xref:scheduling/explanation/cal-com-and-cal-diy.adoc[Cal.com and Cal.diy]
+* xref:scheduling/index.adoc[Scheduling]
+** xref:scheduling/explanation/cal-com-and-cal-diy.adoc[Cal.com and Cal.diy]
 
-.Design
-* xref:design/index.adoc[Overview]
-* xref:design/explanation/penpot.adoc[Penpot]
+* xref:design/index.adoc[Design]
+** xref:design/explanation/penpot.adoc[Penpot]
 
-.Vault
-* xref:vault/index.adoc[Overview]
-* xref:vault/explanation/bitwarden-and-vaultwarden.adoc[Bitwarden and Vaultwarden]
+* xref:vault/index.adoc[Vault]
+** xref:vault/explanation/bitwarden-and-vaultwarden.adoc[Bitwarden and Vaultwarden]
 
-.Chat
-* xref:chat/index.adoc[Overview]
-* xref:chat/explanation/mattermost-self-host.adoc[Mattermost self-host]
+* xref:chat/index.adoc[Chat]
+** xref:chat/explanation/mattermost-self-host.adoc[Mattermost self-host]
 
-.Org infra
-* xref:infra/index.adoc[Overview]
-* xref:explanation/org-infra-repo-pattern.adoc[Org infra repo pattern]
-* xref:infra/explanation/pulumi-cloud-org-model.adoc[Pulumi Cloud org model]
-* xref:infra/explanation/pulumi-secrets-vs-state.adoc[Pulumi secrets vs stack state]
-* xref:infra/how-to/backup-pulumi-state.adoc[Back up Pulumi stack state]
-* xref:infra/how-to/transfer-gcp-project-to-org.adoc[Transfer a project into an org]
-* xref:infra/reference/pulumi-cloudflare-email-checklist.adoc[Pulumi + Cloudflare email checklist]
-* xref:general-knowledge::how-to/cloudflare-access-static-site.adoc[Cloudflare Access (static sites)]
+* xref:infra/index.adoc[Org infra]
+** xref:explanation/org-infra-repo-pattern.adoc[Org infra repo pattern]
+** xref:infra/explanation/pulumi-cloud-org-model.adoc[Pulumi Cloud org model]
+** xref:infra/explanation/pulumi-secrets-vs-state.adoc[Pulumi secrets vs stack state]
+** xref:infra/how-to/backup-pulumi-state.adoc[Back up Pulumi stack state]
+** xref:infra/how-to/transfer-gcp-project-to-org.adoc[Transfer a project into an org]
+** xref:infra/reference/pulumi-cloudflare-email-checklist.adoc[Pulumi + Cloudflare email checklist]
+** xref:general-knowledge::how-to/cloudflare-access-static-site.adoc[Cloudflare Access (static sites)]
 
-.Funding
-* xref:funding/index.adoc[Overview]
-* xref:funding/explanation/oss-funding-landscape.adoc[OSS funding landscape]
-* xref:funding/explanation/donation-ask-ideas.adoc[Donation ask ideas]
+* xref:funding/index.adoc[Funding]
+** xref:funding/explanation/oss-funding-landscape.adoc[OSS funding landscape]
+** xref:funding/explanation/donation-ask-ideas.adoc[Donation ask ideas]
 
-.Business (non-tech ops)
-* xref:business/index.adoc[Overview]
-* xref:reference/business-resources.adoc[Stack map]
-* xref:reference/defaults-by-org-stage.adoc[Defaults by stage]
+* xref:business/index.adoc[Business]
+** xref:reference/business-resources.adoc[Stack map]
+** xref:reference/defaults-by-org-stage.adoc[Defaults by stage]
