@@ -1,6 +1,10 @@
 = Changelog
 :description: Timeline of Business Bootstrap documentation changes.
 
+== 2026-08-30 — Drop component start-page nav duplicate
+
+* Removed leading `* xref:index.adoc[Business Bootstrap]` — site-nav-tree component root already links to the start page (avoids BB > BB). Section linked parents (`Email`, …) unchanged.
+
 == 2026-08-30 — Linked parent section landings
 
 * Replaced `.Email` / `.Org infra` / … + Overview with linked parents whose link text equals the landing H1 (`Email`, `Org infra`, …); nested pages under `**`. Files stay `index.adoc`.
