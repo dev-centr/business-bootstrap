@@ -18,7 +18,7 @@ Email is the densest Business Bootstrap area: **human correspondence** and **pro
 
 == Reference & explanation
 
-* xref:reference/provider-comparison.adoc[Email provider comparison]
+* xref:email/reference/provider-comparison.adoc[Email provider comparison]
 * xref:email/explanation/cloudflare-email-routing-limits.adoc[Cloudflare Email Routing limits]
 * xref:explanation/dmarc-policy-path.adoc[DMARC policy path]
 * xref:explanation/resend-dns-roles.adoc[Resend subdomain DNS roles]

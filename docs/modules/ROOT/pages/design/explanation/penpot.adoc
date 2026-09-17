@@ -65,6 +65,6 @@ Penpot positions itself for designers, developers, and AI-assisted workflows (co
 == Related
 
 * xref:design/index.adoc[Design]
-* xref:reference/business-resources.adoc[Stack map]
+* xref:software-stack.adoc[Software stack]
 * xref:explanation/org-infra-repo-pattern.adoc[Org infra repo pattern]
 * xref:general-knowledge::explanation/brand-motion.adoc[Brand and UI motion formats]

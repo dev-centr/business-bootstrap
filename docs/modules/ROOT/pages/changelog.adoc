@@ -72,13 +72,13 @@
 == 2026-08-09 — Chat / Mattermost + stage-shaped defaults
 
 * Added **Chat** capability area and xref:chat/explanation/mattermost-self-host.adoc[Mattermost self-host] (hosting matrix, Linear/Composio integrations, file limits, R2/B2 + CDN).
-* Subdivided xref:reference/defaults-by-org-stage.adoc[Defaults by org stage] into phase sections so later-maturity steps (e.g. Mattermost self-host) are not treated as day-one work.
+* Subdivided xref:defaults-by-org-stage.adoc[Defaults by org stage] into phase sections so later-maturity steps (e.g. Mattermost self-host) are not treated as day-one work.
 * See xref:changelog-details/2026-08-09 - chat-mattermost-stage-defaults.adoc[Detailed changelog].
 
 == 2026-08-09 — Gmail / Cloudflare email gotchas + business home
 
 * Added personal Gmail send-as gotchas and Cloudflare Email Routing limits; Pulumi + Cloudflare email checklist under Org infra.
-* Added xref:business/index.adoc[Business] overview (no separate business-resources site).
+* Added xref:software-stack.adoc[Business] overview (no separate business-resources site).
 * Clarified org infra pattern: Gmail Settings API can list/patch send-as; create often UI-bound; Routing is inbound-only.
 
 == 2026-08-08 — Support-systems hub (capability areas)
@@ -88,4 +88,4 @@
 
 == 2026-07-31
 
-* xref:changelog-details/2026-07-31--initial-email-matrix-and-infra-pattern.adoc[Initial email decision matrix, DMARC path, Resend DNS roles, and org infra pattern]
+* xref:changelog-details/2026-07-31\--initial-email-matrix-and-infra-pattern.adoc[Initial email decision matrix, DMARC path, Resend DNS roles, and org infra pattern]

@@ -1,0 +1,11 @@
+= Cloudflare Access (static sites)
+:description: Protect support-system static hosts with Cloudflare Access — full procedure lives in General Knowledge.
+:navtitle: Cloudflare Access (static sites)
+
+Member-only static hosts (status boards, internal handbooks, staging marketing) usually sit behind **Cloudflare Access** rather than a custom auth stack.
+
+The step-by-step procedure is maintained in General Knowledge so product and org docs share one runbook:
+
+* xref:general-knowledge::how-to/cloudflare-access-static-site.adoc[Cloudflare Access for static sites] (General Knowledge)
+
+Wire hostnames and Access apps from the org xref:infra/index.adoc[Org infra] Pulumi stack once the Access path is decided.

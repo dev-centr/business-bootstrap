@@ -186,7 +186,7 @@ Add bucket lifecycle rules to prune deleted attachments / thumbnail junk when co
 == Related
 
 * xref:chat/index.adoc[Chat]
-* xref:reference/business-resources.adoc[Stack map]
-* xref:reference/defaults-by-org-stage.adoc[Defaults by org stage]
+* xref:software-stack.adoc[Software stack]
+* xref:defaults-by-org-stage.adoc[Defaults by org stage]
 * xref:explanation/org-infra-repo-pattern.adoc[Org infra repo pattern]
 * xref:general-knowledge::explanation/infrastructure/composio-and-mcp-connectors.adoc[Composio and MCP connectors]

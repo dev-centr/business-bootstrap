@@ -76,7 +76,7 @@ GitHub org identity (profile, site, docs hub) can run in the same week as solo d
 
 == Related
 
-* xref:business-resources.adoc[Stack map]
+* xref:software-stack.adoc[Software stack]
 * xref:funding/explanation/oss-funding-landscape.adoc[OSS funding landscape]
 * xref:funding/explanation/donation-ask-ideas.adoc[Donation ask ideas]
 * xref:chat/explanation/mattermost-self-host.adoc[Mattermost self-host]

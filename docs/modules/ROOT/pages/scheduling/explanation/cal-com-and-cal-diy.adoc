@@ -73,6 +73,6 @@ If you only need personal booking pages and do not want another Postgres service
 == Related
 
 * xref:scheduling/index.adoc[Scheduling]
-* xref:reference/business-resources.adoc[Stack map]
+* xref:software-stack.adoc[Software stack]
 * xref:explanation/org-infra-repo-pattern.adoc[Org infra repo pattern]
 * xref:explanation/human-vs-product-messaging.adoc[Human vs product messaging] (booking confirmation mail is usually product/ESP territory)

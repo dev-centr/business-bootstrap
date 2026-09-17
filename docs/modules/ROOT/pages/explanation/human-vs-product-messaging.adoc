@@ -56,4 +56,4 @@ Email need
     └── Separate marketing subdomain (e.g. news.)
 ```
 
-See xref:email-decision-matrix.adoc[Email decision matrix] for the full job table.
+See xref:explanation/email-decision-matrix.adoc[Email decision matrix] for the full job table.

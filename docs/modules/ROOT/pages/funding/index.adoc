@@ -16,8 +16,8 @@ Future pages: applying to a fiscal host (checklist), company side (how to sponso
 
 == Interconnect
 
-* Stage defaults → xref:reference/defaults-by-org-stage.adoc[Defaults by org stage]
-* Business home → xref:business/index.adoc[Business]
-* Stack map → xref:reference/business-resources.adoc[Stack map]
+* Stage defaults → xref:defaults-by-org-stage.adoc[Defaults by org stage]
+* Business home → xref:index.adoc[Business]
+* Software stack → xref:software-stack.adoc[Software stack]
 * Deeper external directory → link:https://www.oss.fund/[OSS.Fund]
 * Nonprofit operator guide → link:https://nonprofit-resources.org/guides/donate-page-as-a-ledger[Donate page as a ledger]

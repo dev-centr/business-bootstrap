@@ -68,6 +68,6 @@ Not a coin flip:
 
 == Related
 
-* xref:human-vs-product-messaging.adoc[Human vs product messaging]
-* xref:reference/provider-comparison.adoc[Provider comparison]
-* xref:resend-dns-roles.adoc[Resend subdomain DNS roles]
+* xref:explanation/human-vs-product-messaging.adoc[Human vs product messaging]
+* xref:email/reference/provider-comparison.adoc[Provider comparison]
+* xref:explanation/resend-dns-roles.adoc[Resend subdomain DNS roles]

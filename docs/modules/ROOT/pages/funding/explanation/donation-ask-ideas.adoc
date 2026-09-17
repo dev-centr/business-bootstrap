@@ -63,4 +63,4 @@ xref:funding/explanation/oss-funding-landscape.adoc[OSS funding landscape] maps 
 * Nonprofit Resources — link:https://nonprofit-resources.org/guides/donate-page-as-a-ledger[Donate page as a ledger]
 * xref:funding/index.adoc[Funding overview]
 * xref:funding/explanation/oss-funding-landscape.adoc[OSS funding landscape]
-* xref:reference/defaults-by-org-stage.adoc[Defaults by org stage]
+* xref:defaults-by-org-stage.adoc[Defaults by org stage]

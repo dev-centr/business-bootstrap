@@ -40,9 +40,9 @@ Resend's "Add domain" flow pushes **subdomain isolation**, not pedantry. Do not 
 
 Set application `From` to a local-part on the verified sending host (e.g. `support@updates.foodtrucknerdz.com`). Keep marketing on a separate identity (e.g. `news.…` / Customer.io).
 
-Encode these records in the org xref:org-infra-repo-pattern.adoc[`infra` Pulumi stack] once Resend shows the exact TXT/CNAME values.
+Encode these records in the org xref:explanation/org-infra-repo-pattern.adoc[`infra` Pulumi stack] once Resend shows the exact TXT/CNAME values.
 
 == Related
 
 * xref:how-to/resend-domain-dns.adoc[Resend domain DNS how-to]
-* xref:email-decision-matrix.adoc[Email decision matrix]
+* xref:explanation/email-decision-matrix.adoc[Email decision matrix]

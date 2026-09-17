@@ -103,7 +103,7 @@ Fiscal hosts, grant agencies, and subscription marketplaces are the buffers. You
 
 == Stage notes for DevCentr orgs
 
-Funding is optional until you **are** the open source (or critically depend on unpaid infrastructure you might steward). Rough fit against xref:reference/defaults-by-org-stage.adoc[org stage]:
+Funding is optional until you **are** the open source (or critically depend on unpaid infrastructure you might steward). Rough fit against xref:defaults-by-org-stage.adoc[org stage]:
 
 * *Solo / pre-product* — Skip unless you publish libraries people already lean on. Sponsors profile is cheap insurance.
 * *Product shipping* — If parts of the stack are OSS you maintain, stand up Sponsors and/or an Open Collective before the first corporate “how do we pay you?” email.
@@ -121,8 +121,8 @@ Funding is optional until you **are** the open source (or critically depend on u
 
 * xref:funding/index.adoc[Funding overview]
 * xref:funding/explanation/donation-ask-ideas.adoc[Donation and monetization ask ideas]
-* xref:business/index.adoc[Business topics]
-* xref:reference/defaults-by-org-stage.adoc[Defaults by org stage]
+* xref:index.adoc[Business topics]
+* xref:defaults-by-org-stage.adoc[Defaults by org stage]
 * link:https://nonprofit-resources.org/guides/donate-page-as-a-ledger[Donate page as a ledger] (Nonprofit Resources)
 * link:https://www.oss.fund/[OSS.Fund] · link:https://www.oss.fund/guides/open-source-grants-2026/[Open source grants (2026)]
 * link:https://opencollective.com/opensource[Open Source Collective on Open Collective]

@@ -8,5 +8,5 @@
 ** xref:scheduling/explanation/cal-com-and-cal-diy.adoc[Cal.com and Cal.diy]
 ** xref:design/explanation/penpot.adoc[Penpot]
 ** xref:vault/explanation/bitwarden-and-vaultwarden.adoc[Bitwarden and Vaultwarden]
-* Promoted xref:reference/business-resources.adoc[Stack map] (was flat "business resources" catalog) and extended xref:reference/defaults-by-org-stage.adoc[Defaults by org stage].
+* Promoted xref:software-stack.adoc[Software stack] (was flat "business resources" catalog) and extended xref:defaults-by-org-stage.adoc[Defaults by org stage].
 * Kept published **email** page paths stable (`explanation/…`, `how-to/…`, `tutorials/…`); new topics live under area folders so how-tos and interconnect pages can grow without a second Antora component.
