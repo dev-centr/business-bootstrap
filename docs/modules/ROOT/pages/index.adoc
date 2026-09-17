@@ -50,4 +50,4 @@ Hub for founders and ops teams setting up essential **IT support systems** and r
 * xref:general-knowledge::explanation/infrastructure/iac.adoc[Infrastructure as Code (IaC)] (developer mechanics)
 * xref:general-knowledge::explanation/infrastructure/secrets-distribution-hub.adoc[Secrets distribution hub] (vault → hosts)
 * xref:general-knowledge::explanation/infrastructure/vibe-coding-bootstrap.adoc[Vibe coding bootstrap] · xref:general-knowledge::how-to/bootstrap-cursor-skills.adoc[Bootstrap Cursor skills] (AI studio — related sibling during early BB, not nested under a capability area)
-* DevCentr xref:DevCentr:specifications:components/installation-workflow.adoc[Installation workflow] (org infra wizard hooks)
+* DevCentr xref:platforms:specifications:components/installation-workflow.adoc[Installation workflow] (org infra wizard hooks)
