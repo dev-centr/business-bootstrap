@@ -80,4 +80,4 @@ centered logo; rule; 1–3 pitch lines; no H1 restating the org name; no notable
 * xref:index.adoc[Business Bootstrap hub] — capability areas (the long path)
 * xref:defaults-by-org-stage.adoc[Defaults by org stage]
 * xref:general-knowledge::explanation/infrastructure/vibe-coding-bootstrap.adoc[Vibe coding bootstrap] — AI studio (skills/MCP), not org identity
-* xref:agent-rules::skills-catalog.adoc[Agent Rules skills catalog]
+* xref:tools:agent-rules:skills-catalog.adoc[Agent Rules skills catalog]
