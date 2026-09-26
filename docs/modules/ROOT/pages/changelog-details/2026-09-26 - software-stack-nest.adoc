@@ -1,0 +1,6 @@
+= 2026-09-26 - Software stack nest + Overview peers
+
+* **IA:** Capability categories (Email, Scheduling, Design, Vault, Chat, Org infra, Funding) nest under xref:software-stack.adoc[Software stack] as linked parents (`Business Bootstrap > Software stack > Email > ...`). Categories no longer sit on the component root (avoids reading "BB > Email" as bootstrap email).
+* **Overview:** Component start-page nav stays a sibling **Overview** leaf. Category landings are the linked parent titles (Email, ...), not nested Overview wrappers.
+* **Typology:** Hub excludes `/business-bootstrap/` from Diataxis *URL path* heuristics (tree folders are hierarchy). Leaf icons, when wanted, use explicit `:page-nav-typology:` (see nav-typology README) -- not `/how-to|tutorials|.../` URL markers.
+* History: BB grew its own Diataxis-shaped tree; articles were not lifted from General Knowledge (GK overlap is xrefs/altitude).

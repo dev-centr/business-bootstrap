@@ -2,6 +2,10 @@
 :description: Timeline of Business Bootstrap documentation changes.
 
 
+== 2026-09-26 - Software stack nest + Overview peers
+
+* Capability categories nest under xref:software-stack.adoc[Software stack] (set theory: BB contains Software stack contains Email/Vault/...). Component **Overview** stays a sibling start-page leaf.
+* See xref:changelog-details/2026-09-26 - software-stack-nest.adoc[Detailed changelog].
 == 2026-09-26 - Nav Overview label
 
 * Component start-page nav item is **Overview** (forest pattern: `Business Bootstrap > Overview`), restoring an explicit landing child after the 2026-08-30 duplicate removal — prefer Overview over Home / component-titled duplicates.
