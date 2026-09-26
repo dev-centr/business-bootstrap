@@ -1,7 +1,10 @@
 * xref:index.adoc[Overview]
 * xref:tutorials/fast-org-bootstrap.adoc[Fast org bootstrap]
-* xref:software-stack.adoc[Software stack]
-** xref:email/index.adoc[Email]
+* Software stack
+** xref:software-stack.adoc[Overview]
+** xref:defaults-by-org-stage.adoc[Defaults by stage]
+** Email
+*** xref:email/index.adoc[Overview]
 *** xref:explanation/human-vs-product-messaging.adoc[Human vs product messaging]
 *** xref:explanation/email-decision-matrix.adoc[Email decision matrix]
 *** xref:tutorials/bootstrap-org-email.adoc[Bootstrap org email]
@@ -14,15 +17,20 @@
 *** xref:explanation/dmarc-policy-path.adoc[DMARC policy path]
 *** xref:explanation/resend-dns-roles.adoc[Resend subdomain DNS roles]
 *** xref:explanation/itil-email-services.adoc[ITIL-shaped email services]
-** xref:scheduling/index.adoc[Scheduling]
+** Scheduling
+*** xref:scheduling/index.adoc[Overview]
 *** xref:scheduling/explanation/cal-com-and-cal-diy.adoc[Cal.com and Cal.diy]
-** xref:design/index.adoc[Design]
+** Design
+*** xref:design/index.adoc[Overview]
 *** xref:design/explanation/penpot.adoc[Penpot]
-** xref:vault/index.adoc[Vault]
+** Vault
+*** xref:vault/index.adoc[Overview]
 *** xref:vault/explanation/bitwarden-and-vaultwarden.adoc[Bitwarden and Vaultwarden]
-** xref:chat/index.adoc[Chat]
+** Chat
+*** xref:chat/index.adoc[Overview]
 *** xref:chat/explanation/mattermost-self-host.adoc[Mattermost self-host]
-** xref:infra/index.adoc[Org infra]
+** Org infra
+*** xref:infra/index.adoc[Overview]
 *** xref:explanation/org-infra-repo-pattern.adoc[Org infra repo pattern]
 *** xref:infra/explanation/pulumi-cloud-org-model.adoc[Pulumi Cloud org model]
 *** xref:infra/explanation/pulumi-secrets-vs-state.adoc[Pulumi secrets vs stack state]
@@ -30,8 +38,8 @@
 *** xref:infra/how-to/transfer-gcp-project-to-org.adoc[Transfer a project into an org]
 *** xref:infra/reference/pulumi-cloudflare-email-checklist.adoc[Pulumi + Cloudflare email checklist]
 *** xref:infra/how-to/cloudflare-access-static-sites.adoc[Cloudflare Access (static sites)]
-** xref:funding/index.adoc[Funding]
+** Funding
+*** xref:funding/index.adoc[Overview]
 *** xref:funding/explanation/oss-funding-landscape.adoc[OSS funding landscape]
 *** xref:funding/explanation/donation-ask-ideas.adoc[Donation ask ideas]
-* xref:defaults-by-org-stage.adoc[Defaults by stage]
 * xref:changelog.adoc[Changelog]

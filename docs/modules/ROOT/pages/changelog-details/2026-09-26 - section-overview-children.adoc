@@ -1,0 +1,20 @@
+= 2026-09-26 - Section Overview children + Defaults under Software stack
+:description: Changelog detail for Business Bootstrap section Overview IA.
+
+== What landed
+
+* **Software stack** is an unlinked section with children:
+** Overview (`software-stack.adoc`)
+** Defaults by stage
+** Email, Scheduling, Design, Vault, Chat, Org infra, Funding (each an unlinked section with its own Overview leaf for the category `index.adoc`)
+* Clicking **Overview** under Email (or any section) keeps Overview selected — parents no longer share the landing URL with the Overview leaf.
+* Hub `@antora-supplemental/site-nav-tree` **0.5.2** also auto-promotes legacy linked parents with children to the same shape.
+
+== Deferred
+
+* Grafting Business Bootstrap under General Knowledge → Tutorials remains deferred (Ryan still deciding). BB stays its own forest root.
+
+== Wiring
+
+* `docs/modules/ROOT/nav.adoc`
+* Companion hub SoftNav same-path nav selection + site-nav-tree promote rewrite
