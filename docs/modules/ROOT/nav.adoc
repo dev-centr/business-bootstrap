@@ -1,4 +1,4 @@
-* xref:index.adoc[Business Bootstrap]
+* xref:index.adoc[Overview]
 * xref:tutorials/fast-org-bootstrap.adoc[Fast org bootstrap]
 * xref:software-stack.adoc[Software stack]
 * xref:defaults-by-org-stage.adoc[Defaults by stage]

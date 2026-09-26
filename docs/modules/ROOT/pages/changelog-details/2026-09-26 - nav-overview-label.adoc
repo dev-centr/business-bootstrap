@@ -1,0 +1,15 @@
+= Nav Overview label
+:description: Changelog detail for Business Bootstrap Overview nav naming.
+
+== What landed
+
+The component start-page nav item is labeled **Overview** instead of repeating **Business Bootstrap**. Under site-nav-tree the sidebar reads `Business Bootstrap > Overview` and still opens the same index article.
+
+== Why
+
+Ryan's forest convention: prefer **Overview** over a component-titled duplicate or **Home** (Home conflicts with the Home forest root).
+
+== Wiring
+
+* `docs/modules/ROOT/nav.adoc`: `* xref:index.adoc[Overview]`
+* Hub `@antora-supplemental/site-nav-tree` **0.5.0** unwraps/synthesizes Overview for parity across forest roots
