@@ -5,3 +5,7 @@
 !/README.adoc
 !/docs/
 !/docs/**
+!/.github/
+!/.github/workflows/
+!/.github/workflows/encoding-guard.yml
+!/.editorconfig
