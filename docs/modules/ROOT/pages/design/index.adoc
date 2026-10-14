@@ -1,15 +1,16 @@
 = Design
-:description: Product and brand design platforms — Penpot as the open default, Figma when partners require it.
+:description: Product and brand design platforms — Penpot as the open default, Lunacy for desktop Figma-class work, Figma when partners require it.
 
 Shared frames, components, and handoff belong in a real design host — not PNG dumps in chat. This area covers **which canvas** and how it ties to `infra` and the vault.
 
 == Articles
 
 * xref:design/explanation/penpot.adoc[Penpot] — open-source design platform (self-host or cloud)
+* xref:general-knowledge::reference/web-design-tools.adoc[Web design tools] — Figma baseline, Lunacy, and why Framer is a poor primary site host
 
 == Room to grow
 
-Future pages: self-host how-to, library/backup runbook, Figma↔Penpot migration notes, design-token export into repos.
+Future pages: self-host how-to, library/backup runbook, Figma↔Penpot migration notes, design-token export into repos, Lunacy-specific handoff notes.
 
 == Interconnect
 

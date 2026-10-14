@@ -21,8 +21,8 @@ Short map of **support systems** early organizations usually need besides produc
 | xref:scheduling/index.adoc[Scheduling] · xref:scheduling/explanation/cal-com-and-cal-diy.adoc[Cal.com and Cal.diy]
 
 | Product / brand design (Figma-class)
-| **Penpot** (open file format, self-host or cloud); Figma when partners require it
-| xref:design/index.adoc[Design] · xref:design/explanation/penpot.adoc[Penpot]
+| **Penpot** (open file format, self-host or cloud); **Lunacy** for free desktop `.fig` work; Figma when partners require it
+| xref:design/index.adoc[Design] · xref:design/explanation/penpot.adoc[Penpot] · xref:general-knowledge::reference/web-design-tools.adoc[Web design tools]
 
 | Human + machine secrets vault
 | **Bitwarden** cloud (or official self-host for compliance); **Vaultwarden** for tiny self-host
