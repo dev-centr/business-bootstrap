@@ -14,4 +14,4 @@ Example TXT shape (values are illustrative):
 v=DMARC1; p=reject; rua=mailto:your-dmarc-inbox@example.com;
 ----
 
-See xref:explanation/dmarc-policy-path.adoc[DMARC policy path].
+See xref:general-knowledge::explanation/email/dmarc-policy-path.adoc[DMARC policy path].

@@ -3,7 +3,7 @@
 
 == Summary
 
-* New Funding article xref:funding/explanation/donation-ask-ideas.adoc[Donation and monetization ask ideas]: on-site ask that shows raised/balance, a floor or goal, an as-of date, and the work the money buys. Exhibit is Transparency HOA’s Analyze Queue (screenshot). Full operator guide is on Nonprofit Resources so this hub does not duplicate a fundraising handbook.
+* New Funding article xref:general-knowledge::explanation/funding/donation-ask-ideas.adoc[Donation and monetization ask ideas]: on-site ask that shows raised/balance, a floor or goal, an as-of date, and the work the money buys. Exhibit is Transparency HOA’s Analyze Queue (screenshot). Full operator guide is on Nonprofit Resources so this hub does not duplicate a fundraising handbook.
 * Wired into Funding overview, nav, stack map, stage defaults (solo / shipping), OSS landscape Related, and the hub Funding row.
 * Index and Business overview: “business” means running an organization. No repo or Antora component rename.
 

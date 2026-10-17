@@ -5,10 +5,10 @@ Early products and donation-supported orgs need **cash for maintenance**, not on
 
 This is an orientation map, not a live grant calendar. Programs open and close; verify eligibility on the official pages before you apply.
 
-== Articles
+== Articles (canonical in General Knowledge)
 
-* xref:funding/explanation/oss-funding-landscape.adoc[OSS funding landscape] — fiscal hosts, grants, sponsorships, subscriptions, bounties, credits
-* xref:funding/explanation/donation-ask-ideas.adoc[Donation and monetization ask ideas] — show raised + floor/goal on your own page (canonical guide on Nonprofit Resources)
+* xref:general-knowledge::explanation/funding/oss-funding-landscape.adoc[OSS funding landscape] — fiscal hosts, grants, sponsorships, subscriptions, bounties, credits
+* xref:general-knowledge::explanation/funding/donation-ask-ideas.adoc[Donation and monetization ask ideas] — show raised + floor/goal on your own page (canonical guide on Nonprofit Resources)
 
 == Room to grow
 

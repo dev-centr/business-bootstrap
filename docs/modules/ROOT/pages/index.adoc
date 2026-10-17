@@ -32,7 +32,7 @@ Hub for founders and ops teams setting up essential **IT support systems** and r
 | Pulumi org `infra` repos and DNS for support hosts
 
 | xref:funding/index.adoc[Funding]
-| OSS fiscal hosts, grants, sponsorships, subscriptions — map + link:https://www.oss.fund/[OSS.Fund]. On-site ask: xref:funding/explanation/donation-ask-ideas.adoc[donation ask ideas] (canonical: link:https://nonprofit-resources.org/guides/donate-page-as-a-ledger[Nonprofit Resources])
+| OSS fiscal hosts, grants, sponsorships, subscriptions — map + link:https://www.oss.fund/[OSS.Fund]. On-site ask: xref:general-knowledge::explanation/funding/donation-ask-ideas.adoc[donation ask ideas] (canonical: link:https://nonprofit-resources.org/guides/donate-page-as-a-ledger[Nonprofit Resources])
 
 | xref:index.adoc[Business]
 | Non-engineering ops home + software stack / stage defaults

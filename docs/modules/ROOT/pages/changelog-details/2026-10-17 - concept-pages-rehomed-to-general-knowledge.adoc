@@ -1,0 +1,10 @@
+= 2026-10-17 - Concept pages rehomed to General Knowledge
+:description: Changelog detail for the GK-canonical / BB-links split.
+
+== What landed
+
+* Principle: **General Knowledge** is the canonical home for explanation and reference; **Business Bootstrap** is the curated how-to path that links there (same pattern as code signing in the release pipeline and Cloudflare Access for static sites).
+* Moved to `general-knowledge` (old URLs alias there): Cloudflare Email Routing limits, Personal Gmail send-as gotchas, DMARC policy path, Human vs product messaging, ITIL-shaped email services, Resend subdomain DNS roles, Email provider comparison, Org infra repo pattern, Pulumi Cloud org model, Pulumi secrets vs stack state, OSS funding landscape, Donation ask ideas.
+* Kept here (bootstrap-specific): tutorials, how-tos, Email decision matrix (our defaults), Defaults by org stage, Software stack, vendor-choice pages (Cal.com, Penpot, Bitwarden/Vaultwarden, Mattermost), GCP transfer, Pulumi state backup, Pulumi + Cloudflare email checklist.
+* Email, Org infra, and Funding area pages list the GK pages under a "Background in General Knowledge" section; `nav.adoc` links straight to them.
+* All inbound xrefs rewritten to `general-knowledge::`.

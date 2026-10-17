@@ -13,7 +13,7 @@ GitHub org identity (profile, site, docs hub) can run in the same week as solo d
 * *Scheduling* — Cal.com hosted, or Cal.diy only if you already self-host.
 * *Chat* — Skip dedicated infra; Discord / Slack free is enough if you need a room at all. **No Mattermost yet.**
 * *Infra* — Optional personal infra; else DNS by hand until painful.
-* *Funding* — Skip unless you already publish libraries others depend on or you run on donations; a GitHub Sponsors profile is cheap if you do. If you do ask, put balance + floor on your own page (xref:funding/explanation/donation-ask-ideas.adoc[donation ask ideas]).
+* *Funding* — Skip unless you already publish libraries others depend on or you run on donations; a GitHub Sponsors profile is cheap if you do. If you do ask, put balance + floor on your own page (xref:general-knowledge::explanation/funding/donation-ask-ideas.adoc[donation ask ideas]).
 * *Studio (vibe coding)* — Stand up Cursor (or peer) skills / agent rules / MCP now if you ship with an AI studio. Not a BB capability area — see xref:general-knowledge::explanation/infrastructure/vibe-coding-bootstrap.adoc[Vibe coding bootstrap] · xref:general-knowledge::how-to/bootstrap-cursor-skills.adoc[Bootstrap Cursor skills].
 * *Forge identity* — If the GitHub (or peer) org still looks vacant, run xref:tutorials/fast-org-bootstrap.adoc[Fast org bootstrap] before the deeper IT rows.
 
@@ -25,7 +25,7 @@ GitHub org identity (profile, site, docs hub) can run in the same week as solo d
 * *Scheduling* — Cal.com unless residency forces Cal.diy.
 * *Chat* — Hosted Slack / Mattermost Cloud / Discord. Self-host Mattermost only if residency already forces a VPS fleet.
 * *Infra* — Org `infra` Pulumi repo; encode Resend/Zepto/DMARC DNS; optional `cal.` / `vault.` / Penpot hosts. Member-only static docs: Cloudflare Access (GitHub org as IdP).
-* *Funding* — If you maintain public OSS, add Sponsors and/or an Open Collective before the first “how do we pay you?” email. See xref:funding/explanation/oss-funding-landscape.adoc[OSS funding landscape]. Donation-supported products: xref:funding/explanation/donation-ask-ideas.adoc[show the fund on-site].
+* *Funding* — If you maintain public OSS, add Sponsors and/or an Open Collective before the first “how do we pay you?” email. See xref:general-knowledge::explanation/funding/oss-funding-landscape.adoc[OSS funding landscape]. Donation-supported products: xref:general-knowledge::explanation/funding/donation-ask-ideas.adoc[show the fund on-site].
 * *Studio (vibe coding)* — Keep the studio durable (skills out of always-on rules; connectors for CI mail / forge). Same links as solo; wire secrets via vault + xref:general-knowledge::explanation/infrastructure/secrets-distribution-hub.adoc[secrets distribution hub].
 
 == Small team (collaborators)
@@ -77,8 +77,8 @@ GitHub org identity (profile, site, docs hub) can run in the same week as solo d
 == Related
 
 * xref:software-stack.adoc[Software stack]
-* xref:funding/explanation/oss-funding-landscape.adoc[OSS funding landscape]
-* xref:funding/explanation/donation-ask-ideas.adoc[Donation ask ideas]
+* xref:general-knowledge::explanation/funding/oss-funding-landscape.adoc[OSS funding landscape]
+* xref:general-knowledge::explanation/funding/donation-ask-ideas.adoc[Donation ask ideas]
 * xref:chat/explanation/mattermost-self-host.adoc[Mattermost self-host]
 * xref:scheduling/explanation/cal-com-and-cal-diy.adoc[Cal.com / Cal.diy]
 * xref:design/explanation/penpot.adoc[Penpot]

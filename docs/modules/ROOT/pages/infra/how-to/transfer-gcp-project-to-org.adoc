@@ -87,7 +87,7 @@ The project now shows below the organization. Before the move it showed below *N
 == Related
 
 * xref:infra/index.adoc[Org infra]
-* xref:explanation/org-infra-repo-pattern.adoc[Org infra repo pattern]
+* xref:general-knowledge::explanation/infrastructure/org-infra-repo-pattern.adoc[Org infra repo pattern]
 * xref:tutorials/fast-org-bootstrap.adoc[Fast org bootstrap]
 
 ifndef::page-context-active[]

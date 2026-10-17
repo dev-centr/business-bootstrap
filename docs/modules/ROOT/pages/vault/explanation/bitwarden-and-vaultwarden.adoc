@@ -83,5 +83,5 @@ Business Bootstrap owns the **hosting choice** (cloud vs official server vs Vaul
 
 * xref:vault/index.adoc[Vault]
 * xref:software-stack.adoc[Software stack]
-* xref:explanation/org-infra-repo-pattern.adoc[Org infra repo pattern]
+* xref:general-knowledge::explanation/infrastructure/org-infra-repo-pattern.adoc[Org infra repo pattern]
 * xref:defaults-by-org-stage.adoc[Defaults by org stage]

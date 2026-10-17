@@ -1,6 +1,11 @@
 = Changelog
 :description: Timeline of Business Bootstrap documentation changes.
 
+== 2026-10-17 - Concept pages rehomed to General Knowledge
+
+* Twelve explanation/reference pages (email concepts, org infra pattern, Pulumi Cloud/state, funding) moved to General Knowledge; Business Bootstrap keeps the how-to path and links to them. Old URLs alias.
+* See xref:changelog-details/2026-10-17 - concept-pages-rehomed-to-general-knowledge.adoc[Detailed changelog].
+
 == 2026-10-13 - Web design tools cross-link (Penpot · Lunacy · Framer warning)
 
 * xref:design/index.adoc[Design] and xref:software-stack.adoc[Software stack] link xref:general-knowledge::reference/web-design-tools.adoc[Web design tools] — Figma baseline, Lunacy for desktop `.fig` work, explicit Framer counterexample.
@@ -58,13 +63,13 @@
 
 * Org infra: member-only static sites stay Antora; **Cloudflare Access** on the orange-cloud hostname. Reader accounts = GitHub org invite / Google / email PIN.
 * Access checks GitHub org membership **at login** (`GET /user/orgs`); it does not keep a roster. Canonical: xref:general-knowledge::explanation/infrastructure/access-in-front-of-static-sites.adoc#how-github-org-membership[How Cloudflare learns GitHub org membership].
-* Wired from xref:infra/index.adoc[Org infra], xref:explanation/org-infra-repo-pattern.adoc[org infra repo pattern], stack map, and product-shipping / small-team stage defaults.
+* Wired from xref:infra/index.adoc[Org infra], xref:general-knowledge::explanation/infrastructure/org-infra-repo-pattern.adoc[org infra repo pattern], stack map, and product-shipping / small-team stage defaults.
 * Canonical steps: xref:general-knowledge::how-to/cloudflare-access-static-site.adoc[Protect a static site with Cloudflare Access].
 * See xref:changelog-details/2026-08-12 - access-member-hostnames.adoc[Detailed changelog].
 
 == 2026-08-11 — Transparent fund ask + org scope
 
-* Added xref:funding/explanation/donation-ask-ideas.adoc[Donation ask ideas] (Transparency HOA–style balance + floor on the donate page). Canonical writeup: link:https://nonprofit-resources.org/guides/donate-page-as-a-ledger[Nonprofit Resources · Donate page as a ledger].
+* Added xref:general-knowledge::explanation/funding/donation-ask-ideas.adoc[Donation ask ideas] (Transparency HOA–style balance + floor on the donate page). Canonical writeup: link:https://nonprofit-resources.org/guides/donate-page-as-a-ledger[Nonprofit Resources · Donate page as a ledger].
 * Hub intro now states the scope is **organizations** (for-profit, nonprofit, OSS), not a profit-only reading of “business.” Repo and Antora component stay `business-bootstrap`.
 * See xref:changelog-details/2026-08-11 - donation-ask-ideas.adoc[Detailed changelog].
 
@@ -75,13 +80,13 @@
 
 == 2026-08-09 — OSS funding landscape
 
-* Added **Funding** capability area and xref:funding/explanation/oss-funding-landscape.adoc[OSS funding landscape] (fiscal hosts, grants, sponsorships, subscriptions, bounties, credits).
+* Added **Funding** capability area and xref:general-knowledge::explanation/funding/oss-funding-landscape.adoc[OSS funding landscape] (fiscal hosts, grants, sponsorships, subscriptions, bounties, credits).
 * Deep external directory: link:https://www.oss.fund/[OSS.Fund].
 * See xref:changelog-details/2026-08-09 - oss-funding-landscape.adoc[Detailed changelog].
 
 == 2026-08-09 — Pulumi secrets vs state + rclone GUIs
 
-* Added xref:infra/explanation/pulumi-secrets-vs-state.adoc[Pulumi secrets vs stack state] (encrypted config in git ≠ resource inventory backend).
+* Added xref:general-knowledge::explanation/infrastructure/pulumi-secrets-vs-state.adoc[Pulumi secrets vs stack state] (encrypted config in git ≠ resource inventory backend).
 * Expanded backup how-to with rclone GUI options (RcloneView, Cyberduck, Mountain Duck, S3 Browser, AlternativeTo) — untested; shopping list.
 * See also earlier entry for org-model / backup pages.
 

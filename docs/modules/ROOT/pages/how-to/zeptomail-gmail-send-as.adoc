@@ -18,7 +18,7 @@
 
 == Gotchas
 
-Personal `@gmail.com` accounts and free Cloudflare Email Routing have sharp edges — read xref:email/how-to/personal-gmail-send-as-gotchas.adoc[Personal Gmail send-as gotchas] and xref:email/explanation/cloudflare-email-routing-limits.adoc[Cloudflare Email Routing limits] before production cutover.
+Personal `@gmail.com` accounts and free Cloudflare Email Routing have sharp edges — read xref:general-knowledge::explanation/email/personal-gmail-send-as-gotchas.adoc[Personal Gmail send-as gotchas] and xref:general-knowledge::explanation/email/cloudflare-email-routing-limits.adoc[Cloudflare Email Routing limits] before production cutover.
 
 == SPF / multi-user
 
@@ -32,5 +32,5 @@ SPF and DKIM are **domain-level**. One correct DNS set authorizes all users of t
 
 == Related
 
-* xref:explanation/dmarc-policy-path.adoc[DMARC policy path]
+* xref:general-knowledge::explanation/email/dmarc-policy-path.adoc[DMARC policy path]
 * xref:how-to/dmarc-escalation.adoc[Escalate DMARC policy]

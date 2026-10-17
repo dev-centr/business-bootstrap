@@ -34,7 +34,7 @@ pulumi login --local
 
 Then collaboration is **IAM + Git**, not Pulumi invites. You must back up that bucket or directory yourself.
 
-Read xref:infra/explanation/pulumi-secrets-vs-state.adoc[Pulumi secrets vs stack state] if you expected the git repo alone to remember live Cloudflare resource IDs.
+Read xref:general-knowledge::explanation/infrastructure/pulumi-secrets-vs-state.adoc[Pulumi secrets vs stack state] if you expected the git repo alone to remember live Cloudflare resource IDs.
 
 == GUIs when `rclone` feels hostile
 
@@ -110,10 +110,10 @@ Treat exports as sensitive (resource IDs, sometimes secret ciphertext). Keep the
 . Confirm `pulumi preview` is clean before the next apply
 . Upload the same export JSON to Drive as a dated backup
 
-See xref:infra/explanation/pulumi-cloud-org-model.adoc[Pulumi Cloud org model] for why free Organizations/invites are not the escape hatch.
+See xref:general-knowledge::explanation/infrastructure/pulumi-cloud-org-model.adoc[Pulumi Cloud org model] for why free Organizations/invites are not the escape hatch.
 
 == Related
 
-* xref:infra/explanation/pulumi-cloud-org-model.adoc[Pulumi Cloud org model]
-* xref:infra/explanation/pulumi-secrets-vs-state.adoc[Pulumi secrets vs stack state]
-* xref:explanation/org-infra-repo-pattern.adoc[Org infra repo pattern]
+* xref:general-knowledge::explanation/infrastructure/pulumi-cloud-org-model.adoc[Pulumi Cloud org model]
+* xref:general-knowledge::explanation/infrastructure/pulumi-secrets-vs-state.adoc[Pulumi secrets vs stack state]
+* xref:general-knowledge::explanation/infrastructure/org-infra-repo-pattern.adoc[Org infra repo pattern]

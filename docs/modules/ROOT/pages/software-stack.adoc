@@ -34,11 +34,11 @@ Short map of **support systems** early organizations usually need besides produc
 
 | Org DNS + platform IaC
 | Pulumi TypeScript org infra repo; member-only static hosts behind Cloudflare Access
-| xref:infra/index.adoc[Org infra] · xref:explanation/org-infra-repo-pattern.adoc[Org infra repo pattern] · xref:general-knowledge::how-to/cloudflare-access-static-site.adoc[Access how-to]
+| xref:infra/index.adoc[Org infra] · xref:general-knowledge::explanation/infrastructure/org-infra-repo-pattern.adoc[Org infra repo pattern] · xref:general-knowledge::how-to/cloudflare-access-static-site.adoc[Access how-to]
 
 | Fund OSS maintenance / infrastructure
 | GitHub Sponsors and/or Open Collective (fiscal host); grants when the work is public-good scoped — see landscape. On-site: show balance + floor/goal (Nonprofit Resources guide).
-| xref:funding/index.adoc[Funding] · xref:funding/explanation/oss-funding-landscape.adoc[OSS funding landscape] · xref:funding/explanation/donation-ask-ideas.adoc[Donation ask ideas]
+| xref:funding/index.adoc[Funding] · xref:general-knowledge::explanation/funding/oss-funding-landscape.adoc[OSS funding landscape] · xref:general-knowledge::explanation/funding/donation-ask-ideas.adoc[Donation ask ideas]
 |===
 
 == What this hub is not
