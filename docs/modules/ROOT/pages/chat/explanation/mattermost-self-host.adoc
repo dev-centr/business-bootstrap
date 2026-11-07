@@ -179,7 +179,7 @@ Add bucket lifecycle rules to prune deleted attachments / thumbnail junk when co
 == Links
 
 * https://docs.mattermost.com/[Mattermost docs]
-* https://docs.mattermost.com/administer/install-guides.html[Mattermost install guides]
+* https://docs.mattermost.com/deployment-guide/server/deploy-server[Mattermost install guides]
 * https://docs.mattermost.com/configure/configuration-settings.html#file-storage[File storage settings]
 * https://linear.app/docs[Linear docs] · https://composio.dev/[Composio]
 

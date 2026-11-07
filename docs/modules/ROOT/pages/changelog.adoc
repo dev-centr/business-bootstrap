@@ -1,65 +1,97 @@
 = Changelog
 :description: Timeline of Business Bootstrap documentation changes.
 
-== 2026-10-17 - Concept pages rehomed to General Knowledge
+== 2026-11-07
+
+=== Refresh documentation destinations
+
+* Update links to canonical folder URLs and the current news/blog article slugs. Replace retired references with available authoritative resources; private repositories remain explicitly access-controlled examples.
+
+== 2026-10-17
+
+=== Concept pages rehomed to General Knowledge
 
 * Twelve explanation/reference pages (email concepts, org infra pattern, Pulumi Cloud/state, funding) moved to General Knowledge; Business Bootstrap keeps the how-to path and links to them. Old URLs alias.
 * See xref:changelog-details/2026-10-17 - concept-pages-rehomed-to-general-knowledge.adoc[Detailed changelog].
 
-== 2026-10-13 - Web design tools cross-link (Penpot · Lunacy · Framer warning)
+== 2026-10-13
+
+=== Web design tools cross-link (Penpot · Lunacy · Framer warning)
 
 * xref:design/index.adoc[Design] and xref:software-stack.adoc[Software stack] link xref:general-knowledge::reference/web-design-tools.adoc[Web design tools] — Figma baseline, Lunacy for desktop `.fig` work, explicit Framer counterexample.
 
-== 2026-10-06 - Fast org bootstrap: repository essentials step
+== 2026-10-06
+
+=== Fast org bootstrap: repository essentials step
 
 * xref:tutorials/fast-org-bootstrap.adoc[Fast org bootstrap] gains a repository-essentials step: encoding-guard caller plus a grouped, monthly `.github/dependabot.yml` for GitHub Actions in every repo with workflows, and current action majors verified against each release. Links xref:general-knowledge::how-to/keep-github-actions-current.adoc[Keep GitHub Actions current] (matches skill `bootstrap-org` phase 2a).
 
-== 2026-09-26 - Section Overview children + Defaults under Software stack
+== 2026-09-26
+
+=== Section Overview children + Defaults under Software stack
 
 * Software stack nests **Overview**, **Defaults by stage**, and capability categories. Categories use unlinked parents + **Overview** leaves (H1s stay descriptive).
 * See xref:changelog-details/2026-09-26 - section-overview-children.adoc[Detailed changelog].
 
-== 2026-09-26 - Software stack nest + Overview peers
+== 2026-09-26
+
+=== Software stack nest + Overview peers
 
 * Capability categories nest under xref:software-stack.adoc[Software stack] (set theory: BB contains Software stack contains Email/Vault/...). Component **Overview** stays a sibling start-page leaf.
 * See xref:changelog-details/2026-09-26 - software-stack-nest.adoc[Detailed changelog].
-== 2026-09-26 - Nav Overview label
+== 2026-09-26
+
+=== Nav Overview label
 
 * Component start-page nav item is **Overview** (forest pattern: `Business Bootstrap > Overview`), restoring an explicit landing child after the 2026-08-30 duplicate removal — prefer Overview over Home / component-titled duplicates.
 * See xref:changelog-details/2026-09-26 - nav-overview-label.adoc[Detailed changelog].
 
-== 2026-08-30 — Drop component start-page nav duplicate
+== 2026-08-30
+
+=== Drop component start-page nav duplicate
 
 * Removed leading `* xref:index.adoc[Business Bootstrap]` — site-nav-tree component root already links to the start page (avoids BB > BB). Section linked parents (`Email`, …) unchanged.
 
-== 2026-08-30 — Linked parent section landings
+== 2026-08-30
+
+=== Linked parent section landings
 
 * Replaced `.Email` / `.Org infra` / … + Overview with linked parents whose link text equals the landing H1 (`Email`, `Org infra`, …); nested pages under `**`. Files stay `index.adoc`.
 * See agent-rules `general/documentation.md` (Antora page title = nav label).
 
-== 2026-08-30 — Page title = nav label
+== 2026-08-30
+
+=== Page title = nav label
 
 * Aligned document H1s with `nav.adoc` labels and dropped divergent `:navtitle:` attrs (house rule: one canonical title).
 * See agent-rules `general/documentation.md` (Antora page title = nav label).
 
-== 2026-08-30 — Transfer a GCP project into an org
+== 2026-08-30
+
+=== Transfer a GCP project into an org
 
 * Added xref:infra/how-to/transfer-gcp-project-to-org.adoc[Transfer a project into an org] — why a personal Google account can never move a project into a Cloud Identity organization, and the two-grant bridge that works.
 * Names the trap: `resourcemanager.projects.move` is an **organization**-level permission. Granting Project Mover on the project's own IAM page looks right and does nothing.
 * See xref:changelog-details/2026-08-30 - gcp-project-transfer.adoc[Detailed changelog].
 
-== 2026-08-15 — Project SDL profiles (`library` / `cli` / `desktop`)
+== 2026-08-15
+
+=== Project SDL profiles (`library` / `cli` / `desktop`)
 
 * Fast-path tutorial now lists project profiles besides org ones. House site default remains **SolidStart static + solid-ui**. Name a profile, paste SDL in the first prompt, or let the agent infer (`new CLI` → `cli`).
 * See xref:changelog-details/2026-08-15 - bootstrap-project-profiles.adoc[Detailed changelog].
 
-== 2026-08-15 — Fast org bootstrap (agent skill)
+== 2026-08-15
+
+=== Fast org bootstrap (agent skill)
 
 * Added xref:tutorials/fast-org-bootstrap.adoc[Fast org bootstrap] — GitHub org identity (`.github` profile, site, docs hub) as a **fast alternative** to walking every capability area. Email, vault, chat, and infra literature stay where they are.
 * Cursor skill `bootstrap-org` in `dev-centr/agent-rules`, with named SDLang profiles (SolidStart static + solid-ui house defaults).
 * See xref:changelog-details/2026-08-15 - fast-org-bootstrap.adoc[Detailed changelog].
 
-== 2026-08-12 — Access on member hostnames
+== 2026-08-12
+
+=== Access on member hostnames
 
 * Org infra: member-only static sites stay Antora; **Cloudflare Access** on the orange-cloud hostname. Reader accounts = GitHub org invite / Google / email PIN.
 * Access checks GitHub org membership **at login** (`GET /user/orgs`); it does not keep a roster. Canonical: xref:general-knowledge::explanation/infrastructure/access-in-front-of-static-sites.adoc#how-github-org-membership[How Cloudflare learns GitHub org membership].
@@ -67,48 +99,64 @@
 * Canonical steps: xref:general-knowledge::how-to/cloudflare-access-static-site.adoc[Protect a static site with Cloudflare Access].
 * See xref:changelog-details/2026-08-12 - access-member-hostnames.adoc[Detailed changelog].
 
-== 2026-08-11 — Transparent fund ask + org scope
+== 2026-08-11
+
+=== Transparent fund ask + org scope
 
 * Added xref:general-knowledge::explanation/funding/donation-ask-ideas.adoc[Donation ask ideas] (Transparency HOA–style balance + floor on the donate page). Canonical writeup: link:https://nonprofit-resources.org/guides/donate-page-as-a-ledger[Nonprofit Resources · Donate page as a ledger].
 * Hub intro now states the scope is **organizations** (for-profit, nonprofit, OSS), not a profit-only reading of “business.” Repo and Antora component stay `business-bootstrap`.
 * See xref:changelog-details/2026-08-11 - donation-ask-ideas.adoc[Detailed changelog].
 
-== 2026-08-10 — Vibe coding bootstrap related links
+== 2026-08-10
+
+=== Vibe coding bootstrap related links
 
 * Hub intro + Related, stage defaults (solo / shipping + matrix), stack map, business overview, and Chat interconnect now point at xref:general-knowledge::explanation/infrastructure/vibe-coding-bootstrap.adoc[Vibe coding bootstrap] as a **sibling** path during early BB—not a nested capability area.
 * See xref:changelog-details/2026-08-10 - vibe-coding-related-links.adoc[Detailed changelog].
 
-== 2026-08-09 — OSS funding landscape
+== 2026-08-09
+
+=== OSS funding landscape
 
 * Added **Funding** capability area and xref:general-knowledge::explanation/funding/oss-funding-landscape.adoc[OSS funding landscape] (fiscal hosts, grants, sponsorships, subscriptions, bounties, credits).
 * Deep external directory: link:https://www.oss.fund/[OSS.Fund].
 * See xref:changelog-details/2026-08-09 - oss-funding-landscape.adoc[Detailed changelog].
 
-== 2026-08-09 — Pulumi secrets vs state + rclone GUIs
+== 2026-08-09
+
+=== Pulumi secrets vs state + rclone GUIs
 
 * Added xref:general-knowledge::explanation/infrastructure/pulumi-secrets-vs-state.adoc[Pulumi secrets vs stack state] (encrypted config in git ≠ resource inventory backend).
 * Expanded backup how-to with rclone GUI options (RcloneView, Cyberduck, Mountain Duck, S3 Browser, AlternativeTo) — untested; shopping list.
 * See also earlier entry for org-model / backup pages.
 
-== 2026-08-09 — Pulumi Cloud org model + state backup
+== 2026-08-09
+
+=== Pulumi Cloud org model + state backup
 
 * Documented free Individual = no invites; Organizations need Team / OSS Team / self-managed backend.
 * How-to for `pulumi stack export` and Drive offline copies (not a Pulumi backend).
 * See xref:changelog-details/2026-08-09 - pulumi-cloud-org-model.adoc[Detailed changelog].
 
-== 2026-08-09 — Chat / Mattermost + stage-shaped defaults
+== 2026-08-09
+
+=== Chat / Mattermost + stage-shaped defaults
 
 * Added **Chat** capability area and xref:chat/explanation/mattermost-self-host.adoc[Mattermost self-host] (hosting matrix, Linear/Composio integrations, file limits, R2/B2 + CDN).
 * Subdivided xref:defaults-by-org-stage.adoc[Defaults by org stage] into phase sections so later-maturity steps (e.g. Mattermost self-host) are not treated as day-one work.
 * See xref:changelog-details/2026-08-09 - chat-mattermost-stage-defaults.adoc[Detailed changelog].
 
-== 2026-08-09 — Gmail / Cloudflare email gotchas + business home
+== 2026-08-09
+
+=== Gmail / Cloudflare email gotchas + business home
 
 * Added personal Gmail send-as gotchas and Cloudflare Email Routing limits; Pulumi + Cloudflare email checklist under Org infra.
 * Added xref:software-stack.adoc[Business] overview (no separate business-resources site).
 * Clarified org infra pattern: Gmail Settings API can list/patch send-as; create often UI-bound; Routing is inbound-only.
 
-== 2026-08-08 — Support-systems hub (capability areas)
+== 2026-08-08
+
+=== Support-systems hub (capability areas)
 
 * Restructured into Email · Scheduling · Design · Vault · Org infra; stack map + Cal.com/Cal.diy, Penpot, Bitwarden/Vaultwarden articles.
 * See xref:changelog-details/2026-08-08 - business-resources-cal-penpot-vault.adoc[Detailed changelog].
