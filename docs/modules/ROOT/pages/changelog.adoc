@@ -1,6 +1,12 @@
 = Changelog
 :description: Timeline of Business Bootstrap documentation changes.
 
+== 2026-11-12
+
+=== Design area links the AI site contract
+
+* xref:design/index.adoc[Design] links the general-knowledge pages for a locked visual contract: explanation, how-to, and token reference. The canvas notes on this page stay here.
+
 == 2026-11-07
 
 === Refresh documentation destinations

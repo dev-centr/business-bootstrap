@@ -7,6 +7,9 @@ Shared frames, components, and handoff belong in a real design host — not PNG 
 
 * xref:design/explanation/penpot.adoc[Penpot] — open-source design platform (self-host or cloud)
 * xref:general-knowledge::reference/web-design-tools.adoc[Web design tools] — Figma baseline, Lunacy, and why Framer is a poor primary site host
+* xref:general-knowledge::explanation/constrained-ai-web-design.adoc[Constrained AI web design] — once a canvas (or a token file) exists, the agent implements inside it
+* xref:general-knowledge::how-to/tighten-an-ai-built-site.adoc[Tighten an AI-built site] — procedure for a site that already runs
+* xref:general-knowledge::reference/ai-site-design-contract.adoc[AI site design contract] — token names and prompt shapes
 
 == Room to grow
 
